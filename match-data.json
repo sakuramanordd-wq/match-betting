@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T06:54:01.597Z",
+  "fetchedAt": "2026-09-30T06:55:02.626Z",
   "events": [
     {
       "id": "2026-national",
@@ -173,10 +173,10 @@
         },
         {
           "name": "井心小能（冥灯朋友）",
-          "wins": "3",
-          "losses": "-3",
-          "winRate": "",
-          "total": ""
+          "wins": "1",
+          "losses": "1",
+          "winRate": "50.00%",
+          "total": "2"
         },
         {
           "name": "猫掌柜吃不下了",
@@ -15813,7 +15813,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T06:53:51.733Z",
+    "fetchedAt": "2026-09-30T06:54:51.955Z",
     "syncFailed": false,
     "records": [
       {
