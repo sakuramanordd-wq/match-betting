@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T13:38:11.308Z",
+  "fetchedAt": "2026-09-30T13:39:11.730Z",
   "events": [
     {
       "id": "2026-national",
@@ -16203,7 +16203,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T13:38:01.913Z",
+    "fetchedAt": "2026-09-30T13:39:01.856Z",
     "syncFailed": false,
     "records": [
       {
@@ -16246,7 +16246,7 @@
         "name": "梅布斯尼",
         "side": "red",
         "postedAt": "2026-09-30T21:13:24+08:00",
-        "match": "9月30日 20:00场"
+        "match": "9月30日，20：00场"
       },
       {
         "name": "面灵气喵",
@@ -16348,7 +16348,7 @@
         "name": "yys雯雯",
         "side": "red",
         "postedAt": "2026-09-30T21:04:15+08:00",
-        "match": "20-22点场"
+        "match": "9月30日，20:00~22:00点场"
       }
     ]
   }
