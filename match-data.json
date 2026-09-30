@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T16:11:14.224Z",
+  "fetchedAt": "2026-09-30T16:22:14.274Z",
   "events": [
     {
       "id": "2026-national",
@@ -130,7 +130,7 @@
           "total": "7"
         },
         {
-          "name": "二蛋",
+          "name": "二蛋搬砖",
           "wins": "3",
           "losses": "4",
           "winRate": "42.86%",
@@ -276,7 +276,7 @@
               "side": "red"
             },
             {
-              "name": "二蛋",
+              "name": "二蛋搬砖",
               "side": "red"
             },
             {
@@ -392,7 +392,7 @@
               "side": "blue"
             },
             {
-              "name": "二蛋",
+              "name": "二蛋搬砖",
               "side": "red"
             },
             {
@@ -508,7 +508,7 @@
               "side": "red"
             },
             {
-              "name": "二蛋",
+              "name": "二蛋搬砖",
               "side": "red"
             },
             {
@@ -624,7 +624,7 @@
               "side": "red"
             },
             {
-              "name": "二蛋",
+              "name": "二蛋搬砖",
               "side": "blue"
             },
             {
@@ -736,7 +736,7 @@
               "side": "blue"
             },
             {
-              "name": "二蛋",
+              "name": "二蛋搬砖",
               "side": "blue"
             },
             {
@@ -852,7 +852,7 @@
               "side": "red"
             },
             {
-              "name": "二蛋",
+              "name": "二蛋搬砖",
               "side": "blue"
             },
             {
@@ -968,7 +968,7 @@
               "side": "red"
             },
             {
-              "name": "二蛋",
+              "name": "二蛋搬砖",
               "side": "blue"
             },
             {
@@ -16332,7 +16332,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T16:11:05.266Z",
+    "fetchedAt": "2026-09-30T16:22:05.559Z",
     "syncFailed": false,
     "records": [
       {
