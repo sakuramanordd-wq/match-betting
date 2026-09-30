@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T13:06:10.429Z",
+  "fetchedAt": "2026-09-30T13:07:11.519Z",
   "events": [
     {
       "id": "2026-national",
@@ -788,11 +788,19 @@
               "side": "red"
             },
             {
+              "name": "炒饭菌（实测",
+              "side": "red"
+            },
+            {
               "name": "嘤嘤井",
               "side": "red"
             },
             {
               "name": "徐清林",
+              "side": "red"
+            },
+            {
+              "name": "Mico林木森",
               "side": "red"
             },
             {
@@ -16155,7 +16163,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T13:06:01.065Z",
+    "fetchedAt": "2026-09-30T13:07:01.143Z",
     "syncFailed": false,
     "records": [
       {
