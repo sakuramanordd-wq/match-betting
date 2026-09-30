@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T07:30:03.362Z",
+  "fetchedAt": "2026-09-30T07:31:01.718Z",
   "events": [
     {
       "id": "2026-national",
@@ -433,8 +433,16 @@
               "side": "red"
             },
             {
+              "name": "梅布斯尼（实测",
+              "side": "red"
+            },
+            {
               "name": "嘤嘤井",
               "side": "blue"
+            },
+            {
+              "name": "徐清林",
+              "side": "red"
             },
             {
               "name": "行水姑娘",
@@ -15837,7 +15845,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T07:29:52.677Z",
+    "fetchedAt": "2026-09-30T07:30:52.732Z",
     "syncFailed": false,
     "records": [
       {
