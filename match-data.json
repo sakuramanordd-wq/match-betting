@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T04:52:36.007Z",
+  "fetchedAt": "2026-09-30T05:10:37.314Z",
   "events": [
     {
       "id": "2026-national",
@@ -281,6 +281,10 @@
           "records": [
             {
               "name": "查查尔",
+              "side": "blue"
+            },
+            {
+              "name": "徐清林",
               "side": "blue"
             },
             {
@@ -15651,7 +15655,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T04:52:26.632Z",
+    "fetchedAt": "2026-09-30T05:10:26.826Z",
     "syncFailed": false,
     "records": [
       {
