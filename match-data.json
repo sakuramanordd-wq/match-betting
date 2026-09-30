@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T11:16:07.920Z",
+  "fetchedAt": "2026-09-30T11:17:07.449Z",
   "events": [
     {
       "id": "2026-national",
@@ -660,6 +660,10 @@
               "side": "red"
             },
             {
+              "name": "徐OK（实测",
+              "side": "blue"
+            },
+            {
               "name": "鸽海成路",
               "side": "blue"
             },
@@ -674,6 +678,10 @@
             {
               "name": "来姐大人",
               "side": "red"
+            },
+            {
+              "name": "NGA平安志作者模拟",
+              "side": "blue"
             },
             {
               "name": "井心小能（冥灯？）",
@@ -16030,7 +16038,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T11:15:58.180Z",
+    "fetchedAt": "2026-09-30T11:16:58.263Z",
     "syncFailed": false,
     "records": [
       {
@@ -16053,9 +16061,9 @@
       },
       {
         "name": "待机中的徐OK",
-        "side": "red",
-        "postedAt": "2026-09-30T17:32:11+08:00",
-        "match": "day1·16点场"
+        "side": "blue",
+        "postedAt": "2026-09-30T19:15:12+08:00",
+        "match": "day1·18点场"
       },
       {
         "name": "奉天城公子奉天",
@@ -16089,9 +16097,9 @@
       },
       {
         "name": "清流不加班",
-        "side": "red",
-        "postedAt": "2026-09-30T16:47:58+08:00",
-        "match": "9月30日，16:00场"
+        "side": "blue",
+        "postedAt": "2026-09-30T19:02:30+08:00",
+        "match": "9月30日，18:00场"
       },
       {
         "name": "是大荣啦",
