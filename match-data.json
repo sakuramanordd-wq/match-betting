@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T09:30:06.737Z",
+  "fetchedAt": "2026-09-30T09:31:06.172Z",
   "events": [
     {
       "id": "2026-national",
@@ -542,6 +542,18 @@
             },
             {
               "name": "七面相（实测",
+              "side": "red"
+            },
+            {
+              "name": "梅布斯尼（实测",
+              "side": "red"
+            },
+            {
+              "name": "晨时微凉（实测",
+              "side": "red"
+            },
+            {
+              "name": "炒饭菌（实测",
               "side": "red"
             },
             {
@@ -15942,7 +15954,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T09:29:56.243Z",
+    "fetchedAt": "2026-09-30T09:30:56.209Z",
     "syncFailed": false,
     "records": [
       {
