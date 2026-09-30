@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T11:42:09.088Z",
+  "fetchedAt": "2026-09-30T11:43:09.128Z",
   "events": [
     {
       "id": "2026-national",
@@ -674,6 +674,10 @@
             {
               "name": "查查尔",
               "side": "red"
+            },
+            {
+              "name": "NGAArchonXP",
+              "side": "blue"
             },
             {
               "name": "七面相（实测",
@@ -16110,7 +16114,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T11:41:58.894Z",
+    "fetchedAt": "2026-09-30T11:42:59.162Z",
     "syncFailed": false,
     "records": [
       {
@@ -16181,9 +16185,9 @@
       },
       {
         "name": "夕水残阳",
-        "side": "red",
-        "postedAt": "2026-09-30T17:36:04+08:00",
-        "match": "9月30日 16点场"
+        "side": "blue",
+        "postedAt": "2026-09-30T19:34:00+08:00",
+        "match": "9月30日，18点场"
       },
       {
         "name": "夜神月Lwaite",
