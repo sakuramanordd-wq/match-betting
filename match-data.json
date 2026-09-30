@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T06:36:01.989Z",
+  "fetchedAt": "2026-09-30T06:37:00.856Z",
   "events": [
     {
       "id": "2026-national",
@@ -158,6 +158,13 @@
           "total": "2"
         },
         {
+          "name": "平安志作者",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
           "name": "猫掌柜吃不下了",
           "wins": "2",
           "losses": "0",
@@ -261,6 +268,10 @@
             },
             {
               "name": "YYS方寒",
+              "side": "red"
+            },
+            {
+              "name": "平安志作者",
               "side": "red"
             },
             {
@@ -15748,7 +15759,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T06:35:51.385Z",
+    "fetchedAt": "2026-09-30T06:36:51.437Z",
     "syncFailed": false,
     "records": [
       {
@@ -15831,9 +15842,9 @@
       },
       {
         "name": "阴阳师攻略组",
-        "side": "red",
-        "postedAt": "2026-09-30T12:49:29+08:00",
-        "match": "9月30日，12:00场"
+        "side": "blue",
+        "postedAt": "2026-09-30T14:30:28+08:00",
+        "match": "14:00场"
       },
       {
         "name": "阴阳师手游攻略墙",
@@ -15849,8 +15860,8 @@
       },
       {
         "name": "著名智障二小姐(明灯)",
-        "side": null,
-        "postedAt": "2026-09-30T13:32:45+08:00",
+        "side": "red",
+        "postedAt": "2026-09-30T14:24:58+08:00",
         "match": ""
       },
       {
