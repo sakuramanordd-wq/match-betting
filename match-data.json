@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T13:31:11.048Z",
+  "fetchedAt": "2026-09-30T13:36:11.585Z",
   "events": [
     {
       "id": "2026-national",
@@ -784,6 +784,10 @@
           "result": null,
           "records": [
             {
+              "name": "面灵气喵",
+              "side": "blue"
+            },
+            {
               "name": "查查尔",
               "side": "red"
             },
@@ -809,6 +813,10 @@
             },
             {
               "name": "徐OK（实测",
+              "side": "red"
+            },
+            {
+              "name": "鸽海成路",
               "side": "red"
             },
             {
@@ -16191,7 +16199,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T13:31:01.631Z",
+    "fetchedAt": "2026-09-30T13:36:01.767Z",
     "syncFailed": false,
     "records": [
       {
@@ -16208,8 +16216,8 @@
       },
       {
         "name": "春秋霸主徐清林",
-        "side": "blue",
-        "postedAt": "2026-09-30T19:28:46+08:00",
+        "side": null,
+        "postedAt": "2026-09-30T20:38:33+08:00",
         "match": ""
       },
       {
