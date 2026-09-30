@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T12:36:10.372Z",
+  "fetchedAt": "2026-09-30T12:37:10.201Z",
   "events": [
     {
       "id": "2026-national",
@@ -16135,7 +16135,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T12:36:00.252Z",
+    "fetchedAt": "2026-09-30T12:37:00.269Z",
     "syncFailed": false,
     "records": [
       {
@@ -16164,9 +16164,9 @@
       },
       {
         "name": "奉天城公子奉天",
-        "side": "blue",
-        "postedAt": "2026-09-30T18:45:04+08:00",
-        "match": "9月30日，16:00场"
+        "side": "red",
+        "postedAt": "2026-09-30T20:26:27+08:00",
+        "match": ""
       },
       {
         "name": "鸽海成路",
