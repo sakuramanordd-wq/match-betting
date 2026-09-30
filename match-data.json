@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T08:52:04.246Z",
+  "fetchedAt": "2026-09-30T08:53:04.260Z",
   "events": [
     {
       "id": "2026-national",
@@ -538,6 +538,10 @@
           "records": [
             {
               "name": "嘤嘤井",
+              "side": "red"
+            },
+            {
+              "name": "行水姑娘",
               "side": "red"
             },
             {
@@ -15902,7 +15906,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T08:51:54.654Z",
+    "fetchedAt": "2026-09-30T08:52:55.039Z",
     "syncFailed": false,
     "records": [
       {
@@ -15968,8 +15972,8 @@
       {
         "name": "是大荣啦",
         "side": "red",
-        "postedAt": "2026-09-30T14:54:16+08:00",
-        "match": "9月30日，14:00场"
+        "postedAt": "2026-09-30T16:38:43+08:00",
+        "match": "9月30日，16:00场"
       },
       {
         "name": "夕水残阳",
