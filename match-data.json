@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T05:37:01.412Z",
+  "fetchedAt": "2026-09-30T05:38:04.408Z",
   "events": [
     {
       "id": "2026-national",
@@ -165,6 +165,13 @@
           "total": "1"
         },
         {
+          "name": "猫掌柜吃不下了",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
           "name": "小琨爱小蛊",
           "wins": "1",
           "losses": "0",
@@ -268,6 +275,10 @@
               "side": "red"
             },
             {
+              "name": "猫掌柜吃不下了",
+              "side": "red"
+            },
+            {
               "name": "小琨爱小蛊",
               "side": "red"
             }
@@ -309,6 +320,14 @@
             },
             {
               "name": "YYS方寒",
+              "side": "red"
+            },
+            {
+              "name": "猫掌柜吃不下了",
+              "side": "red"
+            },
+            {
+              "name": "小琨爱小蛊",
               "side": "red"
             }
           ]
@@ -15675,7 +15694,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T05:36:50.467Z",
+    "fetchedAt": "2026-09-30T05:37:50.234Z",
     "syncFailed": false,
     "records": [
       {
@@ -15698,9 +15717,9 @@
       },
       {
         "name": "待机中的徐OK",
-        "side": "red",
-        "postedAt": "2026-09-30T10:43:56+08:00",
-        "match": "10点场"
+        "side": "blue",
+        "postedAt": "2026-09-30T13:32:06+08:00",
+        "match": "day1·12点场"
       },
       {
         "name": "奉天城公子奉天",
@@ -15728,9 +15747,9 @@
       },
       {
         "name": "七面相",
-        "side": "red",
-        "postedAt": "2026-09-30T10:06:08+08:00",
-        "match": "9月30日，10:00场"
+        "side": "blue",
+        "postedAt": "2026-09-30T13:36:03+08:00",
+        "match": "9月30号 12点场"
       },
       {
         "name": "清流不加班",
@@ -15776,8 +15795,8 @@
       },
       {
         "name": "著名智障二小姐(明灯)",
-        "side": "blue",
-        "postedAt": "2026-02-23T20:44:19+08:00",
+        "side": null,
+        "postedAt": "2026-09-30T13:32:45+08:00",
         "match": ""
       },
       {
