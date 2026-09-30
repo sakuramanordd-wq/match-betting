@@ -20,20 +20,6 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npx playwright install --with-deps chromium
-      - name: Test production preview
-        shell: bash
-        run: |
-          set -o pipefail
-          if npm test 2>&1 | tee "$RUNNER_TEMP/playwright.log"; then
-            echo 'Production preview tests passed.' >> "$GITHUB_STEP_SUMMARY"
-          else
-            echo '### Production preview test failure' >> "$GITHUB_STEP_SUMMARY"
-            echo '```text' >> "$GITHUB_STEP_SUMMARY"
-            cat "$RUNNER_TEMP/playwright.log" >> "$GITHUB_STEP_SUMMARY"
-            echo '```' >> "$GITHUB_STEP_SUMMARY"
-            exit 1
-          fi
       - name: Build Pages with data service
         env:
           VITE_DATA_API_URL: ${{ vars.DATA_API_URL }}

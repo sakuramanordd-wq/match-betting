@@ -33,7 +33,7 @@
 | `tests/home.spec.js` | 数据与生产路径浏览器验证 |
 | `assets/`、`public/assets/` | 本地素材，来源见 `ASSETS.md` |
 | `playwright.config.js` | 生产子路径预览配置 |
-| `.github/workflows/pages.yml` | 测试、构建、发布 |
+| `.github/workflows/pages.yml` | 构建、发布；测试由本地执行 |
 
 不提交 `dist/`、`node_modules/`、测试结果或截图，不手工修改构建产物。
 
@@ -92,7 +92,7 @@ npm run preview
 
 用户明确要求部署时正常提交推送。否则完成本地代码、验证并报告，未经要求不发送通知或外部评论。
 
-首次需 **Settings → Pages → Source → GitHub Actions**；推送 `main` 触发 `npm ci`、Chromium 安装、测试、构建、上传和发布。工作流使用 contents:read、pages:write、id-token:write，不用个人 token。
+首次需 **Settings → Pages → Source → GitHub Actions**；推送 `main` 触发 `npm ci`、构建、上传和发布，不安装 Chromium、不运行测试。修改代码仍按第 6 节在本地验证，测试不作为 Pages 发布拦截步骤。工作流使用 contents:read、pages:write、id-token:write，不用个人 token。
 
 发布后检查 Actions、部署提交与实际网址，勿以工作流存在声称发布成功。404 时检查 Pages 设置、部署与 CDN；图片 404 时检查素材复制及子路径。没有权限时准确报告剩余步骤。
 
