@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T11:37:08.234Z",
+  "fetchedAt": "2026-09-30T11:38:08.631Z",
   "events": [
     {
       "id": "2026-national",
@@ -124,6 +124,13 @@
         },
         {
           "name": "惰落珈百璃",
+          "wins": "3",
+          "losses": "1",
+          "winRate": "75.00%",
+          "total": "4"
+        },
+        {
+          "name": "二蛋",
           "wins": "3",
           "losses": "1",
           "winRate": "75.00%",
@@ -269,6 +276,10 @@
               "side": "red"
             },
             {
+              "name": "二蛋",
+              "side": "red"
+            },
+            {
               "name": "Mico林木森",
               "side": "red"
             },
@@ -381,6 +392,10 @@
               "side": "blue"
             },
             {
+              "name": "二蛋",
+              "side": "red"
+            },
+            {
               "name": "Mico林木森",
               "side": "blue"
             },
@@ -490,6 +505,10 @@
             },
             {
               "name": "惰落珈百璃",
+              "side": "red"
+            },
+            {
+              "name": "二蛋",
               "side": "red"
             },
             {
@@ -605,6 +624,10 @@
               "side": "red"
             },
             {
+              "name": "二蛋",
+              "side": "blue"
+            },
+            {
               "name": "Mico林木森",
               "side": "red"
             },
@@ -702,6 +725,10 @@
             },
             {
               "name": "惰落珈百璃",
+              "side": "blue"
+            },
+            {
+              "name": "二蛋",
               "side": "blue"
             },
             {
@@ -16083,7 +16110,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T11:36:58.775Z",
+    "fetchedAt": "2026-09-30T11:37:58.832Z",
     "syncFailed": false,
     "records": [
       {
@@ -16094,9 +16121,9 @@
       },
       {
         "name": "晨时微凉",
-        "side": "red",
-        "postedAt": "2026-09-30T17:30:44+08:00",
-        "match": "9月30日，16:00场"
+        "side": "blue",
+        "postedAt": "2026-09-30T19:26:58+08:00",
+        "match": "9月30日，18:00场"
       },
       {
         "name": "春秋霸主徐清林",
