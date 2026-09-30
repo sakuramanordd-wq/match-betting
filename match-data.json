@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T15:37:14.760Z",
+  "fetchedAt": "2026-09-30T15:38:13.767Z",
   "events": [
     {
       "id": "2026-national",
@@ -912,6 +912,10 @@
               "side": "blue"
             },
             {
+              "name": "炒饭菌（实测",
+              "side": "red"
+            },
+            {
               "name": "嘤嘤井",
               "side": "blue"
             },
@@ -925,6 +929,10 @@
             },
             {
               "name": "抖音茨木童子（实测",
+              "side": "red"
+            },
+            {
+              "name": "CC南浔",
               "side": "red"
             },
             {
@@ -958,6 +966,10 @@
             {
               "name": "猫掌柜吃不下了",
               "side": "blue"
+            },
+            {
+              "name": "小琨爱小蛊",
+              "side": "red"
             }
           ]
         },
@@ -16288,7 +16300,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T15:37:05.258Z",
+    "fetchedAt": "2026-09-30T15:38:04.535Z",
     "syncFailed": false,
     "records": [
       {
@@ -16312,8 +16324,8 @@
       {
         "name": "待机中的徐OK",
         "side": "red",
-        "postedAt": "2026-09-30T21:15:28+08:00",
-        "match": "day1·20点场"
+        "postedAt": "2026-09-30T23:36:20+08:00",
+        "match": "9月30日，22:00场"
       },
       {
         "name": "奉天城公子奉天",
@@ -16373,7 +16385,7 @@
         "name": "阴阳师攻略组",
         "side": "red",
         "postedAt": "2026-09-30T22:41:49+08:00",
-        "match": "10月1日，22:00场"
+        "match": "9月30日，22:00场"
       },
       {
         "name": "阴阳师手游攻略墙",
@@ -16390,8 +16402,8 @@
       {
         "name": "著名智障二小姐(明灯)",
         "side": "red",
-        "postedAt": "2026-09-30T20:42:34+08:00",
-        "match": "9月30日场"
+        "postedAt": "2026-09-30T23:36:52+08:00",
+        "match": ""
       },
       {
         "name": "CC南浔",
