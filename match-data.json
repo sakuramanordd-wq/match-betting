@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T02:40:58.235Z",
+  "fetchedAt": "2026-09-30T03:01:24.613Z",
   "events": [
     {
       "id": "2026-national",
@@ -9,6 +9,169 @@
       "year": 2026,
       "resultRow": "26国庆结果",
       "sourceSheet": "206国庆竞猜汇总",
+      "summaries": [
+        {
+          "name": "面灵气喵",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "查查尔",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "NGAArchonXP",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "Poetry红鲤",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "七面相（实测",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "NGA渊无尽（大数据",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "梅布斯尼（实测",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "雯雯（实测",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "晨时微凉（实测",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "炒饭菌（实测",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "徐OK（实测",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "鸽海成路",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "嘤嘤井",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "徐清林",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "行水姑娘",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "抖音茨木童子（实测",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "CC南浔",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "惰落珈百璃",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "Mico林木森",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "世一协（群友",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "来姐大人",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "YYS方寒",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        },
+        {
+          "name": "小琨爱小蛊",
+          "wins": "1",
+          "losses": "0",
+          "winRate": "100.00%",
+          "total": "1"
+        }
+      ],
       "slots": [
         {
           "id": "2026-national-1",
@@ -21,11 +184,15 @@
               "side": "red"
             },
             {
+              "name": "查查尔",
+              "side": "red"
+            },
+            {
               "name": "NGAArchonXP",
               "side": "red"
             },
             {
-              "name": "查查尔",
+              "name": "Poetry红鲤",
               "side": "red"
             },
             {
@@ -33,11 +200,11 @@
               "side": "red"
             },
             {
-              "name": "梅布斯尼（实测",
+              "name": "NGA渊无尽（大数据",
               "side": "red"
             },
             {
-              "name": "NGA渊无尽（大数据",
+              "name": "梅布斯尼（实测",
               "side": "red"
             },
             {
@@ -73,10 +240,6 @@
               "side": "red"
             },
             {
-              "name": "Poetry红鲤",
-              "side": "red"
-            },
-            {
               "name": "抖音茨木童子（实测",
               "side": "red"
             },
@@ -93,7 +256,7 @@
               "side": "red"
             },
             {
-              "name": "世一协",
+              "name": "世一协（群友",
               "side": "red"
             },
             {
@@ -454,6 +617,183 @@
       "year": 2026,
       "resultRow": "26春节结果",
       "sourceSheet": "206春节竞猜汇总",
+      "summaries": [
+        {
+          "name": "面灵气喵",
+          "wins": "28",
+          "losses": "21",
+          "winRate": "57.14%",
+          "total": "49"
+        },
+        {
+          "name": "NGAArchonXP",
+          "wins": "26",
+          "losses": "23",
+          "winRate": "53.06%",
+          "total": "49"
+        },
+        {
+          "name": "查查尔",
+          "wins": "27",
+          "losses": "22",
+          "winRate": "55.10%",
+          "total": "49"
+        },
+        {
+          "name": "七面相（实测",
+          "wins": "30",
+          "losses": "19",
+          "winRate": "61.22%",
+          "total": "49"
+        },
+        {
+          "name": "梅布斯尼（实测",
+          "wins": "31",
+          "losses": "18",
+          "winRate": "63.27%",
+          "total": "49"
+        },
+        {
+          "name": "NGA渊无尽（大数据",
+          "wins": "24",
+          "losses": "25",
+          "winRate": "48.98%",
+          "total": "49"
+        },
+        {
+          "name": "雯雯（实测",
+          "wins": "30",
+          "losses": "19",
+          "winRate": "61.22%",
+          "total": "49"
+        },
+        {
+          "name": "晨时微凉（实测",
+          "wins": "30",
+          "losses": "19",
+          "winRate": "61.22%",
+          "total": "49"
+        },
+        {
+          "name": "炒饭菌（实测",
+          "wins": "30",
+          "losses": "19",
+          "winRate": "61.22%",
+          "total": "49"
+        },
+        {
+          "name": "徐OK（实测",
+          "wins": "29",
+          "losses": "20",
+          "winRate": "59.18%",
+          "total": "49"
+        },
+        {
+          "name": "鸽海成路（AI?",
+          "wins": "23",
+          "losses": "25",
+          "winRate": "47.92%",
+          "total": "48"
+        },
+        {
+          "name": "嘤嘤井",
+          "wins": "28",
+          "losses": "21",
+          "winRate": "57.14%",
+          "total": "49"
+        },
+        {
+          "name": "徐清林",
+          "wins": "30",
+          "losses": "19",
+          "winRate": "61.22%",
+          "total": "49"
+        },
+        {
+          "name": "行水姑娘",
+          "wins": "30",
+          "losses": "19",
+          "winRate": "61.22%",
+          "total": "49"
+        },
+        {
+          "name": "Poetry红鲤",
+          "wins": "27",
+          "losses": "22",
+          "winRate": "55.10%",
+          "total": "49"
+        },
+        {
+          "name": "抖音茨木童子（实测",
+          "wins": "22",
+          "losses": "27",
+          "winRate": "44.90%",
+          "total": "49"
+        },
+        {
+          "name": "CC南浔",
+          "wins": "30",
+          "losses": "19",
+          "winRate": "61.22%",
+          "total": "49"
+        },
+        {
+          "name": "惰落珈百璃",
+          "wins": "32",
+          "losses": "17",
+          "winRate": "65.31%",
+          "total": "49"
+        },
+        {
+          "name": "Mico林木森",
+          "wins": "27",
+          "losses": "22",
+          "winRate": "55.10%",
+          "total": "49"
+        },
+        {
+          "name": "世一协",
+          "wins": "30",
+          "losses": "19",
+          "winRate": "61.22%",
+          "total": "49"
+        },
+        {
+          "name": "Otaku小刚",
+          "wins": "23",
+          "losses": "25",
+          "winRate": "47.92%",
+          "total": "48"
+        },
+        {
+          "name": "来姐大人",
+          "wins": "27",
+          "losses": "18",
+          "winRate": "60.00%",
+          "total": "45"
+        },
+        {
+          "name": "YYS方寒",
+          "wins": "32",
+          "losses": "17",
+          "winRate": "65.31%",
+          "total": "49"
+        },
+        {
+          "name": "猫掌柜_Nekomata",
+          "wins": "23",
+          "losses": "24",
+          "winRate": "48.94%",
+          "total": "47"
+        },
+        {
+          "name": "小琨爱小蛊",
+          "wins": "17",
+          "losses": "23",
+          "winRate": "42.50%",
+          "total": "40"
+        }
+      ],
       "slots": [
         {
           "id": "2026-spring-1",
@@ -5687,6 +6027,176 @@
       "year": 2025,
       "resultRow": "25周年结果",
       "sourceSheet": "2025国庆竞猜汇总",
+      "summaries": [
+        {
+          "name": "面灵气喵",
+          "wins": "30",
+          "losses": "19",
+          "winRate": "61.22%",
+          "total": "49"
+        },
+        {
+          "name": "NGA ArchonXP",
+          "wins": "26",
+          "losses": "23",
+          "winRate": "53.06%",
+          "total": "49"
+        },
+        {
+          "name": "查查尔",
+          "wins": "27",
+          "losses": "22",
+          "winRate": "55.10%",
+          "total": "49"
+        },
+        {
+          "name": "七面相（实测",
+          "wins": "24",
+          "losses": "25",
+          "winRate": "48.98%",
+          "total": "49"
+        },
+        {
+          "name": "梅布斯尼（实测",
+          "wins": "28",
+          "losses": "21",
+          "winRate": "57.14%",
+          "total": "49"
+        },
+        {
+          "name": "NGA渊无尽（大数据",
+          "wins": "23",
+          "losses": "26",
+          "winRate": "46.94%",
+          "total": "49"
+        },
+        {
+          "name": "雯雯（实测",
+          "wins": "27",
+          "losses": "22",
+          "winRate": "55.10%",
+          "total": "49"
+        },
+        {
+          "name": "晨时微凉（实测",
+          "wins": "27",
+          "losses": "22",
+          "winRate": "55.10%",
+          "total": "49"
+        },
+        {
+          "name": "炒饭菌（实测",
+          "wins": "28",
+          "losses": "21",
+          "winRate": "57.14%",
+          "total": "49"
+        },
+        {
+          "name": "徐OK（实测",
+          "wins": "28",
+          "losses": "21",
+          "winRate": "57.14%",
+          "total": "49"
+        },
+        {
+          "name": "鸽海成路（实测",
+          "wins": "26",
+          "losses": "23",
+          "winRate": "53.06%",
+          "total": "49"
+        },
+        {
+          "name": "嘤嘤井",
+          "wins": "27",
+          "losses": "20",
+          "winRate": "57.45%",
+          "total": "47"
+        },
+        {
+          "name": "徐清林",
+          "wins": "24",
+          "losses": "25",
+          "winRate": "48.98%",
+          "total": "49"
+        },
+        {
+          "name": "行水姑娘",
+          "wins": "28",
+          "losses": "21",
+          "winRate": "57.14%",
+          "total": "49"
+        },
+        {
+          "name": "Poetry红鲤",
+          "wins": "29",
+          "losses": "20",
+          "winRate": "59.18%",
+          "total": "49"
+        },
+        {
+          "name": "抖音茨木童子（实测",
+          "wins": "31",
+          "losses": "18",
+          "winRate": "63.27%",
+          "total": "49"
+        },
+        {
+          "name": "CC南浔",
+          "wins": "28",
+          "losses": "21",
+          "winRate": "57.14%",
+          "total": "49"
+        },
+        {
+          "name": "惰落珈百璃",
+          "wins": "30",
+          "losses": "19",
+          "winRate": "61.22%",
+          "total": "49"
+        },
+        {
+          "name": "Mico林木森",
+          "wins": "27",
+          "losses": "21",
+          "winRate": "56.25%",
+          "total": "48"
+        },
+        {
+          "name": "槐夏三十",
+          "wins": "29",
+          "losses": "20",
+          "winRate": "59.18%",
+          "total": "49"
+        },
+        {
+          "name": "来姐大人",
+          "wins": "29",
+          "losses": "16",
+          "winRate": "64.44%",
+          "total": "45"
+        },
+        {
+          "name": "B站Otaku小刚",
+          "wins": "35",
+          "losses": "14",
+          "winRate": "71.43%",
+          "total": "49"
+        },
+        {
+          "name": "YYS方寒",
+          "wins": "18",
+          "losses": "31",
+          "winRate": "36.73%",
+          "total": "49"
+        },
+        {
+          "name": "小琨爱小蛊",
+          "wins": "0",
+          "losses": "41",
+          "winRate": "0.00%",
+          "total": "41"
+        }
+      ],
       "slots": [
         {
           "id": "2025-national-1",
@@ -10732,6 +11242,148 @@
       "year": 2025,
       "resultRow": "25春节结果",
       "sourceSheet": "25年春节竞猜汇总",
+      "summaries": [
+        {
+          "name": "面灵气喵",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "ArchonXP",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "查查尔",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "七面相（实测",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "梅布斯尼（实测",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "渊无尽（大数据",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "雯雯（实测",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "晨时微凉（实测",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "炒饭菌（实测",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "徐OK（实测",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "鸽海成路（实测",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "嘤嘤井（实测",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "47"
+        },
+        {
+          "name": "徐清林（实测",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "夕水残阳",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "不包邮哦亲",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "林公子",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "CC南浔",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "49"
+        },
+        {
+          "name": "Poetry红鲤",
+          "wins": "#VALUE!",
+          "losses": "#VALUE!",
+          "winRate": "#VALUE!",
+          "total": "47"
+        },
+        {
+          "name": "惰落珈百璃",
+          "wins": "29",
+          "losses": "17",
+          "winRate": "63.04%",
+          "total": "46"
+        },
+        {
+          "name": "小琨爱小蛊",
+          "wins": "18",
+          "losses": "24",
+          "winRate": "42.86%",
+          "total": "42"
+        }
+      ],
       "slots": [
         {
           "id": "2025-spring-1",

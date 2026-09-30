@@ -13,22 +13,17 @@
   <a class="wallet source-link" href="https://www.kdocs.cn/l/cris3KItpMwO" target="_blank" rel="noopener noreferrer">查看原表 ↗</a>
 </div></header>
 <main id="home">
-<section class="hero"><div class="hero-art" aria-hidden="true"></div><div class="hero-inner">
-  <p class="eyebrow"><span></span> 平安京观战手帖 <i> / </i> HEIAN-KYO CHRONICLES</p>
-  <h1>每一场对弈，<br>都有<span>迹可循。</span></h1>
-  <p class="hero-description">当下场次，一眼掌握。翻阅红蓝结果，<br>对照各方记录，在历史中读懂对弈。</p>
-  <a href="#arena" class="primary hero-cta">查看当前场次 <span>↗</span></a>
-  <div class="hero-foot"><span class="tiny-seal">观</span> 看场次 · 查结果 · 翻历史 <span class="hero-rule"></span><small>非官方数据整理</small></div>
-</div><div class="vertical-text" aria-hidden="true">百 鬼 对 弈 · 观 战 手 帖</div></section>
 <div class="content">
-  <div class="notice"><span class="notice-label">数据告示</span><p>数据来自公开金山文档，本站展示同步快照。空白表示原表尚未填写，最新内容请以原表为准。</p><button id="rules-button">数据说明 ↗</button></div>
-  <section class="overview" aria-label="活动数据概览"><div><span class="stat-icon">◷</span><p>所选活动<strong id="stat-event">—</strong></p></div><div><span class="stat-icon">✦</span><p>已记录结果<strong id="stat-count">—</strong></p></div><div><span class="stat-icon">◎</span><p>红 / 蓝结果<strong id="stat-result">—</strong></p></div><div class="overview-last"><p>原表持续更新<br><span id="updated-at"></span></p></div></section>
-  <section id="arena" class="arena"><div class="section-top"><div><p class="eyebrow section-eyebrow">MATCH ARCHIVE</p><h2>对弈数据<span>当前场次优先，历史随时可查。</span></h2></div><span class="demo-pill">文档快照</span></div>
-    <div class="arena-toolbar"><div class="tabs" role="tablist" aria-label="场次分类"><button role="tab" aria-selected="true" data-filter="current" class="selected">当前场次</button><button role="tab" aria-selected="false" data-filter="history">历史场次</button></div><span class="toolbar-note">北京时间 · 结果与判断分开展示</span></div>
-    <div class="data-filters"><label>活动 <select id="event-select"></select></label><label>日期 <select id="date-select"></select></label><p id="list-summary" role="status" aria-live="polite"></p></div>
-    <div class="arena-layout"><div><div id="current-match"></div><div id="matches" class="matches"></div></div><aside class="sidebar"><article class="tip-card"><p class="eyebrow">ONMYOJI RECORDS</p><h3>观当下，<br>也看往昔。</h3><p>红蓝结果来自原表结果行。<br>各方判断仅作记录参考。</p><a href="https://www.kdocs.cn/l/cris3KItpMwO" target="_blank" rel="noopener noreferrer">打开完整汇总表 <span>↗</span></a><span class="tip-decoration" aria-hidden="true">弈</span></article><article class="side-rules" id="source"><div class="mini-title"><span>✧</span><h3>关于数据</h3></div><ol><li><span>01</span> 优先查看当前活动最近时段</li><li><span>02</span> 按活动和日期翻阅历史</li><li><span>03</span> 查看每场的各方判断记录</li></ol><p id="source-detail"></p><p>本站未接入游戏实时接口。原模拟演示数据已退出展示；不提供虚拟资产或模拟结算。</p></article></aside></div>
+  <section id="arena" class="arena">
+    <div class="section-top"><div><p class="eyebrow">平安京 · 对弈数据</p><h1>本场判断</h1></div><span id="updated-at"></span></div>
+    <div class="arena-toolbar"><div class="tabs" role="tablist" aria-label="场次分类"><button role="tab" aria-selected="true" data-filter="current" class="selected">当前场次</button><button role="tab" aria-selected="false" data-filter="history">历史场次</button></div><span id="stat-event"></span></div>
+    <div id="current-match" aria-live="polite"></div>
+    <details class="archive" open><summary>场次列表 · 切换查看</summary>
+      <div class="data-filters"><label>活动 <select id="event-select"></select></label><label>日期 <select id="date-select"></select></label><p id="list-summary" role="status" aria-live="polite"></p></div>
+      <div id="matches" class="matches"></div>
+    </details>
   </section>
-  <div class="closing"><span>✧</span><p>落子有声，往事有迹。</p><small>记录来自社区，结果请以原始文档及游戏内信息为准。</small></div>
+  <section id="source" class="source-note"><p id="source-detail"></p><p>静态快照 · 未接入实时比赛 · 空白表示原表未填写。判断比例与加权比例不代表获胜概率。</p><button id="rules-button">数据说明 ↗</button></section>
 </div>
 </main>
 <footer><a class="footer-brand" href="#home">平安京 · 对弈数据</a><p>非官方社区数据整理 · 与网易无关联 · 图片版权归网易及原作者所有</p><a href="https://yys.163.com/" target="_blank" rel="noopener noreferrer">阴阳师官网 ↗</a></footer>
