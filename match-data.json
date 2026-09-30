@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T05:54:00.135Z",
+  "fetchedAt": "2026-09-30T05:55:05.860Z",
   "events": [
     {
       "id": "2026-national",
@@ -32,7 +32,7 @@
           "total": "1"
         },
         {
-          "name": "Poetry红鲤",
+          "name": "红鲤没空更好像",
           "wins": "1",
           "losses": "0",
           "winRate": "100.00%",
@@ -199,7 +199,7 @@
               "side": "red"
             },
             {
-              "name": "Poetry红鲤",
+              "name": "红鲤没空更好像",
               "side": "red"
             },
             {
@@ -332,6 +332,10 @@
             },
             {
               "name": "鸽海成路",
+              "side": "blue"
+            },
+            {
+              "name": "嘤嘤井",
               "side": "blue"
             },
             {
@@ -15742,7 +15746,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T05:53:50.332Z",
+    "fetchedAt": "2026-09-30T05:54:50.785Z",
     "syncFailed": false,
     "records": [
       {
@@ -15857,7 +15861,7 @@
         "name": "Mico林木森",
         "side": "blue",
         "postedAt": "2026-09-30T13:12:55+08:00",
-        "match": "9月30日，12:00场"
+        "match": "Day1-12:00场次"
       },
       {
         "name": "Poetry红鲤",
@@ -15873,9 +15877,9 @@
       },
       {
         "name": "YYS方寒",
-        "side": "red",
-        "postedAt": "2026-09-30T10:13:48+08:00",
-        "match": "9月30号，10:00-12:00场"
+        "side": null,
+        "postedAt": "2026-09-30T13:22:53+08:00",
+        "match": "9月30号，12:00场"
       },
       {
         "name": "yys雯雯",
