@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T10:52:06.734Z",
+  "fetchedAt": "2026-09-30T10:53:07.067Z",
   "events": [
     {
       "id": "2026-national",
@@ -127,6 +127,13 @@
           "wins": "3",
           "losses": "1",
           "winRate": "75.00%",
+          "total": "4"
+        },
+        {
+          "name": "恰似冬眠一场",
+          "wins": "1",
+          "losses": "3",
+          "winRate": "25.00%",
           "total": "4"
         },
         {
@@ -266,6 +273,10 @@
             },
             {
               "name": "惰落珈百璃",
+              "side": "red"
+            },
+            {
+              "name": "恰似冬眠一场",
               "side": "red"
             },
             {
@@ -16011,7 +16022,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T10:51:57.545Z",
+    "fetchedAt": "2026-09-30T10:52:57.594Z",
     "syncFailed": false,
     "records": [
       {
@@ -16076,15 +16087,15 @@
       },
       {
         "name": "是大荣啦",
-        "side": "red",
-        "postedAt": "2026-09-30T16:38:43+08:00",
-        "match": "9月30日，16:00场"
+        "side": "blue",
+        "postedAt": "2026-09-30T18:41:29+08:00",
+        "match": "9月30日，18点局"
       },
       {
         "name": "夕水残阳",
         "side": "red",
         "postedAt": "2026-09-30T17:36:04+08:00",
-        "match": "9月30日，16:00场"
+        "match": "9月30日 16点场"
       },
       {
         "name": "夜神月Lwaite",
@@ -16095,8 +16106,8 @@
       {
         "name": "阴阳师攻略组",
         "side": "blue",
-        "postedAt": "2026-09-30T16:42:50+08:00",
-        "match": "9月30日，16:00场"
+        "postedAt": "2026-09-30T18:39:09+08:00",
+        "match": "9月30日，18:00场"
       },
       {
         "name": "阴阳师手游攻略墙",
