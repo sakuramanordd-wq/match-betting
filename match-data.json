@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T04:51:36.695Z",
+  "fetchedAt": "2026-09-30T04:52:36.007Z",
   "events": [
     {
       "id": "2026-national",
@@ -15651,7 +15651,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T04:51:26.679Z",
+    "fetchedAt": "2026-09-30T04:52:26.632Z",
     "syncFailed": false,
     "records": [
       {
@@ -15716,15 +15716,15 @@
       },
       {
         "name": "是大荣啦",
-        "side": "red",
-        "postedAt": "2026-09-30T10:21:48+08:00",
-        "match": "9月30日，10点局"
+        "side": "blue",
+        "postedAt": "2026-09-30T12:44:38+08:00",
+        "match": "9月30日，12点局"
       },
       {
         "name": "夕水残阳",
         "side": "red",
         "postedAt": "2026-09-30T10:12:12+08:00",
-        "match": "9月30日，10:00场"
+        "match": "9月30日，10点场"
       },
       {
         "name": "夜神月Lwaite",
