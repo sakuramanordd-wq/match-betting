@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T13:55:11.986Z",
+  "fetchedAt": "2026-09-30T13:56:11.097Z",
   "events": [
     {
       "id": "2026-national",
@@ -838,6 +838,10 @@
             {
               "name": "行水姑娘",
               "side": "red"
+            },
+            {
+              "name": "抖音茨木童子（实测",
+              "side": "blue"
             },
             {
               "name": "CC南浔",
@@ -16223,14 +16227,14 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T13:55:02.122Z",
+    "fetchedAt": "2026-09-30T13:56:02.191Z",
     "syncFailed": false,
     "records": [
       {
         "name": "炒饭菌",
         "side": "red",
         "postedAt": "2026-09-30T21:05:07+08:00",
-        "match": "09月30日，20:00场"
+        "match": "09.30，20点场"
       },
       {
         "name": "晨时微凉",
@@ -16332,7 +16336,7 @@
         "name": "CC南浔",
         "side": "red",
         "postedAt": "2026-09-30T21:20:03+08:00",
-        "match": "第1天第6局"
+        "match": "实测第1天——第6局"
       },
       {
         "name": "Mico林木森",
@@ -16342,9 +16346,9 @@
       },
       {
         "name": "Poetry红鲤",
-        "side": "blue",
-        "postedAt": "2026-09-30T19:30:02+08:00",
-        "match": "9月30日 18点场"
+        "side": "red",
+        "postedAt": "2026-09-30T21:45:49+08:00",
+        "match": "9月30日，20点场"
       },
       {
         "name": "yys查查尔",
