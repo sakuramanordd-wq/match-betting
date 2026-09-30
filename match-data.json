@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T07:38:02.590Z",
+  "fetchedAt": "2026-09-30T07:39:02.250Z",
   "events": [
     {
       "id": "2026-national",
@@ -158,7 +158,7 @@
           "total": "2"
         },
         {
-          "name": "平安志作者模拟",
+          "name": "NGA平安志作者模拟",
           "wins": "2",
           "losses": "0",
           "winRate": "100.00%",
@@ -285,7 +285,7 @@
               "side": "red"
             },
             {
-              "name": "平安志作者模拟",
+              "name": "NGA平安志作者模拟",
               "side": "red"
             },
             {
@@ -397,7 +397,7 @@
               "side": "red"
             },
             {
-              "name": "平安志作者模拟",
+              "name": "NGA平安志作者模拟",
               "side": "red"
             },
             {
@@ -509,7 +509,7 @@
               "side": "red"
             },
             {
-              "name": "平安志作者模拟",
+              "name": "NGA平安志作者模拟",
               "side": "red"
             },
             {
@@ -15885,7 +15885,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T07:37:52.946Z",
+    "fetchedAt": "2026-09-30T07:38:52.868Z",
     "syncFailed": false,
     "records": [
       {
@@ -15908,9 +15908,9 @@
       },
       {
         "name": "待机中的徐OK",
-        "side": "blue",
-        "postedAt": "2026-09-30T13:32:06+08:00",
-        "match": "day1·12点场"
+        "side": "red",
+        "postedAt": "2026-09-30T15:31:40+08:00",
+        "match": "9月30日，14:00场"
       },
       {
         "name": "奉天城公子奉天",
