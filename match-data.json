@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T16:22:14.274Z",
+  "fetchedAt": "2026-09-30T16:29:14.598Z",
   "events": [
     {
       "id": "2026-national",
@@ -131,9 +131,9 @@
         },
         {
           "name": "二蛋搬砖",
-          "wins": "3",
-          "losses": "4",
-          "winRate": "42.86%",
+          "wins": "0",
+          "losses": "7",
+          "winRate": "0.00%",
           "total": "7"
         },
         {
@@ -16332,7 +16332,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T16:22:05.559Z",
+    "fetchedAt": "2026-09-30T16:29:05.700Z",
     "syncFailed": false,
     "records": [
       {
