@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T16:29:14.598Z",
+  "fetchedAt": "2026-09-30T16:34:14.760Z",
   "events": [
     {
       "id": "2026-national",
@@ -139,8 +139,8 @@
         {
           "name": "Mico林木森",
           "wins": "5",
-          "losses": "2",
-          "winRate": "71.43%",
+          "losses": "3",
+          "winRate": "62.50%",
           "total": "7"
         },
         {
@@ -16332,7 +16332,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T16:29:05.700Z",
+    "fetchedAt": "2026-09-30T16:34:05.856Z",
     "syncFailed": false,
     "records": [
       {
