@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T05:39:02.949Z",
+  "fetchedAt": "2026-09-30T05:40:00.730Z",
   "events": [
     {
       "id": "2026-national",
@@ -307,6 +307,10 @@
               "side": "blue"
             },
             {
+              "name": "雯雯（实测",
+              "side": "blue"
+            },
+            {
               "name": "晨时微凉（实测",
               "side": "blue"
             },
@@ -315,11 +319,19 @@
               "side": "blue"
             },
             {
+              "name": "徐OK（实测",
+              "side": "blue"
+            },
+            {
               "name": "徐清林",
               "side": "blue"
             },
             {
               "name": "行水姑娘",
+              "side": "blue"
+            },
+            {
+              "name": "CC南浔",
               "side": "blue"
             },
             {
@@ -15706,7 +15718,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T05:38:50.244Z",
+    "fetchedAt": "2026-09-30T05:39:50.373Z",
     "syncFailed": false,
     "records": [
       {
@@ -15779,7 +15791,7 @@
         "name": "夕水残阳",
         "side": "red",
         "postedAt": "2026-09-30T10:12:12+08:00",
-        "match": "9月30日，10点场"
+        "match": "9月30日 10点场"
       },
       {
         "name": "夜神月Lwaite",
