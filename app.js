@@ -1,6 +1,8 @@
-import { snapshot, forecastHistory, sideName, currentSlot, latestEvent, judgmentStats, backtest, predictionSide } from './data.js';
+import { snapshot, forecastHistory, replaceSnapshot, sideName, currentSlot, latestEvent, judgmentStats, backtest, predictionSide } from './data.js';
 const $ = selector => document.querySelector(selector);
-const latest = latestEvent(snapshot.events);
+let latest = latestEvent(snapshot.events);
+let syncStatus = '每分钟检查更新';
+let refreshInProgress = false;
 let mode = 'current';
 let event = latest;
 let selectedSlotId = null;
@@ -158,7 +160,7 @@ function card(slot, featured = false) {
 }
 function render() {
   $('#stat-event').textContent = event.title;
-  $('#updated-at').textContent = `同步于 ${time(snapshot.fetchedAt)}`;
+  $('#updated-at').textContent = `同步于 ${time(snapshot.fetchedAt)} · ${syncStatus}`;
   $('#source-detail').textContent = `来源：${snapshot.sourceTitle}。工作表：${event.sourceSheet}。同步时间：${time(snapshot.fetchedAt)}（北京时间）。`;
   const featured = event.slots.find(slot => slot.id === selectedSlotId) || currentSlot(event);
   const outside = Date.now() > Date.parse(event.slots.at(-1).startsAt) + 2 * 60 * 60 * 1000;
@@ -187,9 +189,48 @@ $('#close-modal').addEventListener('click', () => $('#modal').close());
 $('#modal').addEventListener('close', () => returnFocus?.isConnected && returnFocus.focus());
 $('#modal').addEventListener('click', e => { if (e.target !== $('#modal')) return; const r = $('#modal').getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) $('#modal').close(); });
 selectMode('current');
+async function refreshSnapshot() {
+  if (refreshInProgress || $('#modal').open) return;
+  refreshInProgress = true;
+  try {
+    const response = await fetch(import.meta.env.VITE_DATA_API_URL || new URL('./data-snapshot.json', document.baseURI), { cache: 'no-store', signal: AbortSignal.timeout(10_000) });
+    if (!response.ok) throw new Error('无法读取快照');
+    const data = await response.json();
+    const validEvents = Array.isArray(data.snapshot?.events) && data.snapshot.events.length > 0 && data.snapshot.events.every(item =>
+      typeof item.id === 'string' && typeof item.title === 'string' && Array.isArray(item.slots) && item.slots.length > 0 && item.slots.every(slot =>
+        typeof slot.id === 'string' && Number.isFinite(Date.parse(slot.startsAt)) && [null, 'red', 'blue'].includes(slot.result) && Array.isArray(slot.records) && slot.records.every(record => typeof record.name === 'string' && ['red', 'blue'].includes(record.side))));
+    if (!Number.isFinite(Date.parse(data.snapshot?.fetchedAt)) || !validEvents || !Array.isArray(data.forecastHistory?.forecasts)) throw new Error('快照格式异常');
+    syncStatus = data.syncFailed ? '更新失败，保留旧数据' : data.autoSync ? '每分钟同步' : '每分钟检查更新';
+    // 打开详情时不替换页面，保留当前弹窗数据与关闭后的焦点位置。
+    if ($('#modal').open) return;
+    if (data.snapshot.fetchedAt !== snapshot.fetchedAt || JSON.stringify(data.forecastHistory) !== JSON.stringify(forecastHistory)) {
+      const selectedDate = $('#date-select').value;
+      const eventId = event.id;
+      const focusedButton = document.activeElement?.closest('.current-card') ? document.activeElement.className : null;
+      replaceSnapshot(data.snapshot, data.forecastHistory);
+      latest = latestEvent(snapshot.events);
+      const events = mode === 'current' ? [latest] : snapshot.events.filter(item => item.id !== latest.id);
+      if (!events.length) { selectMode('current'); return; }
+      event = events.find(item => item.id === eventId) || events[0];
+      options($('#event-select'), events.map(item => [item.id, item.title]), event.id);
+      dates();
+      if ([...$('#date-select').options].some(option => option.value === selectedDate)) $('#date-select').value = selectedDate;
+      if (!event.slots.some(slot => slot.id === selectedSlotId)) selectedSlotId = null;
+      evaluationCache.clear();
+      render();
+      if (focusedButton) [...document.querySelectorAll('.current-card button')].find(button => button.className === focusedButton)?.focus({ preventScroll: true });
+    } else $('#updated-at').textContent = `同步于 ${time(snapshot.fetchedAt)} · ${syncStatus}`;
+  } catch {
+    syncStatus = '更新失败，保留旧数据';
+    $('#updated-at').textContent = `同步于 ${time(snapshot.fetchedAt)} · ${syncStatus}`;
+  } finally { refreshInProgress = false; }
+}
+refreshSnapshot();
+setInterval(refreshSnapshot, 60_000);
+$('#modal').addEventListener('close', refreshSnapshot);
 // 切换至新时段时更新置顶，不改变用户选择的活动或日期。
 let featuredId = currentSlot(latest).id;
 setInterval(() => {
   const nextId = currentSlot(latest).id;
-  if (nextId !== featuredId) { featuredId = nextId; if (mode === 'current') render(); }
+  if (nextId !== featuredId && !$('#modal').open) { featuredId = nextId; if (mode === 'current') render(); }
 }, 60_000);

@@ -1,8 +1,11 @@
 // 只读提取公开共享表，不保存会话、账号或协作者信息。
 import { chromium } from '@playwright/test';
 import { readFile, writeFile, rename } from 'node:fs/promises';
+import { resolve, join } from 'node:path';
+import { projectRoot } from './live-data.mjs';
 import { updateForecasts } from '../prediction.js';
 const sourceUrl = 'https://www.kdocs.cn/l/cris3KItpMwO';
+const dataDir = process.env.DATA_DIR ? resolve(process.env.DATA_DIR) : projectRoot;
 const definitions = [
   { id: '2026-national', title: '2026 国庆', year: 2026, resultRow: '26国庆结果' },
   { id: '2026-spring', title: '2026 春节', year: 2026, resultRow: '26春节结果' },
@@ -42,12 +45,12 @@ try {
     events.push({ ...definition, sourceSheet: source.name, summaries, slots });
   }
   const fetchedAt = new Date().toISOString();
-  const historyUrl = new URL('../forecast-history.json', import.meta.url);
+  const historyUrl = join(dataDir, 'forecast-history.json');
   const history = JSON.parse(await readFile(historyUrl, 'utf8'));
   const forecasts = updateForecasts(history.forecasts, events, fetchedAt);
-  const snapshotUrl = new URL('../match-data.json', import.meta.url);
-  const snapshotTemp = new URL('../match-data.json.tmp', import.meta.url);
-  const historyTemp = new URL('../forecast-history.json.tmp', import.meta.url);
+  const snapshotUrl = join(dataDir, 'match-data.json');
+  const snapshotTemp = join(dataDir, 'match-data.json.tmp');
+  const historyTemp = join(dataDir, 'forecast-history.json.tmp');
   // 所有提取和计算成功后再替换；已有预测保留首次生成时的方向和时间。
   await writeFile(snapshotTemp, JSON.stringify({ sourceUrl, sourceTitle: '2026国庆对弈竞猜汇总（尽量准时版', fetchedAt, events }, null, 2) + '\n');
   await writeFile(historyTemp, JSON.stringify({ version: 1, forecasts }, null, 2) + '\n');

@@ -9,6 +9,8 @@
     "preview": "vite preview --host 0.0.0.0",
     "test": "playwright test",
     "sync:data": "node scripts/sync-data.mjs",
+    "serve:data": "node scripts/data-server.mjs",
+    "publish:watch": "node scripts/auto-publish.mjs",
     "evaluate:predictions": "node scripts/evaluate-predictions.mjs"
   },
   "devDependencies": {

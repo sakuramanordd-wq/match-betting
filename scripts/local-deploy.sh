@@ -13,6 +13,7 @@ usage() {
 示例：PORT=5174 ./scripts/local-deploy.sh
       HOST=0.0.0.0 ./scripts/local-deploy.sh dev
 按 Ctrl+C 停止服务。
+默认每分钟同步原表；LOCAL_AUTO_SYNC=0 可关闭自动同步。
 EOF
 }
 
@@ -46,6 +47,10 @@ if [[ ! "$port" =~ ^[0-9]{1,5}$ ]] || (( 10#$port < 1 || 10#$port > 65535 )); th
 fi
 
 npm ci
+export LOCAL_AUTO_SYNC="${LOCAL_AUTO_SYNC:-1}"
+if [[ "$LOCAL_AUTO_SYNC" == 1 ]]; then
+  npx playwright install chromium
+fi
 if [[ "$mode" == preview ]]; then
   npm run build
 fi

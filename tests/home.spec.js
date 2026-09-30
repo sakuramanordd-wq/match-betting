@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 const predictionSource = readFileSync(new URL('../prediction.js', import.meta.url), 'utf8');
 const dataSource = readFileSync(new URL('../data.js', import.meta.url), 'utf8').replace(/^import .*;$/gm, '').replace(/^export \{.*\}.*;$/gm, '');
-const { judgmentStats, predictSlot, backtest, updateForecasts } = await import(`data:text/javascript;base64,${Buffer.from(predictionSource + '\n' + dataSource).toString('base64')}`);
+const { judgmentStats, predictSlot, backtest, updateForecasts } = await import(`data:text/javascript;base64,${Buffer.from('const initialSnapshot = {}; const initialForecastHistory = { forecasts: [] };\n' + predictionSource + '\n' + dataSource).toString('base64')}`);
 const snapshot = JSON.parse(readFileSync(new URL('../match-data.json', import.meta.url)));
 
 test('snapshot contains source results and valid, unique dated slots', () => {

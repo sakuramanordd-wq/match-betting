@@ -15,7 +15,11 @@ npm run sync:data             # 更新快照，生成/验证新场次的首次�
 npm run evaluate:predictions  # 查看回放及实际留档评估报告
 ```
 
-本站仍是静态网页，无后台定时拉取；原表新增判断后执行同步并刷新本地页面，发布版本需重新构建部署。同步完成但没有本场判断时仍不生成预测。
+通过本地启动脚本运行时，每分钟自动同步原表并生成/验证预测，页面每分钟读取最新快照，无需手动刷新。页面打开详情弹窗时暂缓更新，关闭后检查更新；同步失败保留旧数据及真实同步时间。GitHub Pages 可通过独立数据服务每分钟获取最新数据；配置仓库变量 `DATA_API_URL` 为服务的 HTTPS 快照接口即可，详见 [线上数据服务部署](./deploy/DATA_SERVICE.md)。未配置服务时仅每分钟检查发布快照。同步完成但没有本场判断时仍不生成预测。
+
+## 本地自动发布（无需云服务器）
+
+运行 `npm run publish:watch`，每分钟同步并检查数据，有实际变化才推送并触发 Pages 发布；仅抓取时间变化时跳过。使用独立 Git 副本，不混入开发修改。电脑需保持开机联网并具有 Git 推送权限，详细说明见 [本地自动发布](./deploy/LOCAL_PUBLISH.md)。网页每分钟读取已发布快照，实际上线时间还包含 Actions 发布延迟。
 
 ## 开发与同步
 
@@ -28,7 +32,7 @@ npm run evaluate:predictions  # 查看回放及实际留档评估报告
 ./scripts/local-deploy.sh preview  # 安装依赖、生产构建并预览，http://127.0.0.1:4173
 ```
 
-脚本可从任意目录调用，按 `Ctrl+C` 停止。每次运行通过 `npm ci` 安装锁定依赖，需要能访问 npm 源。端口占用时会报错，可用 `PORT=5174 ./scripts/local-deploy.sh` 指定其他端口；手机同一局域网调试可用 `HOST=0.0.0.0 ./scripts/local-deploy.sh`，再访问电脑的局域网 IP 和端口。脚本使用现有静态快照，更新数据需单独执行同步命令。
+脚本可从任意目录调用，按 `Ctrl+C` 停止。每次运行通过 `npm ci` 安装锁定依赖，需要能访问 npm 源。端口占用时会报错，可用 `PORT=5174 ./scripts/local-deploy.sh` 指定其他端口；手机同一局域网调试可用 `HOST=0.0.0.0 ./scripts/local-deploy.sh`，再访问电脑的局域网 IP 和端口。脚本默认开启每分钟原表同步，并自动安装同步所需的 Chromium；首次同步完成前展示现有快照。`LOCAL_AUTO_SYNC=0 ./scripts/local-deploy.sh` 可关闭自动同步。普通 `npm run dev` / `npm run preview` 默认仅检查已有快照，使用 `LOCAL_AUTO_SYNC=1` 可开启原表同步。
 
 Node.js 24，执行：
 
@@ -48,6 +52,8 @@ npm run preview
 测试检查数据格式、当前时段、历史活动和日期切换、未知结果、详情弹窗与焦点、旧存档保留、390px/1440px 布局，并使用生产子路径 `/match-betting/`。
 
 ## GitHub Pages
+
+推荐无需云服务器的 [本地每分钟检查、变化才发布](./deploy/LOCAL_PUBLISH.md)。也可采用「Pages 页面 + 独立数据服务」，Docker 部署、HTTPS 与 `DATA_API_URL` 配置见 [部署说明](./deploy/DATA_SERVICE.md)。无需按分钟提交或重新发布页面。
 
 目标：https://sakuramanordd-wq.github.io/match-betting/
 

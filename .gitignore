@@ -3,3 +3,5 @@ dist/
 playwright-report/
 test-results/
 .DS_Store
+.local-publisher/
+.local-publisher.lock

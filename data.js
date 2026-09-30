@@ -1,7 +1,12 @@
-import snapshot from './match-data.json';
-import forecastHistory from './forecast-history.json';
+import initialSnapshot from './match-data.json';
+import initialForecastHistory from './forecast-history.json';
 import { historicalRecords } from './prediction.js';
-export { snapshot, forecastHistory };
+export let snapshot = initialSnapshot;
+export let forecastHistory = initialForecastHistory;
+export function replaceSnapshot(nextSnapshot, nextForecastHistory) {
+  snapshot = nextSnapshot;
+  forecastHistory = nextForecastHistory;
+}
 export { predictSlot, backtest, predictionSide } from './prediction.js';
 export const sideName = side => ({ red: '左红', blue: '右蓝' })[side] || '原表未填写';
 // 按北京时间排期选择最近开始的时段；时间不推断赛果。
