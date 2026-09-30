@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T09:36:05.476Z",
+  "fetchedAt": "2026-09-30T09:37:05.911Z",
   "events": [
     {
       "id": "2026-national",
@@ -541,7 +541,15 @@
               "side": "red"
             },
             {
+              "name": "NGAArchonXP",
+              "side": "red"
+            },
+            {
               "name": "七面相（实测",
+              "side": "red"
+            },
+            {
+              "name": "NGA渊无尽（大数据",
               "side": "red"
             },
             {
@@ -582,6 +590,10 @@
             },
             {
               "name": "抖音茨木童子（实测",
+              "side": "red"
+            },
+            {
+              "name": "CC南浔",
               "side": "red"
             },
             {
@@ -15970,7 +15982,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T09:35:56.290Z",
+    "fetchedAt": "2026-09-30T09:36:55.785Z",
     "syncFailed": false,
     "records": [
       {
@@ -16006,8 +16018,8 @@
       {
         "name": "鸽海成路",
         "side": "red",
-        "postedAt": "2026-09-30T15:16:54+08:00",
-        "match": "30日，14点场"
+        "postedAt": "2026-09-30T17:21:00+08:00",
+        "match": "9月30日，16:00场"
       },
       {
         "name": "梅布斯尼",
@@ -16047,9 +16059,9 @@
       },
       {
         "name": "夜神月Lwaite",
-        "side": "blue",
-        "postedAt": "2026-09-30T15:09:05+08:00",
-        "match": "14:00场"
+        "side": "red",
+        "postedAt": "2026-09-30T17:32:15+08:00",
+        "match": ""
       },
       {
         "name": "阴阳师攻略组",
