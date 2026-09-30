@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T07:02:02.322Z",
+  "fetchedAt": "2026-09-30T07:03:01.792Z",
   "events": [
     {
       "id": "2026-national",
@@ -158,6 +158,13 @@
           "total": "2"
         },
         {
+          "name": "我来弄吧..",
+          "wins": "2",
+          "losses": "-1",
+          "winRate": "200.00%",
+          "total": "1"
+        },
+        {
           "name": "平安志作者模拟",
           "wins": "2",
           "losses": "0",
@@ -282,6 +289,10 @@
             },
             {
               "name": "YYS方寒",
+              "side": "red"
+            },
+            {
+              "name": "我来弄吧..",
               "side": "red"
             },
             {
@@ -15813,7 +15824,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T07:01:52.076Z",
+    "fetchedAt": "2026-09-30T07:02:51.966Z",
     "syncFailed": false,
     "records": [
       {
