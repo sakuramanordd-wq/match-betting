@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T10:51:07.192Z",
+  "fetchedAt": "2026-09-30T10:52:06.734Z",
   "events": [
     {
       "id": "2026-national",
@@ -127,13 +127,6 @@
           "wins": "3",
           "losses": "1",
           "winRate": "75.00%",
-          "total": "4"
-        },
-        {
-          "name": "1111",
-          "wins": "#REF!",
-          "losses": "#REF!",
-          "winRate": "#REF!",
           "total": "4"
         },
         {
@@ -276,10 +269,6 @@
               "side": "red"
             },
             {
-              "name": "1111",
-              "side": "red"
-            },
-            {
               "name": "Mico林木森",
               "side": "red"
             },
@@ -392,10 +381,6 @@
               "side": "blue"
             },
             {
-              "name": "1111",
-              "side": "red"
-            },
-            {
               "name": "Mico林木森",
               "side": "blue"
             },
@@ -505,10 +490,6 @@
             },
             {
               "name": "惰落珈百璃",
-              "side": "red"
-            },
-            {
-              "name": "1111",
               "side": "red"
             },
             {
@@ -624,10 +605,6 @@
               "side": "red"
             },
             {
-              "name": "1111",
-              "side": "red"
-            },
-            {
               "name": "Mico林木森",
               "side": "red"
             },
@@ -677,6 +654,10 @@
             },
             {
               "name": "世一协（群友",
+              "side": "red"
+            },
+            {
+              "name": "井心小能（冥灯？）",
               "side": "red"
             },
             {
@@ -16030,7 +16011,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T10:50:57.592Z",
+    "fetchedAt": "2026-09-30T10:51:57.545Z",
     "syncFailed": false,
     "records": [
       {
@@ -16059,9 +16040,9 @@
       },
       {
         "name": "奉天城公子奉天",
-        "side": "red",
-        "postedAt": "2026-09-30T16:33:34+08:00",
-        "match": "2026年9月30日，16:00场"
+        "side": "blue",
+        "postedAt": "2026-09-30T18:45:04+08:00",
+        "match": "20260930，16点场"
       },
       {
         "name": "鸽海成路",
@@ -16107,8 +16088,8 @@
       },
       {
         "name": "夜神月Lwaite",
-        "side": "red",
-        "postedAt": "2026-09-30T17:32:15+08:00",
+        "side": "blue",
+        "postedAt": "2026-09-30T18:49:47+08:00",
         "match": ""
       },
       {
