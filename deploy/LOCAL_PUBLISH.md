@@ -1,6 +1,6 @@
 # 本地每分钟检查，有变化才发布
 
-电脑保持开机联网，本地每 60 秒同步公开原表，检查场次、判断、赛果及预测留档差异；有实际变化才提交并推送 `main`，由现有 GitHub Actions 发布到 Pages。只有 `fetchedAt` 改变时不提交、不发布，不需要云服务器。
+电脑保持开机联网，本地每 60 秒同步公开原表，同时通过公开接口 `https://yysrank.com/api/dyjc/get` 检查 [对弈竞猜实时风向](https://yysrank.com/dyjc.html)，比较场次、判断、赛果、风向及预测留档差异；有实际变化才提交并推送 `main`，由现有 GitHub Actions 发布到 Pages。只有 `fetchedAt` 改变时不提交、不发布，不需要云服务器。
 
 ## 启动
 
@@ -15,6 +15,19 @@ npm run publish:watch
 首次立即检查，此后每分钟检查，未结束的任务不会重叠。按 `Ctrl+C` 停止。仅检查一次可执行 `npm run publish:watch -- --once`。
 
 `PUBLISH_WORKDIR` 可指定专用副本目录，`PUBLISH_BRANCH` 默认 `main`；`PUBLISH_INTERVAL_MINUTES` 默认 `1`。副本不能与当前开发目录相同，锁文件防止重复启动。
+
+## 查看运行日志
+
+控制台和仓库根目录 `.local-publisher.log` 同时记录带北京时间的日志，文件追加写入，重启后保留。查看最近记录或持续跟踪：
+
+```bash
+tail -n 50 .local-publisher.log
+tail -f .local-publisher.log
+```
+
+日志包含启动 PID、每轮开始、拉取远端、原表和风向各自的抓取结果及真实抓取时间、推送或跳过原因、耗时、失败阶段及退出码；正在执行的轮次不会重叠，停止时记录退出和锁释放。推送成功只表示 Git 推送完成，Pages 是否上线仍需查看 Actions。失败日志不保存子进程原始输出，以免记录认证或访客信息。
+
+可用 `PUBLISH_LOG_FILE` 指定日志文件（相对路径按启动目录解析），默认文件已忽略，不提交。日志持续追加，长期运行可停机后归档。修改脚本后需重启进程才能生效。
 
 ## 发布行为
 

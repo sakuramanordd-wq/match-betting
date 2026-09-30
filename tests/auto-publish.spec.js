@@ -28,11 +28,15 @@ test('publisher skips timestamp-only changes and pushes only data changes in an 
     await git(['push', '-u', 'origin', 'main']);
     const originalHead = (await git(['rev-parse', 'HEAD'])).stdout.trim();
     let changeData = false;
+    let changeWind = false;
     let ticks = 0;
-    const publish = createPublisher({ repoUrl: origin, workDir, syncData: async dir => {
+    const logs = [];
+    const publish = createPublisher({ repoUrl: origin, workDir, logger: message => logs.push(message), syncData: async dir => {
       const snapshot = JSON.parse(await readFile(join(dir, 'match-data.json'), 'utf8'));
       snapshot.fetchedAt = `2026-09-30T04:0${++ticks}:00Z`;
+      snapshot.wind = { ...snapshot.wind, fetchedAt: snapshot.fetchedAt };
       if (changeData) snapshot.events[0].slots[1].records = [{ name: 'New judgment', side: 'blue' }];
+      if (changeWind) snapshot.wind.records = [{ name: 'Wind only', side: 'red', postedAt: '2026-09-30T10:05:00+08:00', match: '10点场' }];
       await writeFile(join(dir, 'match-data.json'), JSON.stringify(snapshot));
     } });
     expect((await publish()).published).toBe(false);
@@ -40,6 +44,10 @@ test('publisher skips timestamp-only changes and pushes only data changes in an 
     expect((await git(['rev-parse', 'origin/main'])).stdout.trim()).toBe(originalHead);
     changeData = true;
     expect((await publish()).published).toBe(true);
+    expect(logs.some(line => line.includes('原表同步成功，抓取时间：'))).toBe(true);
+    expect(logs.some(line => line.includes('开始推送 main'))).toBe(true);
+    expect(logs.some(line => line.includes('https://yysrank.com/dyjc.html'))).toBe(true);
+    expect(logs.some(line => line.includes('对弈风向同步成功，抓取时间：'))).toBe(true);
     await git(['fetch', 'origin']);
     const changedHead = (await git(['rev-parse', 'origin/main'])).stdout.trim();
     expect(changedHead).not.toBe(originalHead);
@@ -47,6 +55,13 @@ test('publisher skips timestamp-only changes and pushes only data changes in an 
     expect((await publish()).published).toBe(false);
     await git(['fetch', 'origin']);
     expect((await git(['rev-parse', 'origin/main'])).stdout.trim()).toBe(changedHead);
+    changeWind = true;
+    expect((await publish()).published).toBe(true);
+    await git(['fetch', 'origin']);
+    const windHead = (await git(['rev-parse', 'origin/main'])).stdout.trim();
+    expect(windHead).not.toBe(changedHead);
+    expect((await git(['diff', '--name-only', changedHead, windHead])).stdout.trim()).toBe('match-data.json');
+    expect((await publish()).published).toBe(false);
     expect(await readFile(join(seed, 'app.js'), 'utf8')).toBe('// unrelated code\n');
     expect(JSON.parse(await readFile(join(seed, 'match-data.json'), 'utf8')).fetchedAt).toBe(initial.fetchedAt);
   } finally { await rm(root, { recursive: true, force: true }); }

@@ -4,6 +4,7 @@ import { readFile, writeFile, rename } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { projectRoot } from './live-data.mjs';
 import { updateForecasts } from '../prediction.js';
+import { syncWind } from './sync-wind.mjs';
 const sourceUrl = 'https://www.kdocs.cn/l/cris3KItpMwO';
 const dataDir = process.env.DATA_DIR ? resolve(process.env.DATA_DIR) : projectRoot;
 const definitions = [
@@ -12,6 +13,8 @@ const definitions = [
   { id: '2025-national', title: '2025 国庆', year: 2025, resultRow: '25周年结果' },
   { id: '2025-spring', title: '2025 春节', year: 2025, resultRow: '25春节结果' },
 ];
+// 独立更新风向，即使原表抓取失败，也保留本轮风向数据供发布重试。
+const wind = await syncWind(dataDir);
 const browser = await chromium.launch();
 try {
   const page = await browser.newPage();
@@ -52,7 +55,7 @@ try {
   const snapshotTemp = join(dataDir, 'match-data.json.tmp');
   const historyTemp = join(dataDir, 'forecast-history.json.tmp');
   // 所有提取和计算成功后再替换；已有预测保留首次生成时的方向和时间。
-  await writeFile(snapshotTemp, JSON.stringify({ sourceUrl, sourceTitle: '2026国庆对弈竞猜汇总（尽量准时版', fetchedAt, events }, null, 2) + '\n');
+  await writeFile(snapshotTemp, JSON.stringify({ sourceUrl, sourceTitle: '2026国庆对弈竞猜汇总（尽量准时版', fetchedAt, events, wind }, null, 2) + '\n');
   await writeFile(historyTemp, JSON.stringify({ version: 1, forecasts }, null, 2) + '\n');
   await rename(historyTemp, historyUrl);
   await rename(snapshotTemp, snapshotUrl);

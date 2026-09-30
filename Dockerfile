@@ -2,7 +2,7 @@ FROM node:24-bookworm-slim
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci && npx playwright install --with-deps chromium
-COPY prediction.js match-data.json forecast-history.json ./
+COPY prediction.js wind.js match-data.json forecast-history.json ./
 COPY scripts/ ./scripts/
 ENV PORT=8080 DATA_DIR=/data
 EXPOSE 8080

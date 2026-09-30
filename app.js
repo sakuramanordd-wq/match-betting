@@ -1,4 +1,5 @@
 import { snapshot, forecastHistory, replaceSnapshot, sideName, currentSlot, latestEvent, judgmentStats, backtest, predictionSide } from './data.js';
+import { windStats, windSourceUrl } from './wind.js';
 const $ = selector => document.querySelector(selector);
 let latest = latestEvent(snapshot.events);
 let syncStatus = '每分钟检查更新';
@@ -115,6 +116,28 @@ function ratio(title, share, note, className) {
   bar.append(red, node('span', 'blue-bar'));
   panel.append(values, bar, node('p', 'metric-note', note)); return panel;
 }
+function windPanel() {
+  const wind = snapshot.wind;
+  const stats = windStats(wind);
+  const panel = ratio('风向预测', stats.share, `红方 ${stats.red} 条 · 蓝方 ${stats.blue} 条明确预测`, 'wind-panel');
+  const direction = !wind?.fetchedAt ? '风向数据暂未获取' : !stats.total ? '本时段等待预测' : stats.direction === 'tie' ? '红蓝持平' : `风向倾向：${sideName(stats.direction)}`;
+  panel.insertBefore(node('strong', `prediction-direction side-${stats.direction || 'pending'}`, direction), panel.children[1]);
+  panel.append(node('p', 'formula-note', `独立博主风向 · 统计北京时间 ${time(new Date(stats.cutoff).toISOString())} 之后发布的预测，不随场次筛选切换。`));
+  panel.append(node('p', 'formula-note', wind?.fetchedAt ? `抓取于 ${time(wind.fetchedAt)}${wind.syncFailed ? ' · 更新失败，保留旧快照' : ''}。原站约每20分钟更新，本站展示已发布快照；占比不代表获胜概率。` : '原站约每20分钟更新，等待本地监控成功抓取。'));
+  const link = node('a', 'calculation-button', '查看风向来源 ↗');
+  link.href = windSourceUrl; link.target = '_blank'; link.rel = 'noopener noreferrer';
+  panel.append(link);
+  const button = node('button', 'calculation-button', '查看博主预测');
+  button.addEventListener('click', () => {
+    const body = node('div', 'modal-body');
+    body.append(node('p', 'formula-note', '口径与原站一致：仅统计当前偶数整点之后发布的明确红蓝预测，不参与历史评估加权。'));
+    if (!stats.records.length) body.append(node('p', 'empty-history', '本时段暂无博主预测。'));
+    for (const record of stats.records) body.append(node('p', '', `${record.name} · ${record.side ? sideName(record.side) : '未给出明确方向'} · ${record.match || '未标注场次'} · ${time(record.postedAt)}`));
+    modal('风向预测 · 博主明细', body);
+  });
+  panel.append(button);
+  return panel;
+}
 function predictionDetails(slot, stats) {
   const panel = node('section', 'prediction-panel');
   const stored = forecastHistory.forecasts.find(item => item.slotId === slot.id);
@@ -184,7 +207,7 @@ function card(slot, featured = false) {
       modal(`${slot.label} · 详细计算`, body);
     });
     metrics.querySelector('.weighted-ratio').append(node('p', 'formula-note', '加权比例表示判断倾向，不代表获胜概率。'), calculationButton);
-    article.append(metrics);
+    article.append(metrics, windPanel());
     if (stats.records.length) article.append(recordTable(stats));
     else article.append(node('p', 'empty-history', '本场原表尚无判断记录。'));
     article.append(node('p', 'weight-note', '表格中的胜场、败场、胜率、总场次直接读取原表累计统计，可能包含本场及之后的结果；本场前评估分只使用本场之前的记录。'));
@@ -243,7 +266,7 @@ async function refreshSnapshot() {
     syncStatus = data.syncFailed ? '更新失败，保留旧数据' : data.autoSync ? '每分钟同步' : '每分钟检查更新';
     // 打开详情时不替换页面，保留当前弹窗数据与关闭后的焦点位置。
     if ($('#modal').open) return;
-    if (data.snapshot.fetchedAt !== snapshot.fetchedAt || JSON.stringify(data.forecastHistory) !== JSON.stringify(forecastHistory)) {
+    if (data.snapshot.fetchedAt !== snapshot.fetchedAt || JSON.stringify(data.snapshot.wind) !== JSON.stringify(snapshot.wind) || JSON.stringify(data.forecastHistory) !== JSON.stringify(forecastHistory)) {
       const selectedDate = $('#date-select').value;
       const eventId = event.id;
       const focusedButton = document.activeElement?.closest('.current-card') ? document.activeElement.className : null;
@@ -270,7 +293,10 @@ setInterval(refreshSnapshot, 60_000);
 $('#modal').addEventListener('close', refreshSnapshot);
 // 切换至新时段时更新置顶，不改变用户选择的活动或日期。
 let featuredId = currentSlot(latest).id;
+let windCutoff = windStats(snapshot.wind).cutoff;
 setInterval(() => {
   const nextId = currentSlot(latest).id;
   if (nextId !== featuredId && !$('#modal').open) { featuredId = nextId; if (mode === 'current') render(); }
+  const nextCutoff = windStats(snapshot.wind).cutoff;
+  if (nextCutoff !== windCutoff && !$('#modal').open) { windCutoff = nextCutoff; document.querySelector('.wind-panel')?.replaceWith(windPanel()); }
 }, 60_000);

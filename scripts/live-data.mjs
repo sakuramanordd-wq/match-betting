@@ -29,6 +29,8 @@ export function createDataSync({ dataDir = projectRoot, enabled = true, logger =
       data = load();
       failed = false;
     } catch {
+      // 风向来源独立同步；原表失败时仍可展示已成功抓取的风向。
+      try { data = { ...data, snapshot: { ...data.snapshot, wind: load().snapshot.wind } }; } catch {}
       if (!stopped) { failed = true; logger.warn('原表自动同步失败，保留上次成功快照；下个周期重试。'); }
     } finally { syncing = false; }
   };
