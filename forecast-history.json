@@ -1,4 +1,17 @@
 {
   "version": 1,
-  "forecasts": []
+  "forecasts": [
+    {
+      "side": "blue",
+      "redShare": 0,
+      "majoritySide": "blue",
+      "judgmentCount": 1,
+      "model": "history-weighted-v1",
+      "slotId": "2026-national-2",
+      "eventId": "2026-national",
+      "startsAt": "2026-09-30T12:00:00+08:00",
+      "createdAt": "2026-09-30T04:45:36.384Z",
+      "result": null
+    }
+  ]
 }
