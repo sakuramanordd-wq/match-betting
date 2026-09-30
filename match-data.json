@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T06:38:00.879Z",
+  "fetchedAt": "2026-09-30T06:39:00.688Z",
   "events": [
     {
       "id": "2026-national",
@@ -159,10 +159,10 @@
         },
         {
           "name": "平安志（只发红蓝胜场",
-          "wins": "1",
+          "wins": "2",
           "losses": "0",
           "winRate": "100.00%",
-          "total": "1"
+          "total": "2"
         },
         {
           "name": "猫掌柜吃不下了",
@@ -15763,7 +15763,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T06:37:51.355Z",
+    "fetchedAt": "2026-09-30T06:38:51.453Z",
     "syncFailed": false,
     "records": [
       {
