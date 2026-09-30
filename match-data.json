@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T11:32:09.421Z",
+  "fetchedAt": "2026-09-30T11:34:08.037Z",
   "events": [
     {
       "id": "2026-national",
@@ -128,13 +128,6 @@
           "losses": "1",
           "winRate": "75.00%",
           "total": "4"
-        },
-        {
-          "name": "恰似冬眠一场",
-          "wins": "1",
-          "losses": "0",
-          "winRate": "100.00%",
-          "total": "1"
         },
         {
           "name": "Mico林木森",
@@ -273,10 +266,6 @@
             },
             {
               "name": "惰落珈百璃",
-              "side": "red"
-            },
-            {
-              "name": "恰似冬眠一场",
               "side": "red"
             },
             {
@@ -672,6 +661,10 @@
               "side": "blue"
             },
             {
+              "name": "梅布斯尼（实测",
+              "side": "blue"
+            },
+            {
               "name": "雯雯（实测",
               "side": "blue"
             },
@@ -701,6 +694,14 @@
             },
             {
               "name": "行水姑娘",
+              "side": "blue"
+            },
+            {
+              "name": "CC南浔",
+              "side": "blue"
+            },
+            {
+              "name": "惰落珈百璃",
               "side": "blue"
             },
             {
@@ -16082,7 +16083,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T11:31:59.127Z",
+    "fetchedAt": "2026-09-30T11:33:58.651Z",
     "syncFailed": false,
     "records": [
       {
