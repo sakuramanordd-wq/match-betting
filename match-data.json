@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T09:35:05.572Z",
+  "fetchedAt": "2026-09-30T09:36:05.476Z",
   "events": [
     {
       "id": "2026-national",
@@ -570,6 +570,10 @@
             },
             {
               "name": "嘤嘤井",
+              "side": "red"
+            },
+            {
+              "name": "徐清林",
               "side": "red"
             },
             {
@@ -15966,7 +15970,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T09:34:55.907Z",
+    "fetchedAt": "2026-09-30T09:35:56.290Z",
     "syncFailed": false,
     "records": [
       {
@@ -15984,8 +15988,8 @@
       {
         "name": "春秋霸主徐清林",
         "side": "red",
-        "postedAt": "2026-09-30T15:20:13+08:00",
-        "match": "九月30日14-16点局"
+        "postedAt": "2026-09-30T17:31:43+08:00",
+        "match": "九月30日，16:00~18:00点"
       },
       {
         "name": "待机中的徐OK",
@@ -16013,9 +16017,9 @@
       },
       {
         "name": "面灵气喵",
-        "side": "red",
-        "postedAt": "2026-09-30T15:23:28+08:00",
-        "match": "9月30日，14:00场"
+        "side": "blue",
+        "postedAt": "2026-09-30T17:33:39+08:00",
+        "match": "9月30日，16:00场"
       },
       {
         "name": "七面相",
