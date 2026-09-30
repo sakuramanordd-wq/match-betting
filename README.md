@@ -60,3 +60,5 @@ npm run preview
 首次设置仓库 **Settings → Pages → Source → GitHub Actions**。推送 `main` 自动触发测试、构建、发布；查看 Actions 确认结果。
 
 旧版演示阵容、支持率、预设赛果不再展示；旧 `heian-betting:v1` 浏览器记录不读取、不改写。本站无登录、充值、提现或真实货币交易，与网易无关联；素材版权归网易及原作者，见 [ASSETS.md](./ASSETS.md)。维护约定见 [Agent.md](./Agent.md)。
+
+记录者表格支持点击七列表头排序，再次点击切换升降序，默认保留原表顺序。累计统计和评估分按数值排序，空白或非数值始终置后；显示仍保留原表文本。

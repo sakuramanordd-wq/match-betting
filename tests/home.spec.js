@@ -42,6 +42,27 @@ for (const width of [390, 1440]) {
     expect(await page.locator('.current-card .metrics > section').evaluateAll(items => items.map(item => item.className))).toEqual(['ratio-panel count-ratio', 'ratio-panel weighted-ratio']);
     const firstSummary = snapshot.events[0].summaries.find(item => item.name === snapshot.events[0].slots[0].records[0].name);
     await expect(page.locator('.current-card .record-table tbody tr').first().locator('.source-stat')).toHaveText([firstSummary.wins || '—', firstSummary.losses || '—', firstSummary.winRate || '—', firstSummary.total || '—']);
+    const table = page.locator('.current-card .record-table');
+    for (const [column, label] of [[2, '胜场'], [3, '败场'], [4, '胜率'], [5, '总场次'], [6, '本场前评估分']]) {
+      for (const direction of ['descending', 'ascending']) {
+        await table.getByRole('button', { name: new RegExp(`^${label}，`) }).click();
+        await expect(table.locator('th').nth(column)).toHaveAttribute('aria-sort', direction);
+        const values = await table.locator('tbody tr').evaluateAll((rows, index) => rows.map(row => {
+          const text = row.children[index].textContent.trim().replace(/[,，%％]/g, '');
+          return text && /^[-+]?\d+(?:\.\d+)?$/.test(text) ? Number(text) : null;
+        }), column);
+        const numbers = values.filter(value => value !== null);
+        expect(numbers.length).toBeGreaterThan(0);
+        expect(values).toEqual([...numbers.slice().sort((a, b) => direction === 'ascending' ? a - b : b - a), ...values.filter(value => value === null)]);
+      }
+    }
+    await table.getByRole('button', { name: /^记录者，/ }).focus();
+    await page.keyboard.press('Enter');
+    await expect(table.locator('th').first()).toHaveAttribute('aria-sort', 'ascending');
+    const names = await table.locator('tbody tr td:first-child').allTextContents();
+    expect(names).toEqual(names.slice().sort((a, b) => a.localeCompare(b, 'zh-CN')));
+    await table.getByRole('button', { name: /^本场选择，/ }).click();
+    await expect(table.locator('th').nth(1)).toHaveAttribute('aria-sort', 'ascending');
     expect(await page.locator('.current-card').evaluate(el => el.getBoundingClientRect().top)).toBeLessThan(300);
     await expect(page.locator('#matches .match-card')).toHaveCount(7);
     await page.getByRole('button', { name: '查看详细计算' }).click();
@@ -68,6 +89,7 @@ for (const width of [390, 1440]) {
     await page.getByRole('button', { name: '数据说明' }).click();
     await expect(page.locator('#modal-content')).toContainText('静态快照');
     await page.getByRole('button', { name: '关闭弹窗' }).click();
+    await expect(page.locator('#modal')).not.toBeVisible();
     await page.getByRole('tab', { name: '当前场次' }).focus();
     await page.keyboard.press('ArrowRight');
     await expect(page.getByRole('tab', { name: '历史场次' })).toHaveAttribute('aria-selected', 'true');

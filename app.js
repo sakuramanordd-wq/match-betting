@@ -48,13 +48,53 @@ function recordTable(stats) {
   const table = node('table', 'record-table');
   table.setAttribute('aria-label', '本场各方判断与历史命中率');
   const head = node('thead', ''); const titles = node('tr', '');
-  for (const label of ['记录者', '本场选择', '胜场', '败场', '胜率', '总场次', '本场前评估分']) titles.append(node('th', '', label));
-  head.append(titles); const body = node('tbody', '');
-  for (const record of stats.records) {
-    const row = node('tr', '');
-    row.append(node('td', '', record.name), node('td', `side-${record.side}`, sideName(record.side)), ...['wins', 'losses', 'winRate', 'total'].map(key => node('td', 'source-stat', record.sourceSummary?.[key] || '—')), node('td', 'evaluation-score', (record.weight * 100).toFixed(1)));
-    body.append(row);
+  const columns = [
+    ['name', '记录者'], ['side', '本场选择'], ['wins', '胜场'], ['losses', '败场'],
+    ['winRate', '胜率'], ['total', '总场次'], ['weight', '本场前评估分'],
+  ];
+  const body = node('tbody', '');
+  let sortKey = null; let ascending = true;
+  const value = (record, key) => {
+    if (key === 'name') return record.name;
+    if (key === 'side') return sideName(record.side);
+    if (key === 'weight') return record.weight;
+    const text = (record.sourceSummary?.[key] || '').trim().replace(/[,，]/g, '').replace(/[%％]$/, '');
+    return text && /^[-+]?\d+(?:\.\d+)?$/.test(text) ? Number(text) : null;
+  };
+  const renderRows = () => {
+    const records = [...stats.records];
+    if (sortKey) records.sort((a, b) => {
+      const left = value(a, sortKey); const right = value(b, sortKey);
+      if (left === null || right === null) return left === right ? 0 : left === null ? 1 : -1;
+      const comparison = typeof left === 'string' ? left.localeCompare(right, 'zh-CN') : left - right;
+      return ascending ? comparison : -comparison;
+    });
+    body.replaceChildren(...records.map(record => {
+      const row = node('tr', '');
+      row.append(node('td', '', record.name), node('td', `side-${record.side}`, sideName(record.side)), ...['wins', 'losses', 'winRate', 'total'].map(key => node('td', 'source-stat', record.sourceSummary?.[key] || '—')), node('td', 'evaluation-score', (record.weight * 100).toFixed(1)));
+      return row;
+    }));
+  };
+  for (const [key, label] of columns) {
+    const title = node('th', ''); title.scope = 'col'; title.setAttribute('aria-sort', 'none');
+    const button = node('button', 'sort-button', `${label} ↕`); button.type = 'button';
+    button.setAttribute('aria-label', `${label}，点击升序排序`);
+    button.addEventListener('click', () => {
+      ascending = sortKey === key ? !ascending : !['wins', 'losses', 'winRate', 'total', 'weight'].includes(key);
+      sortKey = key;
+      for (const [index, [columnKey, columnLabel]] of columns.entries()) {
+        const th = titles.children[index]; const active = columnKey === sortKey;
+        th.setAttribute('aria-sort', active ? ascending ? 'ascending' : 'descending' : 'none');
+        th.firstChild.textContent = `${columnLabel} ${active ? ascending ? '↑' : '↓' : '↕'}`;
+        const nextAscending = active ? !ascending : !['wins', 'losses', 'winRate', 'total', 'weight'].includes(columnKey);
+        th.firstChild.setAttribute('aria-label', `${columnLabel}，点击${nextAscending ? '升序' : '降序'}排序`);
+      }
+      renderRows();
+    });
+    button.setAttribute('aria-label', `${label}，点击${['name', 'side'].includes(key) ? '升序' : '降序'}排序`);
+    title.append(button); titles.append(title);
   }
+  head.append(titles); renderRows();
   table.append(head, body); wrapper.append(table); return wrapper;
 }
 function details(slot) {
