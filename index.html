@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#141a21"><meta name="description" content="平安京对弈竞猜：查看式神阵容，预测对弈胜负，记录你的每一次判断。阴阳师同人演示站。">
+  <title>对弈竞猜 · 平安京观战手帖</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="site-header"><div class="nav-wrap">
+  <a class="brand" href="#home" aria-label="对弈竞猜首页"><span class="brand-seal">弈</span><span>平安京<span class="brand-sub">对弈竞猜 · ONMYOJI</span></span></a>
+  <nav aria-label="主导航"><a class="nav-link active" href="#arena">竞猜大厅</a><a class="nav-link" href="#guide">对弈手帖</a><button class="nav-link" id="history-nav">我的竞猜</button></nav>
+  <button class="wallet" id="wallet-button" aria-label="查看我的竞猜和勾玉余额"><span class="gem">◈</span> <span id="balance">1,000</span><span class="wallet-unit">模拟勾玉</span></button>
+</div></header>
+<main id="home">
+<section class="hero"><div class="hero-art" aria-hidden="true"></div><div class="hero-inner">
+  <p class="eyebrow"><span></span> 平安京观战手帖 <i> / </i> HEIAN-KYO CHRONICLES</p>
+  <h1>落子之间，<br>胜负<span>由你预见。</span></h1>
+  <p class="hero-description">百鬼赴约，式神对弈。洞察阵容中的玄机，<br>为你看好的那一方，落下一枚胜负之签。</p>
+  <a href="#arena" class="primary hero-cta">进入竞猜大厅 <span>↗</span></a>
+  <div class="hero-foot"><span class="tiny-seal">观</span> 观阵容 · 判胜负 · 留手帖 <span class="hero-rule"></span> <small>非官方同人演示</small></div>
+</div><div class="vertical-text" aria-hidden="true">百 鬼 对 弈 · 胜 负 一 念</div></section>
+<div class="content">
+  <div class="notice"><span class="notice-label">庭院告示</span><p>欢迎来到对弈竞猜。当前为模拟体验，所有阵容、支持率与赛果均为演示数据。</p><button id="rules-button">竞猜规则 <span>↗</span></button></div>
+  <section class="overview" aria-label="我的竞猜概览"><div><span class="stat-icon">◈</span><p>我的模拟勾玉<strong id="stat-balance">1,000 <small>枚</small></strong></p></div><div><span class="stat-icon">✦</span><p>累计竞猜<strong id="stat-count">0 <small>场</small></strong></p></div><div><span class="stat-icon">◎</span><p>竞猜命中率<strong id="stat-rate">— <small>待结算</small></strong></p></div><div class="overview-last"><p>每一次判断，都值得记录。<button id="history-overview">查看我的竞猜 <span>→</span></button></p></div></section>
+  <section id="arena" class="arena"><div class="section-top"><div><p class="eyebrow section-eyebrow">THE ARENA</p><h2>对弈竞猜<span>选一方阵容，押一份直觉。</span></h2></div><span class="demo-pill"><span></span> 模拟对局</span></div>
+    <div class="arena-toolbar"><div class="tabs" role="tablist" aria-label="对局状态"><button role="tab" aria-selected="true" data-filter="open" class="selected">可竞猜 <span>02</span></button><button role="tab" aria-selected="false" data-filter="finished">已结束 <span>01</span></button><button role="tab" aria-selected="false" data-filter="all">全部对局 <span>03</span></button></div><span class="toolbar-note">阵容已就位，静候你的选择</span></div>
+    <div class="arena-layout"><div id="matches" class="matches"></div><aside class="sidebar"><article class="tip-card"><p class="eyebrow">ONMYOJI NOTES</p><h3>懂阵容，<br>更懂胜负。</h3><p>先手不一定稳赢，<br>配合往往比稀有度更重要。</p><a href="#guide">翻开对弈手帖 <span>↗</span></a><span class="tip-decoration" aria-hidden="true">弈</span></article><article class="side-rules"><div class="mini-title"><span>✧</span><h3>落签之前</h3></div><ol><li><span>01</span> 查看双方五位式神阵容</li><li><span>02</span> 选择看好的一方和勾玉数量</li><li><span>03</span> 确认落签，保存竞猜记录</li></ol><p>仅使用虚拟勾玉，无充值、提现。<br>模拟结算可在「我的竞猜」中体验。</p></article></aside></div>
+  </section>
+  <section id="guide" class="guide"><div class="section-top"><div><p class="eyebrow section-eyebrow">STRATEGY JOURNAL</p><h2>对弈手帖<span>在落签前，多看一步。</span></h2></div><span class="journal-tag">入门 · 阵容 · 思路</span></div><div class="guide-grid"><button class="guide-card illustrated" data-guide="0"><img src="./assets/feature.jpg" alt="阴阳师官方幻想场景插画" loading="lazy"><div><span class="article-type">入门指南</span><h3>初入对弈，如何看懂一套阵容？</h3><p>从拉条、输出与辅助，读懂队伍的节奏。 <span>↗</span></p></div></button><button class="guide-card text-card" data-guide="1"><span class="article-type">阵容观察</span><span class="article-symbol" aria-hidden="true">速</span><h3>先手与后手，<br>谁掌握战局？</h3><p>看速度，也要看控制与解控。 <span>↗</span></p></button><button class="guide-card text-card" data-guide="2"><span class="article-type">竞猜心得</span><span class="article-symbol" aria-hidden="true">衡</span><h3>留一分余地，<br>让判断更从容。</h3><p>合理分配勾玉，记录每一次选择。 <span>↗</span></p></button></div></section>
+  <div class="closing"><span>✧</span><p>胜负未定，落子有声。</p><small>愿你的每一次选择，都有自己的理由。</small></div>
+</div>
+</main>
+<footer><a class="footer-brand" href="#home">平安京 · 对弈竞猜</a><p>非官方同人演示站 · 与网易无关联 · 图片版权归网易及原作者所有</p><a href="https://yys.163.com/" target="_blank" rel="noopener noreferrer">阴阳师官网 ↗</a></footer>
+<dialog id="modal" aria-labelledby="modal-title"><div class="modal-header"><p class="eyebrow">HEIAN-KYO · 对弈手帖</p><button id="close-modal" class="close-button" aria-label="关闭弹窗">×</button></div><div id="modal-content"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="./app.js"></script>
+</body></html>
