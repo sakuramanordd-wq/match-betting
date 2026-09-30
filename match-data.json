@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T13:40:11.795Z",
+  "fetchedAt": "2026-09-30T13:41:11.182Z",
   "events": [
     {
       "id": "2026-national",
@@ -16203,7 +16203,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T13:40:01.934Z",
+    "fetchedAt": "2026-09-30T13:41:01.841Z",
     "syncFailed": false,
     "records": [
       {
@@ -16310,9 +16310,9 @@
       },
       {
         "name": "CC南浔",
-        "side": "blue",
-        "postedAt": "2026-09-30T19:30:29+08:00",
-        "match": "实测第1天——第5局"
+        "side": "red",
+        "postedAt": "2026-09-30T21:20:03+08:00",
+        "match": "第1天第6局"
       },
       {
         "name": "Mico林木森",
