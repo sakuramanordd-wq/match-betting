@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T14:17:12.795Z",
+  "fetchedAt": "2026-09-30T14:36:13.005Z",
   "events": [
     {
       "id": "2026-national",
@@ -899,6 +899,10 @@
           "startsAt": "2026-09-30T22:00:00+08:00",
           "result": null,
           "records": [
+            {
+              "name": "嘤嘤井",
+              "side": "blue"
+            },
             {
               "name": "二蛋",
               "side": "blue"
@@ -16244,7 +16248,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T14:17:02.664Z",
+    "fetchedAt": "2026-09-30T14:36:03.864Z",
     "syncFailed": false,
     "records": [
       {
@@ -16303,9 +16307,9 @@
       },
       {
         "name": "清流不加班",
-        "side": "blue",
-        "postedAt": "2026-09-30T19:02:30+08:00",
-        "match": ""
+        "side": "red",
+        "postedAt": "2026-09-30T22:26:42+08:00",
+        "match": "9月30日，22:00场"
       },
       {
         "name": "是大荣啦",
@@ -16339,9 +16343,9 @@
       },
       {
         "name": "嘤嘤井",
-        "side": "red",
-        "postedAt": "2026-09-30T20:31:06+08:00",
-        "match": "30日DAY 1，20点场"
+        "side": "blue",
+        "postedAt": "2026-09-30T22:26:42+08:00",
+        "match": "9月30日，22:00场"
       },
       {
         "name": "著名智障二小姐(明灯)",
