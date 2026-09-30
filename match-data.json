@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T09:37:05.911Z",
+  "fetchedAt": "2026-09-30T09:38:05.267Z",
   "events": [
     {
       "id": "2026-national",
@@ -536,6 +536,10 @@
           "startsAt": "2026-09-30T16:00:00+08:00",
           "result": null,
           "records": [
+            {
+              "name": "面灵气喵",
+              "side": "blue"
+            },
             {
               "name": "查查尔",
               "side": "red"
@@ -15982,7 +15986,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T09:36:55.785Z",
+    "fetchedAt": "2026-09-30T09:37:55.975Z",
     "syncFailed": false,
     "records": [
       {
@@ -15994,8 +15998,8 @@
       {
         "name": "晨时微凉",
         "side": "red",
-        "postedAt": "2026-09-30T15:32:58+08:00",
-        "match": "9月30日，14点场"
+        "postedAt": "2026-09-30T17:30:44+08:00",
+        "match": "9.30号16点场"
       },
       {
         "name": "春秋霸主徐清林",
@@ -16006,8 +16010,8 @@
       {
         "name": "待机中的徐OK",
         "side": "red",
-        "postedAt": "2026-09-30T15:31:40+08:00",
-        "match": "day1·14点场"
+        "postedAt": "2026-09-30T17:32:11+08:00",
+        "match": "day1·16点场"
       },
       {
         "name": "奉天城公子奉天",
@@ -16043,7 +16047,7 @@
         "name": "清流不加班",
         "side": "red",
         "postedAt": "2026-09-30T16:47:58+08:00",
-        "match": "9月30日，16:00场"
+        "match": "2月17日，10:00~12:00点"
       },
       {
         "name": "是大荣啦",
