@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T05:15:37.543Z",
+  "fetchedAt": "2026-09-30T05:16:37.189Z",
   "events": [
     {
       "id": "2026-national",
@@ -279,6 +279,10 @@
           "startsAt": "2026-09-30T12:00:00+08:00",
           "result": null,
           "records": [
+            {
+              "name": "面灵气喵",
+              "side": "red"
+            },
             {
               "name": "查查尔",
               "side": "blue"
@@ -15655,7 +15659,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T05:15:26.979Z",
+    "fetchedAt": "2026-09-30T05:16:26.845Z",
     "syncFailed": false,
     "records": [
       {
@@ -15672,9 +15676,9 @@
       },
       {
         "name": "春秋霸主徐清林",
-        "side": "red",
-        "postedAt": "2026-09-30T10:05:28+08:00",
-        "match": ""
+        "side": "blue",
+        "postedAt": "2026-09-30T13:06:25+08:00",
+        "match": "9月30日，12:00~14:00点"
       },
       {
         "name": "待机中的徐OK",
@@ -15714,9 +15718,9 @@
       },
       {
         "name": "清流不加班",
-        "side": "red",
-        "postedAt": "2026-09-30T10:09:10+08:00",
-        "match": "9月30日，10:00场"
+        "side": "blue",
+        "postedAt": "2026-09-30T13:13:09+08:00",
+        "match": "10月1日，12:00场"
       },
       {
         "name": "是大荣啦",
@@ -15764,7 +15768,7 @@
         "name": "CC南浔",
         "side": "red",
         "postedAt": "2026-09-30T10:12:49+08:00",
-        "match": "第一天——第一局"
+        "match": "第一天，第一局"
       },
       {
         "name": "Mico林木森",
