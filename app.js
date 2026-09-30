@@ -7,9 +7,13 @@ let recoveryMessage = '';
 try {
   const saved = localStorage.getItem(STORAGE_KEY);
   if (saved) {
-    const parsed = JSON.parse(saved);
-    if (validateState(parsed)) state = parsed;
-    else recoveryMessage = '本地记录格式异常，已恢复初始体验。';
+    try {
+      const parsed = JSON.parse(saved);
+      if (validateState(parsed)) state = parsed;
+      else recoveryMessage = '本地记录格式异常，已恢复初始体验。';
+    } catch {
+      recoveryMessage = '本地记录格式异常，已恢复初始体验。';
+    }
   }
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 } catch {

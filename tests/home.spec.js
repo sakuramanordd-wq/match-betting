@@ -86,3 +86,19 @@ test('blocked storage shows a warning and allows in-memory play', async ({ page 
   await page.getByRole('button', { name: '确认落签' }).click();
   await expect(page.locator('#balance')).toHaveText('900');
 });
+
+
+test('malformed JSON is repaired and new bets remain saved after reload', async ({ page }) => {
+  await page.goto('/match-betting/');
+  await page.evaluate(key => localStorage.setItem(key, '{broken json'), STORAGE_KEY);
+  await page.reload();
+  await expect(page.locator('.storage-warning')).toContainText('本地记录格式异常');
+  await page.getByRole('button', { name: '选择阵容落签' }).first().click();
+  await page.getByRole('button', { name: '青 · 蓝方' }).click();
+  await page.getByRole('button', { name: '确认落签' }).click();
+  await page.reload();
+  await expect(page.locator('.storage-warning')).toHaveCount(0);
+  await expect(page.locator('#balance')).toHaveText('900');
+  await page.getByRole('button', { name: '查看我的竞猜' }).last().click();
+  await expect(page.locator('#modal-content')).toContainText('第一回 · 蓝方');
+});
