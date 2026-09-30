@@ -6,11 +6,12 @@ import { resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createDataSync, projectRoot } from './live-data.mjs';
 import { comparable, githubRepository, checkDeployment, cycleMessage } from './deployment-status.mjs';
+import { checkCurrentPredictions } from './prediction-log.mjs';
 
 const exec = promisify(execFile);
 const dataFiles = ['match-data.json', 'forecast-history.json'];
 
-export function createPublisher({ repoUrl, workDir, branch = 'main', syncData, shouldPublish = () => true, logger = () => {}, deploymentCheck = checkDeployment, retryDeployment = false, rerun = (repository, runId) => exec('gh', ['run', 'rerun', String(runId), '--repo', repository], { timeout: 30_000 }) }) {
+export function createPublisher({ repoUrl, workDir, branch = 'main', syncData, shouldPublish = () => true, logger = () => {}, deploymentCheck = checkDeployment, predictionCheck = checkCurrentPredictions, retryDeployment = false, rerun = (repository, runId) => exec('gh', ['run', 'rerun', String(runId), '--repo', repository], { timeout: 30_000 }) }) {
   if (resolve(workDir) === resolve(projectRoot)) throw new Error('发布副本不能使用当前开发目录。');
   const repository = githubRepository(repoUrl);
   const retriedRuns = new Set();
@@ -57,6 +58,7 @@ export function createPublisher({ repoUrl, workDir, branch = 'main', syncData, s
     logger(`原表同步成功，抓取时间：${snapshot.fetchedAt}；检查实际数据差异。`);
     if (snapshot.wind?.syncFailed) logger('对弈风向抓取失败，保留上次快照，下轮重试。');
     else if (snapshot.wind?.fetchedAt) logger(`对弈风向同步成功，抓取时间：${snapshot.wind.fetchedAt}；内容变化纳入发布检查。`);
+    logger(await predictionCheck({ repository, snapshot }));
     if (!shouldPublish()) { logger('收到停止请求，本轮不推送。'); return { published: false, stopped: true }; }
     await commitData();
     const { stdout } = await git(['rev-list', '--count', `origin/${branch}..HEAD`]);
