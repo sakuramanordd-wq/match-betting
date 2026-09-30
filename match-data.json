@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T06:51:01.055Z",
+  "fetchedAt": "2026-09-30T06:52:01.092Z",
   "events": [
     {
       "id": "2026-national",
@@ -15805,7 +15805,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T06:50:51.621Z",
+    "fetchedAt": "2026-09-30T06:51:51.659Z",
     "syncFailed": false,
     "records": [
       {
@@ -15930,9 +15930,9 @@
       },
       {
         "name": "yys查查尔",
-        "side": "blue",
-        "postedAt": "2026-09-30T12:45:37+08:00",
-        "match": "9月30日，12:00-14:00"
+        "side": "red",
+        "postedAt": "2026-09-30T14:35:16+08:00",
+        "match": "9月30日，14:00-16:00"
       },
       {
         "name": "YYS方寒",
