@@ -53,7 +53,7 @@ function recordTable(stats) {
     ['winRate', '胜率'], ['total', '总场次'], ['weight', '本场前评估分'],
   ];
   const body = node('tbody', '');
-  let sortKey = null; let ascending = true;
+  let sortKey = 'weight'; let ascending = false;
   const value = (record, key) => {
     if (key === 'name') return record.name;
     if (key === 'side') return sideName(record.side);
@@ -76,8 +76,8 @@ function recordTable(stats) {
     }));
   };
   for (const [key, label] of columns) {
-    const title = node('th', ''); title.scope = 'col'; title.setAttribute('aria-sort', 'none');
-    const button = node('button', 'sort-button', `${label} ↕`); button.type = 'button';
+    const title = node('th', ''); title.scope = 'col'; title.setAttribute('aria-sort', key === sortKey ? 'descending' : 'none');
+    const button = node('button', 'sort-button', `${label} ${key === sortKey ? '↓' : '↕'}`); button.type = 'button';
     button.setAttribute('aria-label', `${label}，点击升序排序`);
     button.addEventListener('click', () => {
       ascending = sortKey === key ? !ascending : !['wins', 'losses', 'winRate', 'total', 'weight'].includes(key);
@@ -91,7 +91,7 @@ function recordTable(stats) {
       }
       renderRows();
     });
-    button.setAttribute('aria-label', `${label}，点击${['name', 'side'].includes(key) ? '升序' : '降序'}排序`);
+    button.setAttribute('aria-label', `${label}，点击${key === sortKey || ['name', 'side'].includes(key) ? '升序' : '降序'}排序`);
     title.append(button); titles.append(title);
   }
   head.append(titles); renderRows();

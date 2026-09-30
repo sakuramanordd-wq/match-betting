@@ -36,11 +36,14 @@ for (const width of [390, 1440]) {
     await expect(page.locator('.weighted-ratio')).toContainText('右蓝 0.0%');
     await expect(page.locator('.current-card .record-table tbody tr')).toHaveCount(23);
     const stats = judgmentStats(snapshot.events[0], snapshot.events[0].slots[0], snapshot.events);
-    await expect(page.locator('.current-card .evaluation-score').first()).toHaveText((stats.records[0].weight * 100).toFixed(1));
+    const sortedRecords = stats.records.slice().sort((a, b) => b.weight - a.weight);
+    await expect(page.locator('.current-card .evaluation-score')).toHaveText(sortedRecords.map(record => (record.weight * 100).toFixed(1)));
+    await expect(page.locator('.current-card .record-table th').nth(6)).toHaveAttribute('aria-sort', 'descending');
+    await expect(page.getByRole('button', { name: '本场前评估分，点击升序排序' })).toBeVisible();
     await expect(page.locator('.current-card .prediction-panel')).toHaveCount(0);
     await expect(page.locator('.current-card .prediction-evaluation')).toHaveCount(0);
     expect(await page.locator('.current-card .metrics > section').evaluateAll(items => items.map(item => item.className))).toEqual(['ratio-panel count-ratio', 'ratio-panel weighted-ratio']);
-    const firstSummary = snapshot.events[0].summaries.find(item => item.name === snapshot.events[0].slots[0].records[0].name);
+    const firstSummary = snapshot.events[0].summaries.find(item => item.name === sortedRecords[0].name);
     await expect(page.locator('.current-card .record-table tbody tr').first().locator('.source-stat')).toHaveText([firstSummary.wins || '—', firstSummary.losses || '—', firstSummary.winRate || '—', firstSummary.total || '—']);
     const table = page.locator('.current-card .record-table');
     for (const [column, label] of [[2, '胜场'], [3, '败场'], [4, '胜率'], [5, '总场次'], [6, '本场前评估分']]) {
