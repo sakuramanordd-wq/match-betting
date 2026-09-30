@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T05:56:07.541Z",
+  "fetchedAt": "2026-09-30T05:58:00.408Z",
   "events": [
     {
       "id": "2026-national",
@@ -26,13 +26,6 @@
         },
         {
           "name": "NGAArchonXP",
-          "wins": "1",
-          "losses": "0",
-          "winRate": "100.00%",
-          "total": "1"
-        },
-        {
-          "name": "红鲤没空更好像",
           "wins": "1",
           "losses": "0",
           "winRate": "100.00%",
@@ -196,10 +189,6 @@
             },
             {
               "name": "NGAArchonXP",
-              "side": "red"
-            },
-            {
-              "name": "红鲤没空更好像",
               "side": "red"
             },
             {
@@ -15746,7 +15735,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T05:55:51.994Z",
+    "fetchedAt": "2026-09-30T05:57:50.535Z",
     "syncFailed": false,
     "records": [
       {
