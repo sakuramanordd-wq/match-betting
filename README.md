@@ -1,43 +1,32 @@
-# 平安京 · 对弈竞猜
+# 平安京 · 对弈数据
 
-阴阳师非官方同人首页，包含式神阵容、模拟竞猜、本地记录、模拟结算和对弈手帖，适配手机与桌面。
+阴阳师非官方社区数据看板，优先展示当前活动最近场次，支持按活动、日期查看历史结果与各方判断。保留原有和风页面，移除模拟竞猜、虚拟勾玉和结算功能。
 
-目标访问地址：https://sakuramanordd-wq.github.io/match-betting/
+数据来源：[2026国庆对弈竞猜汇总（尽量准时版](https://www.kdocs.cn/l/cris3KItpMwO)。当前收录 2026 国庆、2026 春节、2025 国庆、2025 春节，共 196 个排期。本站显示静态快照，页面标明同步时间；不接入游戏实时接口，空白不推断赛果，各方判断条数不代表胜率。
 
-## 本地开发
+## 开发与同步
 
-需要 Node.js 24：
+Node.js 24，执行：
 
 ```bash
 npm ci
-npm run dev
-```
-
-## 验证
-
-```bash
 npx playwright install chromium
+npm run dev
+# 从公开文档只读提取，更新 match-data.json
+npm run sync:data
 npm test
 npm run build
 npm run preview
 ```
 
-测试覆盖金额限制、重复提交、重复结算、刷新持久化、重置确认、存储异常、图片加载、对局筛选及手机/桌面布局，并检查生产项目子路径。
+同步失败会保留原快照。同步脚本使用公开访客视图，不需要账号、密钥，不修改原文档。同步后检查差异、测试和构建，再随代码发布；访问网页不会自动请求金山文档。原表结构改变时更新脚本映射，勿将记录者的判断当作结果。
 
-## 部署到 GitHub Pages
+测试检查数据格式、当前时段、历史活动和日期切换、未知结果、详情弹窗与焦点、旧存档保留、390px/1440px 布局，并使用生产子路径 `/match-betting/`。
 
-1. 首次在仓库 **Settings → Pages → Source** 选择 **GitHub Actions**。
-2. 推送至 `main`；`.github/workflows/pages.yml` 自动测试、构建并发布。
-3. 在 Actions 检查 `Deploy GitHub Pages` 成功，再访问目标网址。
+## GitHub Pages
 
-若首次发布时 Pages 未开启，请开启后在 Actions 页面重新运行失败的工作流。
+目标：https://sakuramanordd-wq.github.io/match-betting/
 
-## 功能与边界
+首次设置仓库 **Settings → Pages → Source → GitHub Actions**。推送 `main` 自动触发测试、构建、发布；查看 Actions 确认结果。
 
-- 初始 1,000 枚模拟勾玉，每场限一次，可投入 10–500 枚整数勾玉。
-- 「我的竞猜」可主动模拟结算。命中返还 2 倍投入（含本金），否则不返还。
-- 阵容、支持率、收益和赛果均为预设演示，不接入实时游戏数据。
-- 记录保存在当前浏览器；可重置，不跨设备同步。无登录、充值、提现或真实交易。
-- 本站与网易无关联；图片来自阴阳师官网，版权归网易及原作者，素材来源见 [ASSETS.md](./ASSETS.md)。
-
-迭代请阅读 [Agent.md](./Agent.md)，自动化 Agent 入口为 [AGENTS.md](./AGENTS.md)。
+旧版演示阵容、支持率、预设赛果不再展示；旧 `heian-betting:v1` 浏览器记录不读取、不改写。本站无登录、充值、提现或真实货币交易，与网易无关联；素材版权归网易及原作者，见 [ASSETS.md](./ASSETS.md)。维护约定见 [Agent.md](./Agent.md)。

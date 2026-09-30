@@ -1,135 +1,98 @@
-import { matches, shikigami, guides } from './data.js';
-import { STORAGE_KEY, initialState, validateState, placeBet, settleBets } from './state.js';
+import { snapshot, sideName, currentSlot, latestEvent, resultCounts } from './data.js';
 const $ = selector => document.querySelector(selector);
-let state = initialState();
-let storageAvailable = true;
-let recoveryMessage = '';
-try {
-  const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved) {
-    try {
-      const parsed = JSON.parse(saved);
-      if (validateState(parsed)) state = parsed;
-      else recoveryMessage = '本地记录格式异常，已恢复初始体验。';
-    } catch {
-      recoveryMessage = '本地记录格式异常，已恢复初始体验。';
-    }
-  }
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-} catch {
-  storageAvailable = false;
-  recoveryMessage = '浏览器无法保存本地记录，本次竞猜仅在当前页面有效，刷新后会重置。';
+const latest = latestEvent(snapshot.events);
+let mode = 'current';
+let event = latest;
+const time = value => new Intl.DateTimeFormat('zh-CN', { timeZone: 'Asia/Shanghai', dateStyle: 'medium', timeStyle: 'short', hour12: false }).format(new Date(value));
+// 外部表格文字只通过 textContent 渲染。
+function node(tag, className, text) {
+  const element = document.createElement(tag);
+  element.className = className;
+  if (text !== undefined) element.textContent = text;
+  return element;
 }
-if (recoveryMessage) {
-  const notice = document.createElement('div');
-  notice.className = 'storage-warning'; notice.textContent = recoveryMessage;
-  $('main').prepend(notice);
+function options(select, items, selected) {
+  select.replaceChildren(...items.map(([value, label]) => {
+    const option = new Option(label, value); option.selected = value === selected; return option;
+  }));
 }
-function save(next) {
-  if (storageAvailable) {
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(next)); }
-    catch { storageAvailable = false; toast('本地保存失败，当前记录刷新后可能丢失。'); }
-  }
-  state = next; updateStats(); renderMatches();
+function dates() {
+  const days = [...new Set(event.slots.map(slot => slot.startsAt.slice(0, 10)))];
+  options($('#date-select'), [['all', '全部日期'], ...days.map(day => [day, day])], mode === 'current' ? currentSlot(event).startsAt.slice(0, 10) : 'all');
 }
-function syncStorage(event) {
-  if (event.key !== STORAGE_KEY) return;
-  try {
-    const incoming = event.newValue ? JSON.parse(event.newValue) : initialState();
-    if (validateState(incoming)) { state = incoming; updateStats(); renderMatches(); }
-  } catch { /* 不使用其他标签页中的损坏记录 */ }
+function selectMode(nextMode) {
+  mode = nextMode;
+  $('#history-nav').classList.toggle('active', mode === 'history');
+  $('nav a[href="#arena"]:not(#history-nav)').classList.toggle('active', mode === 'current');
+  const events = mode === 'current' ? [latest] : snapshot.events.filter(item => item.id !== latest.id);
+  event = events[0];
+  options($('#event-select'), events.map(item => [item.id, item.title]), event.id);
+  document.querySelectorAll('[data-filter]').forEach(tab => { const active = tab.dataset.filter === mode; tab.classList.toggle('selected', active); tab.setAttribute('aria-selected', String(active)); tab.tabIndex = active ? 0 : -1; });
+  dates(); render();
 }
-window.addEventListener('storage', syncStorage);
-function refreshStoredState() {
-  if (!storageAvailable) return;
-  try { const saved = JSON.parse(localStorage.getItem(STORAGE_KEY)); if (validateState(saved)) state = saved; }
-  catch { /* 当前页面状态仍然有效 */ }
-}
-const format = n => n.toLocaleString('zh-CN');
-function updateStats() {
-  $('#balance').textContent = format(state.balance);
-  $('#stat-balance').innerHTML = `${format(state.balance)} <small>枚</small>`;
-  $('#stat-count').innerHTML = `${state.bets.length} <small>场</small>`;
-  const settled = state.bets.filter(b => b.status !== 'pending');
-  $('#stat-rate').innerHTML = settled.length ? `${Math.round(settled.filter(b => b.status === 'won').length / settled.length * 100)}% <small>已结算</small>` : '— <small>待结算</small>';
-}
-let filter = 'open';
-function teamHTML(team, side) {
-  return `<div class="team ${side}"><div class="team-title"><h3><span class="team-mark">${side === 'red' ? '赤' : '青'}</span>${team.name}</h3><span class="team-style">${team.style}</span></div><div class="roster">${team.roster.map(id => `<div class="shikigami"><div class="portrait"><img src="./assets/${id}.png" alt="${shikigami[id].name}" loading="lazy"><span class="rarity">${shikigami[id].rarity}</span></div><small title="${shikigami[id].name}">${shikigami[id].name}</small></div>`).join('')}</div></div>`;
-}
-function renderMatches() {
-  const visible = matches.filter(m => filter === 'all' || (filter === 'open' ? m.status === 'open' : m.status === 'finished'));
-  $('#matches').innerHTML = visible.map(match => {
-    const bet = state.bets.find(b => b.matchId === match.id);
-    const finished = match.status === 'finished';
-    return `<article class="match-card"><div class="match-head"><div><strong>平安京对弈 · ${match.round}</strong><span class="match-id">#${match.id.slice(-3)}</span></div><span class="status-label ${finished ? 'finished' : ''}">${finished ? '演示赛果已公布' : '开放模拟竞猜'}</span></div><div class="teams">${teamHTML(match.red, 'red')}<div class="vs" aria-label="对阵">VS</div>${teamHTML(match.blue, 'blue')}</div><div class="support"><div class="support-labels"><span>模拟支持率 <b>${match.support}%</b></span><span><b>${100 - match.support}%</b> 模拟支持率</span></div><div class="support-bar" aria-hidden="true"><span style="width:${match.support}%"></span><span></span></div></div><div class="match-bottom"><span class="match-note">${finished ? '演示结果：<strong>蓝方胜出</strong>' : bet ? `已选择<strong>${bet.side === 'red' ? '红方' : '蓝方'} · ${bet.amount} 枚</strong> · ${bet.status === 'pending' ? '待模拟结算' : '已模拟结算'}` : '每场限一次 · <strong>10–500 枚</strong>模拟勾玉'}</span><button class="bet-button" data-match="${match.id}">${finished ? '查看赛果' : bet ? '查看我的竞猜' : '选择阵容落签'} <span>↗</span></button></div></article>`;
-  }).join('');
-  document.querySelectorAll('[data-match]').forEach(button => button.addEventListener('click', () => openMatch(button.dataset.match)));
-}
-document.querySelectorAll('[data-filter]').forEach(button => {
-  button.addEventListener('click', () => {
-    filter = button.dataset.filter;
-    document.querySelectorAll('[data-filter]').forEach(tab => { const active = tab === button; tab.classList.toggle('selected', active); tab.setAttribute('aria-selected', String(active)); });
-    renderMatches();
-  });
-  button.addEventListener('keydown', event => {
-    const tabs = [...document.querySelectorAll('[data-filter]')];
-    let next;
-    if (event.key === 'ArrowRight') next = tabs[(tabs.indexOf(button) + 1) % tabs.length];
-    if (event.key === 'ArrowLeft') next = tabs[(tabs.indexOf(button) + tabs.length - 1) % tabs.length];
-    if (event.key === 'Home') next = tabs[0]; if (event.key === 'End') next = tabs.at(-1);
-    if (next) { event.preventDefault(); next.click(); next.focus(); }
-  });
-});
 let returnFocus;
-function modal(title, html) {
-  if (!$('#modal').open) returnFocus = document.activeElement;
-  $('#modal-content').innerHTML = `<h2 id="modal-title">${title}</h2>${html}`;
-  if (!$('#modal').open) $('#modal').showModal();
+function modal(title, body) {
+  returnFocus = document.activeElement;
+  $('#modal-content').replaceChildren(node('h2', '', title), body);
+  $('#modal-content h2').id = 'modal-title';
+  $('#modal').showModal();
 }
-$('#close-modal').addEventListener('click', () => $('#modal').close());
-$('#modal').addEventListener('close', () => { if (returnFocus?.isConnected) returnFocus.focus(); });
-$('#modal').addEventListener('click', event => {
-  if (event.target !== $('#modal')) return;
-  const bounds = $('#modal').getBoundingClientRect();
-  if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) $('#modal').close();
+function details(slot) {
+  const body = node('div', 'modal-body');
+  body.append(node('p', '', `原表结果：${sideName(slot.result)}`), node('p', 'modal-note', '以下为各记录者填写的判断，不等于赛果或获胜概率。'));
+  if (!slot.records.length) body.append(node('p', 'empty-history', '本场原表尚无判断记录。'));
+  slot.records.forEach(record => { const row = node('div', 'history-row record-row'); row.append(node('span', '', record.name), node('strong', `side-${record.side}`, sideName(record.side))); body.append(row); });
+  modal(`${event.title} · ${slot.label}`, body);
+}
+function card(slot, featured = false) {
+  const article = node('article', `match-card${featured ? ' current-card' : ''}`);
+  const head = node('div', 'match-head');
+  head.append(node('strong', '', featured ? '最近场次 · 按北京时间排期' : event.title), node('span', `status-label${slot.result ? ' finished' : ''}`, slot.result ? '原表已记录结果' : '结果待更新'));
+  const info = node('div', 'slot-info'); info.append(node('h3', '', slot.label), node('strong', `slot-result side-${slot.result || 'pending'}`, sideName(slot.result)));
+  const bottom = node('div', 'match-bottom');
+  const red = slot.records.filter(record => record.side === 'red').length;
+  bottom.append(node('span', 'match-note', `各方判断：左红 ${red} 条 / 右蓝 ${slot.records.length - red} 条`));
+  const button = node('button', 'bet-button', '查看记录 ↗'); button.addEventListener('click', () => details(slot)); bottom.append(button);
+  article.append(head, info, bottom); return article;
+}
+function render() {
+  const counts = resultCounts(event);
+  $('#stat-event').textContent = event.title;
+  $('#stat-count').textContent = `${counts.red + counts.blue} / ${event.slots.length} 场`;
+  $('#stat-result').textContent = `${counts.red} / ${counts.blue}`;
+  $('#updated-at').textContent = `同步于 ${time(snapshot.fetchedAt)}`;
+  $('#source-detail').textContent = `来源：${snapshot.sourceTitle}。工作表：${event.sourceSheet}。同步时间：${time(snapshot.fetchedAt)}（北京时间）。`;
+  const featured = currentSlot(event);
+  const outside = Date.now() > Date.parse(event.slots.at(-1).startsAt) + 2 * 60 * 60 * 1000;
+  $('#current-match').replaceChildren(...(mode === 'current' ? [node('p', 'current-note', outside ? '此活动排期已结束，下面展示最后一个时段；待原表新增活动后同步。' : '优先展示最近开始的时段；结果是否公布以原表填写为准。'), card(featured, true)] : []));
+  const visible = event.slots.filter(slot => $('#date-select').value === 'all' || slot.startsAt.startsWith($('#date-select').value));
+  $('#list-summary').textContent = `${event.title} · ${visible.length} 场 · 已记录 ${visible.filter(slot => slot.result).length} 场结果`;
+  $('#matches').replaceChildren(...visible.map(slot => card(slot)));
+}
+document.querySelectorAll('[data-filter]').forEach(tab => {
+  tab.addEventListener('click', () => selectMode(tab.dataset.filter));
+  tab.addEventListener('keydown', e => {
+    const tabs = [...document.querySelectorAll('[data-filter]')];
+    if (['ArrowRight', 'ArrowLeft', 'Home', 'End'].includes(e.key)) { e.preventDefault(); const next = e.key === 'Home' ? tabs[0] : e.key === 'End' ? tabs.at(-1) : tabs.find(item => item !== tab); next.click(); next.focus(); }
+  });
 });
-let toastTimer;
-function toast(message) { $('#toast').textContent = message; $('#toast').classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => $('#toast').classList.remove('show'), 3500); }
-function openMatch(id) {
-  refreshStoredState();
-  const match = matches.find(m => m.id === id);
-  if (match.status === 'finished') {
-    modal('第三回 · 演示赛果', '<div class="modal-body"><p>本场预设结果：<strong class="result-win">蓝方胜出</strong>。</p><p>本对局仅用于展示结束状态，无法参与竞猜。该赛果不来自真实游戏对战，也不代表阵容的实际强弱。</p></div>'); return;
-  }
-  if (state.bets.some(b => b.matchId === id)) { openHistory(); return; }
-  modal(`${match.round} · 落下胜负之签`, `<p class="modal-note">选择看好的一方。本场阵容、支持率与赛果均为模拟数据。</p><form id="bet-form"><div class="choice-grid"><button type="button" class="choice" data-side="red" aria-pressed="false">赤 · 红方 / ${match.red.style}</button><button type="button" class="choice" data-side="blue" aria-pressed="false">青 · 蓝方 / ${match.blue.style}</button></div><label class="amount-label" for="amount">投入模拟勾玉 <span>· 可用 ${format(state.balance)} 枚</span></label><input id="amount" class="amount-input" type="number" min="10" max="500" step="1" value="100" inputmode="numeric" required aria-describedby="bet-error amount-help"><div class="amount-presets">${[50, 100, 200, 500].map(n => `<button type="button" data-amount="${n}">${n} 枚</button>`).join('')}</div><p class="modal-note" id="amount-help">每场限一次。命中时返还投入的 2 倍（包含本金），未命中则不返还。赛果为预设演示，提交后可在我的竞猜中模拟结算。</p><p id="bet-error" class="form-error" role="alert"></p><button class="primary full-width" type="submit">确认落签 <span>→</span></button></form>`);
-  let side;
-  document.querySelectorAll('[data-side]').forEach(button => button.addEventListener('click', () => { side = button.dataset.side; document.querySelectorAll('[data-side]').forEach(b => b.setAttribute('aria-pressed', String(b === button))); }));
-  document.querySelectorAll('[data-amount]').forEach(button => button.addEventListener('click', () => { $('#amount').value = button.dataset.amount; }));
-  $('#bet-form').addEventListener('submit', event => {
-    event.preventDefault();
-    try { refreshStoredState(); save(placeBet(state, id, side, Number($('#amount').value))); $('#modal').close(); toast('落签成功，已保存至我的竞猜。'); }
-    catch (error) { $('#bet-error').textContent = error.message; }
-  });
-}
-function openHistory() {
-  refreshStoredState(); updateStats();
-  const pending = state.bets.filter(b => b.status === 'pending');
-  modal('我的竞猜', `<p class="modal-note">当前余额 ${format(state.balance)} 枚 · ${storageAvailable ? '记录保存在当前浏览器，不跨设备同步。' : '当前浏览器无法保存，刷新后可能重置。'}</p>${state.bets.length ? state.bets.map(bet => {
-    const match = matches.find(m => m.id === bet.matchId);
-    return `<article class="history-item"><div class="history-row"><strong>${match.round} · ${bet.side === 'red' ? '红方' : '蓝方'}</strong><span class="${bet.status === 'won' ? 'result-win' : bet.status === 'lost' ? 'result-loss' : ''}">${bet.status === 'pending' ? '待模拟结算' : bet.status === 'won' ? '已命中' : '未命中'}</span></div><div class="history-row"><span>投入 ${bet.amount} 枚${bet.status === 'won' ? ` · 已返还 ${bet.amount * 2} 枚` : ''}</span><time>${new Date(bet.createdAt).toLocaleString('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })}</time></div></article>`;
-  }).join('') : '<div class="empty-history">手帖还是空白的。<br>去竞猜大厅，为你的判断落下第一枚签吧。</div>'}<div class="history-actions">${pending.length ? '<button id="settle-button" class="primary">模拟结算</button>' : ''}<button id="reset-button" class="secondary">重置体验</button></div><p class="modal-note">模拟结算使用预设赛果，无实时比赛接入。重置会清空本机记录，并恢复 1,000 枚模拟勾玉。</p>`);
-  $('#settle-button')?.addEventListener('click', () => { refreshStoredState(); save(settleBets(state)); openHistory(); toast('模拟结算完成，可查看本次结果。'); });
-  $('#reset-button').addEventListener('click', () => {
-    modal('重置当前体验？', '<div class="modal-body"><p>当前浏览器中的竞猜记录将被清空，模拟勾玉恢复为 1,000 枚。</p></div><div class="history-actions"><button id="cancel-reset" class="secondary">保留记录</button><button id="confirm-reset" class="primary">确认重置</button></div>');
-    $('#cancel-reset').addEventListener('click', openHistory);
-    $('#confirm-reset').addEventListener('click', () => { save(initialState()); openHistory(); toast('已开启新的竞猜体验。'); });
-  });
-}
-['#history-nav', '#history-overview', '#wallet-button'].forEach(selector => $(selector).addEventListener('click', openHistory));
-$('#rules-button').addEventListener('click', () => modal('竞猜规则', '<div class="modal-body"><p>初始拥有 1,000 枚模拟勾玉。选择任一开放对局的红方或蓝方，每场可提交一次，投入 10–500 枚整数勾玉，不得超过余额。</p><p>提交时扣除投入数量。在「我的竞猜」点击「模拟结算」后，预设胜方的竞猜将返还投入数量的 2 倍（含本金），未命中的竞猜不返还。重复结算不会重复发放勾玉。</p><p>所有比赛数据和赛果均为演示数据，支持率不是实际胜率。页面无实时比赛接入，不提供充值、提现或真实货币交易。</p><p>记录保存在当前浏览器。清理网站数据会丢失记录，点击「重置体验」可重新开始。</p></div>'));
-document.querySelectorAll('[data-guide]').forEach(button => button.addEventListener('click', () => { const guide = guides[Number(button.dataset.guide)]; modal(guide.title, `<div class="modal-body">${guide.content}</div>`); }));
-function updateNavigation() { document.querySelectorAll('a.nav-link').forEach(a => a.classList.toggle('active', a.getAttribute('href') === (location.hash === '#guide' ? '#guide' : '#arena'))); }
-window.addEventListener('hashchange', updateNavigation);
-updateNavigation(); updateStats(); renderMatches();
+$('#event-select').addEventListener('change', () => { event = snapshot.events.find(item => item.id === $('#event-select').value); dates(); render(); });
+$('#date-select').addEventListener('change', render);
+$('#history-nav').addEventListener('click', () => selectMode('history'));
+$('nav a[href="#arena"]:not(#history-nav)').addEventListener('click', () => selectMode('current'));
+$('.hero-cta').addEventListener('click', () => selectMode('current'));
+$('#rules-button').addEventListener('click', () => {
+  const body = node('div', 'modal-body');
+  for (const text of ['本站展示公开文档中的活动排期、红蓝结果与各方判断记录，不再提供模拟竞猜。', '场次时间采用北京时间；最近场次按排期选择，不代表实时战斗状态。赛果只读取对应活动的结果行，空白不推断胜负。', '各方判断条数不是支持率或胜率。页面为定期整理的静态快照，原表可能已更新，请点击「查看原表」核对。', '旧版演示数据已退出展示。旧浏览器竞猜记录保留在本地，不读取、不修改；本站不处理真实货币。']) body.append(node('p', '', text));
+  modal('数据说明', body);
+});
+$('#close-modal').addEventListener('click', () => $('#modal').close());
+$('#modal').addEventListener('close', () => returnFocus?.isConnected && returnFocus.focus());
+$('#modal').addEventListener('click', e => { if (e.target !== $('#modal')) return; const r = $('#modal').getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) $('#modal').close(); });
+selectMode('current');
+// 切换至新时段时更新置顶，不改变用户选择的活动或日期。
+let featuredId = currentSlot(latest).id;
+setInterval(() => {
+  const nextId = currentSlot(latest).id;
+  if (nextId !== featuredId) { featuredId = nextId; if (mode === 'current') render(); }
+}, 60_000);

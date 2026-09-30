@@ -1,24 +1,13 @@
-// 演示数据，不代表游戏实时阵容、支持率、收益或赛果。
-export const shikigami = {
-  330: { name: '不知火', rarity: 'SSR' }, 341: { name: '鬼王酒吞童子', rarity: 'SP' },
-  325: { name: '八岐大蛇', rarity: 'SSR' }, 280: { name: '辉夜姬', rarity: 'SSR' },
-  261: { name: '镰鼬', rarity: 'SR' }, 288: { name: '彼岸花', rarity: 'SSR' },
-  300: { name: '玉藻前', rarity: 'SSR' }, 316: { name: '白藏主', rarity: 'SSR' },
-  344: { name: '云外镜', rarity: 'SSR' }, 351: { name: '铃鹿御前', rarity: 'SSR' },
-};
-export const matches = [
-  { id: 'HEIAN-001', round: '第一回', status: 'open', support: 62,
-    red: { name: '红方', style: '先手爆发', roster: [330, 341, 325, 280, 261] },
-    blue: { name: '蓝方', style: '后手反击', roster: [288, 300, 316, 344, 351] }, winner: 'blue' },
-  { id: 'HEIAN-002', round: '第二回', status: 'open', support: 47,
-    red: { name: '红方', style: '持续压制', roster: [351, 330, 344, 261, 280] },
-    blue: { name: '蓝方', style: '攻守兼备', roster: [341, 300, 316, 325, 288] }, winner: 'red' },
-  { id: 'HEIAN-003', round: '第三回', status: 'finished', support: 56,
-    red: { name: '红方', style: '协同进攻', roster: [300, 351, 330, 280, 261] },
-    blue: { name: '蓝方', style: '稳守反击', roster: [288, 316, 344, 325, 341] }, winner: 'blue' },
-];
-export const guides = [
-  { title: '初入对弈，如何看懂一套阵容？', content: '<p>先看式神各自承担的职责，再看他们能否配合。稀有度和单个式神的强度，都不能直接决定胜负。</p><h3>先找到队伍的节奏</h3><p>拉条式神帮助队伍更早行动；输出式神负责压低对手血线；供火式神保证技能能持续释放。控制、治疗和保护则决定队伍能否稳定运转。</p><h3>再看阵容的短板</h3><p>输出集中但缺少保护的阵容，可能害怕控制；反击阵容往往需要撑过第一轮。试着问自己：这队靠什么赢，又最怕什么？</p><p>本页仅展示式神名单。未提供真实速度、御魂与技能等级，因此无法据此计算实际胜率。</p>' },
-  { title: '先手与后手，谁掌握战局？', content: '<p>先行动意味着更早打出控制或爆发，但后手队伍可能凭借解控、保护和反击扭转战局。</p><h3>速度之外，还有配合</h3><p>拉条之后，输出是否跟得上？鬼火是否足够？对手有无解除控制或吸收伤害的能力？这些都比单看一位式神更有参考价值。</p><h3>把判断写下来</h3><p>竞猜前为自己的选择写一个理由，结束后再对照结果。支持率仅代表本演示页面的预设数据，并不是式神战斗胜率。</p>' },
-  { title: '留一分余地，让判断更从容。', content: '<p>把每次竞猜当成一次阵容观察练习。不要因为一次判断正确，就把全部勾玉投入下一场。</p><h3>给自己设定额度</h3><p>选择能接受的虚拟勾玉数量，为之后的练习留足空间。本演示每场允许 10–500 枚整数勾玉，且不得超过当前余额。</p><h3>复盘比结果更有价值</h3><p>观察自己的思路是否一致，而不是只看单场输赢。本站赛果为预设模拟结果，不能用来验证真实游戏策略。</p><p>模拟勾玉没有现实价值，本站不提供充值、提现或任何真实交易。</p>' },
-];
+import snapshot from './match-data.json';
+export { snapshot };
+export const sideName = side => ({ red: '左红', blue: '右蓝' })[side] || '原表未填写';
+// 按北京时间排期选择最近开始的时段；时间不推断赛果。
+export function currentSlot(event, now = Date.now()) {
+  return event.slots.findLast(slot => Date.parse(slot.startsAt) <= now) || event.slots[0];
+}
+export function latestEvent(events, now = Date.now()) {
+  return events.find(event => Date.parse(event.slots[0].startsAt) <= now) || events.at(-1);
+}
+export function resultCounts(event) {
+  return { red: event.slots.filter(s => s.result === 'red').length, blue: event.slots.filter(s => s.result === 'blue').length };
+}
