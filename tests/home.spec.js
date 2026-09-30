@@ -20,7 +20,6 @@ test('snapshot contains source results and valid, unique dated slots', () => {
     }
   }
   expect(snapshot.events[0].slots[0].result).toBe('red');
-  expect(snapshot.events[0].slots[1].result).toBeNull();
   expect(snapshot.events[1].slots.every(slot => slot.result)).toBe(true);
 });
 for (const width of [390, 1440]) {
@@ -103,6 +102,10 @@ for (const width of [390, 1440]) {
 }
 test('unfilled results stay unknown and old saved records are preserved', async ({ page }) => {
   await page.clock.install({ time: new Date('2026-09-30T12:45:00+08:00') });
+  const empty = structuredClone(snapshot);
+  empty.events[0].slots[1].result = null;
+  empty.events[0].slots[1].records = [];
+  await page.route('**/data-snapshot.json', route => route.fulfill({ json: { snapshot: empty, forecastHistory: { version: 1, forecasts: [] } } }));
   await page.addInitScript(() => localStorage.setItem('heian-betting:v1', 'legacy record'));
   await page.goto('/match-betting/');
   await expect(page.locator('.current-card')).toContainText('9月30日12点场');

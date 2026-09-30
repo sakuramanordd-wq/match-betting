@@ -31,7 +31,10 @@ test('publisher skips timestamp-only changes and pushes only data changes in an 
     let changeWind = false;
     let ticks = 0;
     const logs = [];
-    const publish = createPublisher({ repoUrl: origin, workDir, logger: message => logs.push(message), syncData: async dir => {
+    let deploymentState = 'failed';
+    let reruns = 0;
+    const deploymentHeads = [];
+    const publish = createPublisher({ repoUrl: origin, workDir, retryDeployment: true, rerun: async () => { reruns++; }, deploymentCheck: async ({ sha }) => { deploymentHeads.push(sha); return { state: deploymentState, runId: 123, message: 'Pages 部署失败' }; }, logger: message => logs.push(message), syncData: async dir => {
       const snapshot = JSON.parse(await readFile(join(dir, 'match-data.json'), 'utf8'));
       snapshot.fetchedAt = `2026-09-30T04:0${++ticks}:00Z`;
       snapshot.wind = { ...snapshot.wind, fetchedAt: snapshot.fetchedAt };
@@ -39,9 +42,18 @@ test('publisher skips timestamp-only changes and pushes only data changes in an 
       if (changeWind) snapshot.wind.records = [{ name: 'Wind only', side: 'red', postedAt: '2026-09-30T10:05:00+08:00', match: '10点场' }];
       await writeFile(join(dir, 'match-data.json'), JSON.stringify(snapshot));
     } });
-    expect((await publish()).published).toBe(false);
+    const first = await publish();
+    expect(first.published).toBe(false);
+    expect(first.deployment.state).toBe('pending');
+    expect(reruns).toBe(1);
     await git(['fetch', 'origin']);
     expect((await git(['rev-parse', 'origin/main'])).stdout.trim()).toBe(originalHead);
+    const failedAgain = await publish();
+    expect(failedAgain.deployment.state).toBe('failed');
+    expect(reruns).toBe(1); // 同一失败流程不无限重跑
+    deploymentState = 'live';
+    expect((await publish()).deployment.state).toBe('live');
+    expect(deploymentHeads.every(sha => sha === originalHead)).toBe(true);
     changeData = true;
     expect((await publish()).published).toBe(true);
     expect(logs.some(line => line.includes('原表同步成功，抓取时间：'))).toBe(true);
