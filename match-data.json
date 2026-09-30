@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T06:45:01.774Z",
+  "fetchedAt": "2026-09-30T06:51:01.055Z",
   "events": [
     {
       "id": "2026-national",
@@ -172,6 +172,13 @@
           "total": "2"
         },
         {
+          "name": "不知火不改名的朋友",
+          "wins": "",
+          "losses": "",
+          "winRate": "",
+          "total": ""
+        },
+        {
           "name": "猫掌柜吃不下了",
           "wins": "2",
           "losses": "0",
@@ -283,6 +290,10 @@
             },
             {
               "name": "四区兄弟",
+              "side": "red"
+            },
+            {
+              "name": "不知火不改名的朋友",
               "side": "red"
             },
             {
@@ -15794,7 +15805,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T06:44:51.621Z",
+    "fetchedAt": "2026-09-30T06:50:51.621Z",
     "syncFailed": false,
     "records": [
       {
