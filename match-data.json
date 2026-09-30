@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-09-30T10:45:07.470Z",
+  "fetchedAt": "2026-09-30T10:51:07.192Z",
   "events": [
     {
       "id": "2026-national",
@@ -127,6 +127,13 @@
           "wins": "3",
           "losses": "1",
           "winRate": "75.00%",
+          "total": "4"
+        },
+        {
+          "name": "1111",
+          "wins": "#REF!",
+          "losses": "#REF!",
+          "winRate": "#REF!",
           "total": "4"
         },
         {
@@ -269,6 +276,10 @@
               "side": "red"
             },
             {
+              "name": "1111",
+              "side": "red"
+            },
+            {
               "name": "Mico林木森",
               "side": "red"
             },
@@ -379,6 +390,10 @@
             {
               "name": "惰落珈百璃",
               "side": "blue"
+            },
+            {
+              "name": "1111",
+              "side": "red"
             },
             {
               "name": "Mico林木森",
@@ -493,6 +508,10 @@
               "side": "red"
             },
             {
+              "name": "1111",
+              "side": "red"
+            },
+            {
               "name": "Mico林木森",
               "side": "red"
             },
@@ -602,6 +621,10 @@
             },
             {
               "name": "惰落珈百璃",
+              "side": "red"
+            },
+            {
+              "name": "1111",
               "side": "red"
             },
             {
@@ -16007,7 +16030,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-09-30T10:44:57.421Z",
+    "fetchedAt": "2026-09-30T10:50:57.592Z",
     "syncFailed": false,
     "records": [
       {
@@ -16103,8 +16126,8 @@
       {
         "name": "嘤嘤井",
         "side": "red",
-        "postedAt": "2026-09-30T16:42:07+08:00",
-        "match": "30日DAY 1，16点场"
+        "postedAt": "2026-09-30T18:41:50+08:00",
+        "match": "30日DAY 1，18点场"
       },
       {
         "name": "著名智障二小姐(明灯)",
@@ -16144,9 +16167,9 @@
       },
       {
         "name": "yys靠脸混饭",
-        "side": "red",
-        "postedAt": "2026-09-30T16:53:06+08:00",
-        "match": "9月30日，16:00场"
+        "side": "blue",
+        "postedAt": "2026-09-30T18:47:08+08:00",
+        "match": "9月30日，18:00场"
       },
       {
         "name": "yys雯雯",
