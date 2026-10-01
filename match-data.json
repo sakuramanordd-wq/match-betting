@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T09:12:41.412Z",
+  "fetchedAt": "2026-10-01T09:13:41.295Z",
   "events": [
     {
       "id": "2026-national",
@@ -1412,6 +1412,10 @@
             },
             {
               "name": "查查尔",
+              "side": "red"
+            },
+            {
+              "name": "梅布斯尼（实测",
               "side": "red"
             },
             {
@@ -16747,7 +16751,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T09:12:32.372Z",
+    "fetchedAt": "2026-10-01T09:13:31.086Z",
     "syncFailed": false,
     "records": [
       {
@@ -16813,8 +16817,8 @@
       {
         "name": "是大荣啦",
         "side": "red",
-        "postedAt": "2026-10-01T14:33:09+08:00",
-        "match": "10月1日，12:00场"
+        "postedAt": "2026-10-01T17:08:44+08:00",
+        "match": "10月1日，16:00场"
       },
       {
         "name": "夕水残阳",
@@ -16878,9 +16882,9 @@
       },
       {
         "name": "YYS方寒",
-        "side": "blue",
-        "postedAt": "2026-10-01T15:42:47+08:00",
-        "match": "10月1号，14.00场"
+        "side": "red",
+        "postedAt": "2026-10-01T17:05:44+08:00",
+        "match": "10月1号，16:00场"
       },
       {
         "name": "yys靠脸混饭",
