@@ -131,7 +131,7 @@
       "eventId": "2026-national",
       "startsAt": "2026-10-01T18:00:00+08:00",
       "createdAt": "2026-10-01T10:01:41.103Z",
-      "result": null
+      "result": "red"
     }
   ]
 }
