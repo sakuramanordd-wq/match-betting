@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T03:48:33.025Z",
+  "fetchedAt": "2026-10-01T03:49:33.626Z",
   "events": [
     {
       "id": "2026-national",
@@ -1020,6 +1020,10 @@
               "side": "blue"
             },
             {
+              "name": "NGAArchonXP",
+              "side": "red"
+            },
+            {
               "name": "七面相（实测",
               "side": "blue"
             },
@@ -1037,6 +1041,10 @@
             },
             {
               "name": "晨时微凉（实测",
+              "side": "blue"
+            },
+            {
+              "name": "炒饭菌（实测",
               "side": "blue"
             },
             {
@@ -1086,6 +1094,10 @@
             {
               "name": "YYS方寒",
               "side": "red"
+            },
+            {
+              "name": "NGA平安志作者模拟",
+              "side": "blue"
             },
             {
               "name": "四区兄弟",
@@ -16425,7 +16437,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T03:48:23.327Z",
+    "fetchedAt": "2026-10-01T03:49:23.449Z",
     "syncFailed": false,
     "records": [
       {
