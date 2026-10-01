@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T07:18:36.972Z",
+  "fetchedAt": "2026-10-01T07:22:37.111Z",
   "events": [
     {
       "id": "2026-national",
@@ -138,10 +138,10 @@
         },
         {
           "name": "猫耄喵大王（抖音）",
-          "wins": "1",
-          "losses": "2",
-          "winRate": "33.33%",
-          "total": "3"
+          "wins": "4",
+          "losses": "6",
+          "winRate": "40.00%",
+          "total": "10"
         },
         {
           "name": "Mico林木森",
@@ -287,6 +287,10 @@
               "side": "red"
             },
             {
+              "name": "猫耄喵大王（抖音）",
+              "side": "red"
+            },
+            {
               "name": "Mico林木森",
               "side": "red"
             },
@@ -400,6 +404,10 @@
             },
             {
               "name": "二蛋板砖",
+              "side": "red"
+            },
+            {
+              "name": "猫耄喵大王（抖音）",
               "side": "red"
             },
             {
@@ -519,6 +527,10 @@
               "side": "red"
             },
             {
+              "name": "猫耄喵大王（抖音）",
+              "side": "blue"
+            },
+            {
               "name": "Mico林木森",
               "side": "red"
             },
@@ -635,6 +647,10 @@
               "side": "blue"
             },
             {
+              "name": "猫耄喵大王（抖音）",
+              "side": "blue"
+            },
+            {
               "name": "Mico林木森",
               "side": "red"
             },
@@ -745,6 +761,10 @@
             {
               "name": "二蛋板砖",
               "side": "blue"
+            },
+            {
+              "name": "猫耄喵大王（抖音）",
+              "side": "red"
             },
             {
               "name": "Mico林木森",
@@ -863,6 +883,10 @@
               "side": "blue"
             },
             {
+              "name": "猫耄喵大王（抖音）",
+              "side": "red"
+            },
+            {
               "name": "Mico林木森",
               "side": "red"
             },
@@ -976,6 +1000,10 @@
             },
             {
               "name": "二蛋板砖",
+              "side": "blue"
+            },
+            {
+              "name": "猫耄喵大王（抖音）",
               "side": "blue"
             },
             {
@@ -16618,7 +16646,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T07:18:28.212Z",
+    "fetchedAt": "2026-10-01T07:22:28.258Z",
     "syncFailed": false,
     "records": [
       {
