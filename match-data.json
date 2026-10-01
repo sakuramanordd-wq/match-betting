@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T09:39:41.081Z",
+  "fetchedAt": "2026-10-01T09:40:40.860Z",
   "events": [
     {
       "id": "2026-national",
@@ -1451,6 +1451,10 @@
               "side": "red"
             },
             {
+              "name": "行水姑娘",
+              "side": "red"
+            },
+            {
               "name": "抖音茨木童子（实测",
               "side": "red"
             },
@@ -1477,6 +1481,10 @@
             {
               "name": "世一协（群友",
               "side": "red"
+            },
+            {
+              "name": "来姐大人",
+              "side": "blue"
             },
             {
               "name": "YYS方寒",
@@ -16803,7 +16811,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T09:39:31.929Z",
+    "fetchedAt": "2026-10-01T09:40:31.961Z",
     "syncFailed": false,
     "records": [
       {
@@ -16821,7 +16829,7 @@
       {
         "name": "春秋霸主徐清林",
         "side": "red",
-        "postedAt": "2026-10-01T14:09:07+08:00",
+        "postedAt": "2026-10-01T17:23:02+08:00",
         "match": ""
       },
       {
