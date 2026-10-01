@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T05:50:36.386Z",
+  "fetchedAt": "2026-10-01T05:51:36.077Z",
   "events": [
     {
       "id": "2026-national",
@@ -16550,7 +16550,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T05:50:26.000Z",
+    "fetchedAt": "2026-10-01T05:51:26.149Z",
     "syncFailed": false,
     "records": [
       {
@@ -16561,9 +16561,9 @@
       },
       {
         "name": "晨时微凉",
-        "side": "blue",
-        "postedAt": "2026-10-01T11:46:10+08:00",
-        "match": "10月1日，10:00场"
+        "side": "red",
+        "postedAt": "2026-10-01T13:43:19+08:00",
+        "match": "10月1日，12:00场"
       },
       {
         "name": "春秋霸主徐清林",
@@ -16573,9 +16573,9 @@
       },
       {
         "name": "待机中的徐OK",
-        "side": "blue",
-        "postedAt": "2026-10-01T11:39:50+08:00",
-        "match": "day2·10点场"
+        "side": "red",
+        "postedAt": "2026-10-01T13:44:01+08:00",
+        "match": "day2·12点场"
       },
       {
         "name": "奉天城公子奉天",
