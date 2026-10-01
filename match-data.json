@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T11:22:43.399Z",
+  "fetchedAt": "2026-10-01T11:23:43.849Z",
   "events": [
     {
       "id": "2026-national",
@@ -1539,12 +1539,20 @@
               "side": "red"
             },
             {
+              "name": "嘤嘤井",
+              "side": "red"
+            },
+            {
               "name": "徐清林",
               "side": "red"
             },
             {
               "name": "CC南浔",
               "side": "blue"
+            },
+            {
+              "name": "二蛋板砖",
+              "side": "red"
             },
             {
               "name": "猫耄喵大王（抖音）",
@@ -16864,7 +16872,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T11:22:34.076Z",
+    "fetchedAt": "2026-10-01T11:23:34.184Z",
     "syncFailed": false,
     "records": [
       {
