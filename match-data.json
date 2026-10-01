@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T04:52:33.892Z",
+  "fetchedAt": "2026-10-01T04:57:33.599Z",
   "events": [
     {
       "id": "2026-national",
@@ -1127,6 +1127,10 @@
           "startsAt": "2026-10-01T12:00:00+08:00",
           "result": null,
           "records": [
+            {
+              "name": "查查尔",
+              "side": "red"
+            },
             {
               "name": "世一协（群友",
               "side": "red"
@@ -16454,7 +16458,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T04:52:24.622Z",
+    "fetchedAt": "2026-10-01T04:57:24.734Z",
     "syncFailed": false,
     "records": [
       {
