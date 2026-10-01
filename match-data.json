@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T13:33:47.162Z",
+  "fetchedAt": "2026-10-01T13:34:47.734Z",
   "events": [
     {
       "id": "2026-national",
@@ -1709,6 +1709,10 @@
             {
               "name": "猫耄喵大王（抖音）",
               "side": "red"
+            },
+            {
+              "name": "Mico林木森",
+              "side": "blue"
             },
             {
               "name": "世一协（群友",
@@ -17021,14 +17025,14 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T13:33:37.500Z",
+    "fetchedAt": "2026-10-01T13:34:37.606Z",
     "syncFailed": false,
     "records": [
       {
         "name": "炒饭菌",
         "side": "red",
-        "postedAt": "2026-10-01T19:40:56+08:00",
-        "match": "10月1日，18:00场"
+        "postedAt": "2026-10-01T21:16:29+08:00",
+        "match": "10月01日，20:00场"
       },
       {
         "name": "晨时微凉",
@@ -17141,8 +17145,8 @@
       {
         "name": "Poetry红鲤",
         "side": "red",
-        "postedAt": "2026-10-01T19:48:55+08:00",
-        "match": "10.1日，18点场"
+        "postedAt": "2026-10-01T21:20:59+08:00",
+        "match": "10月1日，20点场"
       },
       {
         "name": "yys查查尔",
@@ -17165,8 +17169,8 @@
       {
         "name": "yys雯雯",
         "side": "red",
-        "postedAt": "2026-10-01T19:40:29+08:00",
-        "match": "10月1日，18:00~20:00点"
+        "postedAt": "2026-10-01T21:18:28+08:00",
+        "match": "day2，20-22点场"
       }
     ]
   }
