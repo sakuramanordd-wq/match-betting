@@ -132,6 +132,18 @@
       "startsAt": "2026-10-01T18:00:00+08:00",
       "createdAt": "2026-10-01T10:01:41.103Z",
       "result": "red"
+    },
+    {
+      "side": "red",
+      "redShare": 1,
+      "majoritySide": "red",
+      "judgmentCount": 1,
+      "model": "history-weighted-v1",
+      "slotId": "2026-national-13",
+      "eventId": "2026-national",
+      "startsAt": "2026-10-01T20:00:00+08:00",
+      "createdAt": "2026-10-01T12:03:44.670Z",
+      "result": null
     }
   ]
 }
