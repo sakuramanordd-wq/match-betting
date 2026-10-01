@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T06:57:37.232Z",
+  "fetchedAt": "2026-10-01T07:11:37.573Z",
   "events": [
     {
       "id": "2026-national",
@@ -198,6 +198,13 @@
           "losses": "2",
           "winRate": "75.00%",
           "total": "8"
+        },
+        {
+          "name": "猫耄喵大王（抖音）",
+          "wins": "5",
+          "losses": "",
+          "winRate": "",
+          "total": ""
         }
       ],
       "slots": [
@@ -1118,6 +1125,10 @@
             {
               "name": "小琨爱小蛊",
               "side": "blue"
+            },
+            {
+              "name": "猫耄喵大王（抖音）",
+              "side": "blue"
             }
           ]
         },
@@ -1234,6 +1245,10 @@
             {
               "name": "小琨爱小蛊",
               "side": "red"
+            },
+            {
+              "name": "猫耄喵大王（抖音）",
+              "side": "red"
             }
           ]
         },
@@ -1285,6 +1300,10 @@
             },
             {
               "name": "小琨爱小蛊",
+              "side": "red"
+            },
+            {
+              "name": "猫耄喵大王（抖音）",
               "side": "red"
             }
           ]
@@ -16595,7 +16614,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T06:57:27.748Z",
+    "fetchedAt": "2026-10-01T07:11:28.035Z",
     "syncFailed": false,
     "records": [
       {
@@ -16625,8 +16644,8 @@
       {
         "name": "奉天城公子奉天",
         "side": "red",
-        "postedAt": "2026-10-01T13:08:58+08:00",
-        "match": "10月1日，12点场"
+        "postedAt": "2026-10-01T14:54:32+08:00",
+        "match": "10月1日，14:00场"
       },
       {
         "name": "鸽海成路",
