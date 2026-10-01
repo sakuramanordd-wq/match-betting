@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T09:19:40.612Z",
+  "fetchedAt": "2026-10-01T09:22:40.570Z",
   "events": [
     {
       "id": "2026-national",
@@ -138,10 +138,10 @@
         },
         {
           "name": "猫耄喵大王（抖音）",
-          "wins": "4",
+          "wins": "5",
           "losses": "6",
-          "winRate": "40.00%",
-          "total": "10"
+          "winRate": "45.45%",
+          "total": "11"
         },
         {
           "name": "Mico林木森",
@@ -1439,6 +1439,10 @@
               "side": "red"
             },
             {
+              "name": "徐清林",
+              "side": "red"
+            },
+            {
               "name": "抖音茨木童子（实测",
               "side": "red"
             },
@@ -1452,6 +1456,10 @@
             },
             {
               "name": "二蛋板砖",
+              "side": "red"
+            },
+            {
+              "name": "猫耄喵大王（抖音）",
               "side": "red"
             },
             {
@@ -16783,7 +16791,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T09:19:31.509Z",
+    "fetchedAt": "2026-10-01T09:22:31.501Z",
     "syncFailed": false,
     "records": [
       {
