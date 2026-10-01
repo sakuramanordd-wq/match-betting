@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T09:50:40.910Z",
+  "fetchedAt": "2026-10-01T09:55:41.138Z",
   "events": [
     {
       "id": "2026-national",
@@ -1444,6 +1444,10 @@
             },
             {
               "name": "徐OK（实测",
+              "side": "red"
+            },
+            {
+              "name": "鸽海成路",
               "side": "red"
             },
             {
@@ -16815,7 +16819,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T09:50:31.836Z",
+    "fetchedAt": "2026-10-01T09:55:31.942Z",
     "syncFailed": false,
     "records": [
       {
