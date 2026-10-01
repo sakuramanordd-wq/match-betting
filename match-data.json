@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T03:50:33.730Z",
+  "fetchedAt": "2026-10-01T03:51:33.763Z",
   "events": [
     {
       "id": "2026-national",
@@ -16441,7 +16441,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T03:50:24.127Z",
+    "fetchedAt": "2026-10-01T03:51:24.556Z",
     "syncFailed": false,
     "records": [
       {
@@ -16452,9 +16452,9 @@
       },
       {
         "name": "晨时微凉",
-        "side": "red",
-        "postedAt": "2026-09-30T23:45:40+08:00",
-        "match": "9月30号，22点场"
+        "side": "blue",
+        "postedAt": "2026-10-01T11:46:10+08:00",
+        "match": "10月1日，10:00场"
       },
       {
         "name": "春秋霸主徐清林",
