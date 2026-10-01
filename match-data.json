@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T02:42:30.655Z",
+  "fetchedAt": "2026-10-01T02:45:30.926Z",
   "events": [
     {
       "id": "2026-national",
@@ -1011,6 +1011,10 @@
           "startsAt": "2026-10-01T10:00:00+08:00",
           "result": null,
           "records": [
+            {
+              "name": "查查尔",
+              "side": "blue"
+            },
             {
               "name": "二蛋板砖",
               "side": "blue"
@@ -16341,7 +16345,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T02:42:21.268Z",
+    "fetchedAt": "2026-10-01T02:45:21.392Z",
     "syncFailed": false,
     "records": [
       {
