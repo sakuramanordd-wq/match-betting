@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T15:52:50.410Z",
+  "fetchedAt": "2026-10-01T15:53:50.234Z",
   "events": [
     {
       "id": "2026-national",
@@ -1758,6 +1758,10 @@
             {
               "name": "行水姑娘",
               "side": "red"
+            },
+            {
+              "name": "抖音茨木童子（实测",
+              "side": "blue"
             },
             {
               "name": "CC南浔",
@@ -17079,7 +17083,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T15:52:40.619Z",
+    "fetchedAt": "2026-10-01T15:53:40.784Z",
     "syncFailed": false,
     "records": [
       {
@@ -17121,8 +17125,8 @@
       {
         "name": "梅布斯尼",
         "side": "red",
-        "postedAt": "2026-10-01T21:26:28+08:00",
-        "match": "10月1日 20：00场"
+        "postedAt": "2026-10-01T23:47:53+08:00",
+        "match": "10月1日 22:00场"
       },
       {
         "name": "面灵气喵",
@@ -17133,8 +17137,8 @@
       {
         "name": "七面相",
         "side": "red",
-        "postedAt": "2026-10-01T21:29:05+08:00",
-        "match": "10月1号，20点场"
+        "postedAt": "2026-10-01T23:48:16+08:00",
+        "match": "10月1号，22点场"
       },
       {
         "name": "清流不加班",
@@ -17223,8 +17227,8 @@
       {
         "name": "yys雯雯",
         "side": "red",
-        "postedAt": "2026-10-01T21:18:28+08:00",
-        "match": "day2，20-22点场"
+        "postedAt": "2026-10-01T23:50:55+08:00",
+        "match": "10月1日，22:00~24:00场"
       }
     ]
   }
