@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T13:18:46.492Z",
+  "fetchedAt": "2026-10-01T13:19:47.248Z",
   "events": [
     {
       "id": "2026-national",
@@ -1653,6 +1653,14 @@
             {
               "name": "NGA渊无尽（大数据",
               "side": "blue"
+            },
+            {
+              "name": "雯雯（实测",
+              "side": "red"
+            },
+            {
+              "name": "徐OK（实测",
+              "side": "red"
             },
             {
               "name": "鸽海成路",
@@ -16973,7 +16981,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T13:18:36.783Z",
+    "fetchedAt": "2026-10-01T13:19:37.174Z",
     "syncFailed": false,
     "records": [
       {
