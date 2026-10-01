@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T15:32:50.275Z",
+  "fetchedAt": "2026-10-01T15:33:50.400Z",
   "events": [
     {
       "id": "2026-national",
@@ -1714,6 +1714,10 @@
             {
               "name": "查查尔",
               "side": "blue"
+            },
+            {
+              "name": "鸽海成路",
+              "side": "red"
             },
             {
               "name": "嘤嘤井",
@@ -17039,7 +17043,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T15:32:40.735Z",
+    "fetchedAt": "2026-10-01T15:33:40.627Z",
     "syncFailed": false,
     "records": [
       {
@@ -17170,9 +17174,9 @@
       },
       {
         "name": "YYS方寒",
-        "side": "blue",
-        "postedAt": "2026-10-01T21:14:05+08:00",
-        "match": "10月1日，20:00场"
+        "side": "red",
+        "postedAt": "2026-10-01T23:25:01+08:00",
+        "match": "10月1号，22:00场"
       },
       {
         "name": "yys靠脸混饭",
