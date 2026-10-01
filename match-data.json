@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T06:41:37.598Z",
+  "fetchedAt": "2026-10-01T06:43:36.918Z",
   "events": [
     {
       "id": "2026-national",
@@ -16571,7 +16571,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T06:41:27.667Z",
+    "fetchedAt": "2026-10-01T06:43:27.519Z",
     "syncFailed": false,
     "records": [
       {
@@ -16636,9 +16636,9 @@
       },
       {
         "name": "是大荣啦",
-        "side": "blue",
-        "postedAt": "2026-10-01T12:42:20+08:00",
-        "match": "10月1日12点局"
+        "side": "red",
+        "postedAt": "2026-10-01T14:33:09+08:00",
+        "match": "10月1日，12:00场"
       },
       {
         "name": "夕水残阳",
@@ -16684,9 +16684,9 @@
       },
       {
         "name": "Mico林木森",
-        "side": "red",
-        "postedAt": "2026-10-01T13:15:26+08:00",
-        "match": "Day2-12:00"
+        "side": "blue",
+        "postedAt": "2026-10-01T14:41:14+08:00",
+        "match": "Day2-14:00"
       },
       {
         "name": "Poetry红鲤",
