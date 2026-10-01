@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T07:41:37.856Z",
+  "fetchedAt": "2026-10-01T07:42:37.595Z",
   "events": [
     {
       "id": "2026-national",
@@ -1360,6 +1360,10 @@
             },
             {
               "name": "YYS方寒",
+              "side": "blue"
+            },
+            {
+              "name": "NGA平安志作者模拟",
               "side": "blue"
             },
             {
@@ -16686,7 +16690,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T07:41:28.768Z",
+    "fetchedAt": "2026-10-01T07:42:28.741Z",
     "syncFailed": false,
     "records": [
       {
@@ -16709,9 +16713,9 @@
       },
       {
         "name": "待机中的徐OK",
-        "side": "red",
-        "postedAt": "2026-10-01T13:44:01+08:00",
-        "match": "day2·12点场"
+        "side": "blue",
+        "postedAt": "2026-10-01T15:36:34+08:00",
+        "match": "day2·14点场"
       },
       {
         "name": "奉天城公子奉天",
@@ -16739,9 +16743,9 @@
       },
       {
         "name": "七面相",
-        "side": "red",
-        "postedAt": "2026-10-01T13:42:11+08:00",
-        "match": "10月1日，12:00场"
+        "side": "blue",
+        "postedAt": "2026-10-01T15:31:11+08:00",
+        "match": "10月1号 14点场"
       },
       {
         "name": "清流不加班",
