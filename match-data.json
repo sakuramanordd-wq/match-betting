@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T15:31:51.305Z",
+  "fetchedAt": "2026-10-01T15:32:50.275Z",
   "events": [
     {
       "id": "2026-national",
@@ -1718,6 +1718,10 @@
             {
               "name": "嘤嘤井",
               "side": "red"
+            },
+            {
+              "name": "徐清林",
+              "side": "blue"
             },
             {
               "name": "行水姑娘",
@@ -17035,7 +17039,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T15:31:40.488Z",
+    "fetchedAt": "2026-10-01T15:32:40.735Z",
     "syncFailed": false,
     "records": [
       {
@@ -17112,9 +17116,9 @@
       },
       {
         "name": "夜神月Lwaite",
-        "side": "red",
-        "postedAt": "2026-10-01T21:30:49+08:00",
-        "match": "10月1日，20:00场"
+        "side": "blue",
+        "postedAt": "2026-10-01T23:22:08+08:00",
+        "match": ""
       },
       {
         "name": "阴阳师攻略组",
