@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T13:06:46.754Z",
+  "fetchedAt": "2026-10-01T13:11:47.165Z",
   "events": [
     {
       "id": "2026-national",
@@ -1644,6 +1644,10 @@
           "records": [
             {
               "name": "查查尔",
+              "side": "red"
+            },
+            {
+              "name": "鸽海成路",
               "side": "red"
             },
             {
@@ -16953,7 +16957,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T13:06:36.424Z",
+    "fetchedAt": "2026-10-01T13:11:36.957Z",
     "syncFailed": false,
     "records": [
       {
@@ -16982,15 +16986,15 @@
       },
       {
         "name": "奉天城公子奉天",
-        "side": "blue",
-        "postedAt": "2026-10-01T17:20:21+08:00",
-        "match": "10月1日，16:00场"
+        "side": "red",
+        "postedAt": "2026-10-01T21:03:44+08:00",
+        "match": "10月1日，20:00场"
       },
       {
         "name": "鸽海成路",
         "side": "red",
-        "postedAt": "2026-10-01T19:06:46+08:00",
-        "match": "10月1日，18:00场"
+        "postedAt": "2026-10-01T21:09:31+08:00",
+        "match": "1日，20:00场"
       },
       {
         "name": "梅布斯尼",
@@ -17078,9 +17082,9 @@
       },
       {
         "name": "yys查查尔",
-        "side": "blue",
-        "postedAt": "2026-10-01T18:57:23+08:00",
-        "match": "10月1日，18:00-20:00"
+        "side": "red",
+        "postedAt": "2026-10-01T21:03:16+08:00",
+        "match": "10月1日，20:00-22:00点"
       },
       {
         "name": "YYS方寒",
