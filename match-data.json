@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T15:19:49.615Z",
+  "fetchedAt": "2026-10-01T15:24:50.056Z",
   "events": [
     {
       "id": "2026-national",
@@ -128,13 +128,6 @@
           "losses": "5",
           "winRate": "61.54%",
           "total": "13"
-        },
-        {
-          "name": "二蛋板砖",
-          "wins": "5",
-          "losses": "6",
-          "winRate": "45.45%",
-          "total": "11"
         },
         {
           "name": "猫耄喵大王（抖音）",
@@ -283,10 +276,6 @@
               "side": "red"
             },
             {
-              "name": "二蛋板砖",
-              "side": "red"
-            },
-            {
               "name": "猫耄喵大王（抖音）",
               "side": "red"
             },
@@ -403,10 +392,6 @@
               "side": "blue"
             },
             {
-              "name": "二蛋板砖",
-              "side": "red"
-            },
-            {
               "name": "猫耄喵大王（抖音）",
               "side": "red"
             },
@@ -520,10 +505,6 @@
             },
             {
               "name": "惰落珈百璃",
-              "side": "red"
-            },
-            {
-              "name": "二蛋板砖",
               "side": "red"
             },
             {
@@ -643,10 +624,6 @@
               "side": "red"
             },
             {
-              "name": "二蛋板砖",
-              "side": "blue"
-            },
-            {
               "name": "猫耄喵大王（抖音）",
               "side": "blue"
             },
@@ -756,10 +733,6 @@
             },
             {
               "name": "惰落珈百璃",
-              "side": "blue"
-            },
-            {
-              "name": "二蛋板砖",
               "side": "blue"
             },
             {
@@ -879,10 +852,6 @@
               "side": "red"
             },
             {
-              "name": "二蛋板砖",
-              "side": "blue"
-            },
-            {
               "name": "猫耄喵大王（抖音）",
               "side": "red"
             },
@@ -999,10 +968,6 @@
               "side": "red"
             },
             {
-              "name": "二蛋板砖",
-              "side": "blue"
-            },
-            {
               "name": "猫耄喵大王（抖音）",
               "side": "blue"
             },
@@ -1113,10 +1078,6 @@
             {
               "name": "惰落珈百璃",
               "side": "red"
-            },
-            {
-              "name": "二蛋板砖",
-              "side": "blue"
             },
             {
               "name": "猫耄喵大王（抖音）",
@@ -1232,10 +1193,6 @@
             },
             {
               "name": "惰落珈百璃",
-              "side": "red"
-            },
-            {
-              "name": "二蛋板砖",
               "side": "red"
             },
             {
@@ -1355,10 +1312,6 @@
               "side": "blue"
             },
             {
-              "name": "二蛋板砖",
-              "side": "red"
-            },
-            {
               "name": "猫耄喵大王（抖音）",
               "side": "red"
             },
@@ -1472,10 +1425,6 @@
             },
             {
               "name": "惰落珈百璃",
-              "side": "red"
-            },
-            {
-              "name": "二蛋板砖",
               "side": "red"
             },
             {
@@ -17082,7 +17031,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T15:19:40.500Z",
+    "fetchedAt": "2026-10-01T15:24:40.425Z",
     "syncFailed": false,
     "records": [
       {
