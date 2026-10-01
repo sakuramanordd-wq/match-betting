@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T07:17:37.437Z",
+  "fetchedAt": "2026-10-01T07:18:36.972Z",
   "events": [
     {
       "id": "2026-national",
@@ -137,6 +137,13 @@
           "total": "9"
         },
         {
+          "name": "猫耄喵大王（抖音）",
+          "wins": "1",
+          "losses": "2",
+          "winRate": "33.33%",
+          "total": "3"
+        },
+        {
           "name": "Mico林木森",
           "wins": "5",
           "losses": "4",
@@ -198,13 +205,6 @@
           "losses": "2",
           "winRate": "75.00%",
           "total": "8"
-        },
-        {
-          "name": "猫耄喵大王（抖音）",
-          "wins": "5",
-          "losses": "#NAME?",
-          "winRate": "",
-          "total": "9"
         }
       ],
       "slots": [
@@ -1091,6 +1091,10 @@
               "side": "blue"
             },
             {
+              "name": "猫耄喵大王（抖音）",
+              "side": "blue"
+            },
+            {
               "name": "Mico林木森",
               "side": "red"
             },
@@ -1124,10 +1128,6 @@
             },
             {
               "name": "小琨爱小蛊",
-              "side": "blue"
-            },
-            {
-              "name": "猫耄喵大王（抖音）",
               "side": "blue"
             }
           ]
@@ -1211,6 +1211,10 @@
               "side": "red"
             },
             {
+              "name": "猫耄喵大王（抖音）",
+              "side": "red"
+            },
+            {
               "name": "Mico林木森",
               "side": "red"
             },
@@ -1244,10 +1248,6 @@
             },
             {
               "name": "小琨爱小蛊",
-              "side": "red"
-            },
-            {
-              "name": "猫耄喵大王（抖音）",
               "side": "red"
             }
           ]
@@ -1283,6 +1283,10 @@
               "side": "red"
             },
             {
+              "name": "猫耄喵大王（抖音）",
+              "side": "red"
+            },
+            {
               "name": "Mico林木森",
               "side": "blue"
             },
@@ -1304,10 +1308,6 @@
             },
             {
               "name": "小琨爱小蛊",
-              "side": "red"
-            },
-            {
-              "name": "猫耄喵大王（抖音）",
               "side": "red"
             }
           ]
@@ -16618,7 +16618,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T07:17:28.209Z",
+    "fetchedAt": "2026-10-01T07:18:28.212Z",
     "syncFailed": false,
     "records": [
       {
