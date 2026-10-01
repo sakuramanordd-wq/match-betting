@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T05:52:35.932Z",
+  "fetchedAt": "2026-10-01T05:53:35.218Z",
   "events": [
     {
       "id": "2026-national",
@@ -16550,7 +16550,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T05:52:26.166Z",
+    "fetchedAt": "2026-10-01T05:53:26.121Z",
     "syncFailed": false,
     "records": [
       {
@@ -16621,9 +16621,9 @@
       },
       {
         "name": "夕水残阳",
-        "side": "blue",
-        "postedAt": "2026-09-30T21:46:58+08:00",
-        "match": "9月30日，20:00场"
+        "side": "red",
+        "postedAt": "2026-10-01T13:42:30+08:00",
+        "match": "10月1日 12点场"
       },
       {
         "name": "夜神月Lwaite",
