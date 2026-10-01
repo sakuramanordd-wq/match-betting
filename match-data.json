@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T09:11:40.080Z",
+  "fetchedAt": "2026-10-01T09:12:41.412Z",
   "events": [
     {
       "id": "2026-national",
@@ -1416,6 +1416,10 @@
             },
             {
               "name": "嘤嘤井",
+              "side": "red"
+            },
+            {
+              "name": "二蛋板砖",
               "side": "red"
             },
             {
@@ -16743,7 +16747,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T09:11:30.968Z",
+    "fetchedAt": "2026-10-01T09:12:32.372Z",
     "syncFailed": false,
     "records": [
       {
@@ -16826,9 +16830,9 @@
       },
       {
         "name": "阴阳师攻略组",
-        "side": "red",
-        "postedAt": "2026-10-01T14:40:48+08:00",
-        "match": "14:00场"
+        "side": "blue",
+        "postedAt": "2026-10-01T16:43:16+08:00",
+        "match": "10月1日，16:00场"
       },
       {
         "name": "阴阳师手游攻略墙",
