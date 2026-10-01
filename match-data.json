@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T03:42:33.130Z",
+  "fetchedAt": "2026-10-01T03:43:34.049Z",
   "events": [
     {
       "id": "2026-national",
@@ -1017,6 +1017,10 @@
             },
             {
               "name": "查查尔",
+              "side": "blue"
+            },
+            {
+              "name": "雯雯（实测",
               "side": "blue"
             },
             {
@@ -16401,7 +16405,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T03:42:23.250Z",
+    "fetchedAt": "2026-10-01T03:43:23.802Z",
     "syncFailed": false,
     "records": [
       {
@@ -16419,7 +16423,7 @@
       {
         "name": "春秋霸主徐清林",
         "side": "red",
-        "postedAt": "2026-09-30T23:11:20+08:00",
+        "postedAt": "2026-10-01T11:30:37+08:00",
         "match": ""
       },
       {
@@ -16430,15 +16434,15 @@
       },
       {
         "name": "奉天城公子奉天",
-        "side": "red",
-        "postedAt": "2026-09-30T23:38:47+08:00",
-        "match": ""
+        "side": "blue",
+        "postedAt": "2026-10-01T11:33:44+08:00",
+        "match": "10月1日，10:00场"
       },
       {
         "name": "鸽海成路",
         "side": "red",
-        "postedAt": "2026-09-30T23:44:15+08:00",
-        "match": "9月30日，22:00场"
+        "postedAt": "2026-10-01T11:34:06+08:00",
+        "match": "10月1日，10:00场"
       },
       {
         "name": "梅布斯尼",
@@ -16478,9 +16482,9 @@
       },
       {
         "name": "夜神月Lwaite",
-        "side": "red",
-        "postedAt": "2026-09-30T23:03:50+08:00",
-        "match": ""
+        "side": "blue",
+        "postedAt": "2026-10-01T11:35:15+08:00",
+        "match": "10月1日，11:35场"
       },
       {
         "name": "阴阳师攻略组",
