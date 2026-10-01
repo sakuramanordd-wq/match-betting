@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T06:51:38.343Z",
+  "fetchedAt": "2026-10-01T06:52:37.158Z",
   "events": [
     {
       "id": "2026-national",
@@ -1257,6 +1257,10 @@
             },
             {
               "name": "行水姑娘",
+              "side": "blue"
+            },
+            {
+              "name": "Mico林木森",
               "side": "blue"
             },
             {
@@ -16579,7 +16583,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T06:51:28.541Z",
+    "fetchedAt": "2026-10-01T06:52:27.613Z",
     "syncFailed": false,
     "records": [
       {
@@ -16638,9 +16642,9 @@
       },
       {
         "name": "清流不加班",
-        "side": "red",
-        "postedAt": "2026-10-01T13:19:59+08:00",
-        "match": "10月1日，12:00场"
+        "side": "blue",
+        "postedAt": "2026-10-01T14:43:34+08:00",
+        "match": "10月1日，14:00场"
       },
       {
         "name": "是大荣啦",
