@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T13:43:47.137Z",
+  "fetchedAt": "2026-10-01T13:46:47.525Z",
   "events": [
     {
       "id": "2026-national",
@@ -1737,6 +1737,10 @@
             {
               "name": "四区兄弟（夜神大哥",
               "side": "red"
+            },
+            {
+              "name": "井心小能（冥灯？）",
+              "side": "blue"
             },
             {
               "name": "猫掌柜吃不下了",
@@ -17033,7 +17037,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T13:43:37.679Z",
+    "fetchedAt": "2026-10-01T13:46:37.775Z",
     "syncFailed": false,
     "records": [
       {
