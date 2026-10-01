@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-01T13:32:47.672Z",
+  "fetchedAt": "2026-10-01T13:33:47.162Z",
   "events": [
     {
       "id": "2026-national",
@@ -1689,6 +1689,10 @@
             {
               "name": "徐清林",
               "side": "red"
+            },
+            {
+              "name": "行水姑娘",
+              "side": "blue"
             },
             {
               "name": "抖音茨木童子（实测",
@@ -17017,7 +17021,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-01T13:32:37.500Z",
+    "fetchedAt": "2026-10-01T13:33:37.500Z",
     "syncFailed": false,
     "records": [
       {
@@ -17059,8 +17063,8 @@
       {
         "name": "梅布斯尼",
         "side": "red",
-        "postedAt": "2026-10-01T19:41:00+08:00",
-        "match": "10月1日 18：00场"
+        "postedAt": "2026-10-01T21:26:28+08:00",
+        "match": "10月1日 20：00场"
       },
       {
         "name": "面灵气喵",
@@ -17071,8 +17075,8 @@
       {
         "name": "七面相",
         "side": "red",
-        "postedAt": "2026-10-01T19:46:48+08:00",
-        "match": "10月1号 18点场"
+        "postedAt": "2026-10-01T21:29:05+08:00",
+        "match": "10月1号，20点场"
       },
       {
         "name": "清流不加班",
@@ -17118,9 +17122,9 @@
       },
       {
         "name": "著名智障二小姐(明灯)",
-        "side": "red",
-        "postedAt": "2026-10-01T18:06:37+08:00",
-        "match": "10月1日，18:06场"
+        "side": "blue",
+        "postedAt": "2026-10-01T21:23:34+08:00",
+        "match": ""
       },
       {
         "name": "CC南浔",
