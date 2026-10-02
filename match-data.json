@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T09:27:16.683Z",
+  "fetchedAt": "2026-10-02T09:29:17.393Z",
   "events": [
     {
       "id": "2026-national",
@@ -2189,6 +2189,10 @@
             },
             {
               "name": "猫耄喵大王（抖音）",
+              "side": "blue"
+            },
+            {
+              "name": "Mico林木森",
               "side": "blue"
             },
             {
@@ -17471,7 +17475,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T09:27:07.286Z",
+    "fetchedAt": "2026-10-02T09:29:07.347Z",
     "syncFailed": false,
     "records": [
       {
