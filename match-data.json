@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T04:53:10.263Z",
+  "fetchedAt": "2026-10-02T05:11:09.740Z",
   "events": [
     {
       "id": "2026-national",
@@ -1941,6 +1941,10 @@
             },
             {
               "name": "猫耄喵大王（抖音）",
+              "side": "blue"
+            },
+            {
+              "name": "Mico林木森",
               "side": "blue"
             },
             {
@@ -17213,7 +17217,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T04:53:00.250Z",
+    "fetchedAt": "2026-10-02T05:11:00.664Z",
     "syncFailed": false,
     "records": [
       {
@@ -17296,9 +17300,9 @@
       },
       {
         "name": "阴阳师攻略组",
-        "side": "red",
-        "postedAt": "2026-10-02T11:02:12+08:00",
-        "match": "10月2日，10:00场"
+        "side": null,
+        "postedAt": "2026-10-02T12:46:47+08:00",
+        "match": "10月2日，12:00场"
       },
       {
         "name": "阴阳师手游攻略墙",
