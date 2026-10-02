@@ -191,6 +191,18 @@
       "eventId": "2026-national",
       "startsAt": "2026-10-02T14:00:00+08:00",
       "createdAt": "2026-10-02T06:01:11.812Z",
+      "result": "red"
+    },
+    {
+      "side": "blue",
+      "redShare": 0,
+      "majoritySide": "blue",
+      "judgmentCount": 1,
+      "model": "history-weighted-v1",
+      "slotId": "2026-national-18",
+      "eventId": "2026-national",
+      "startsAt": "2026-10-02T16:00:00+08:00",
+      "createdAt": "2026-10-02T08:02:14.372Z",
       "result": null
     }
   ]
