@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T09:45:17.772Z",
+  "fetchedAt": "2026-10-02T09:52:16.898Z",
   "events": [
     {
       "id": "2026-national",
@@ -17515,7 +17515,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T09:45:07.221Z",
+    "fetchedAt": "2026-10-02T09:52:07.412Z",
     "syncFailed": false,
     "records": [
       {
@@ -17532,8 +17532,8 @@
       },
       {
         "name": "春秋霸主徐清林",
-        "side": null,
-        "postedAt": "2026-10-02T15:14:02+08:00",
+        "side": "blue",
+        "postedAt": "2026-10-02T17:16:45+08:00",
         "match": ""
       },
       {
@@ -17653,8 +17653,8 @@
       {
         "name": "yys靠脸混饭",
         "side": "blue",
-        "postedAt": "2026-10-02T15:17:48+08:00",
-        "match": "10月2日，14:00场"
+        "postedAt": "2026-10-02T17:44:15+08:00",
+        "match": "10月2日，16:00场"
       },
       {
         "name": "yys雯雯",
