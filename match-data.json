@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T05:41:11.269Z",
+  "fetchedAt": "2026-10-02T05:49:12.247Z",
   "events": [
     {
       "id": "2026-national",
@@ -1993,6 +1993,10 @@
             },
             {
               "name": "Mico林木森",
+              "side": "blue"
+            },
+            {
+              "name": "世一协（群友",
               "side": "blue"
             },
             {
@@ -17277,7 +17281,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T05:41:01.399Z",
+    "fetchedAt": "2026-10-02T05:49:01.593Z",
     "syncFailed": false,
     "records": [
       {
