@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T11:51:19.335Z",
+  "fetchedAt": "2026-10-02T11:52:20.156Z",
   "events": [
     {
       "id": "2026-national",
@@ -2293,6 +2293,10 @@
             },
             {
               "name": "梅布斯尼（实测",
+              "side": "red"
+            },
+            {
+              "name": "雯雯（实测",
               "side": "red"
             },
             {
@@ -17612,7 +17616,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T11:51:10.247Z",
+    "fetchedAt": "2026-10-02T11:52:10.223Z",
     "syncFailed": false,
     "records": [
       {
@@ -17635,9 +17639,9 @@
       },
       {
         "name": "待机中的徐OK",
-        "side": "blue",
-        "postedAt": "2026-10-02T17:35:00+08:00",
-        "match": "day3·16点场"
+        "side": "red",
+        "postedAt": "2026-10-02T19:50:18+08:00",
+        "match": "10月2日，18:00场"
       },
       {
         "name": "奉天城公子奉天",
@@ -17653,9 +17657,9 @@
       },
       {
         "name": "梅布斯尼",
-        "side": "blue",
-        "postedAt": "2026-10-02T17:33:55+08:00",
-        "match": "10月2日 16：00场"
+        "side": "red",
+        "postedAt": "2026-10-02T19:47:50+08:00",
+        "match": "10月2日，18:00场"
       },
       {
         "name": "面灵气喵",
@@ -17665,9 +17669,9 @@
       },
       {
         "name": "七面相",
-        "side": "blue",
-        "postedAt": "2026-10-02T17:40:50+08:00",
-        "match": "10月2号 16点场"
+        "side": "red",
+        "postedAt": "2026-10-02T19:50:20+08:00",
+        "match": "10月2号，18点场"
       },
       {
         "name": "清流不加班",
@@ -17755,9 +17759,9 @@
       },
       {
         "name": "yys雯雯",
-        "side": "blue",
-        "postedAt": "2026-10-02T17:34:44+08:00",
-        "match": "10月2日，16:00~18:00点"
+        "side": "red",
+        "postedAt": "2026-10-02T19:51:11+08:00",
+        "match": "10月2日，18-20点场"
       }
     ]
   }
