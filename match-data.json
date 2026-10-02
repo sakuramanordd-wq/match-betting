@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T07:38:14.360Z",
+  "fetchedAt": "2026-10-02T07:39:13.831Z",
   "events": [
     {
       "id": "2026-national",
@@ -2056,6 +2056,14 @@
               "side": "blue"
             },
             {
+              "name": "晨时微凉（实测",
+              "side": "blue"
+            },
+            {
+              "name": "炒饭菌（实测",
+              "side": "blue"
+            },
+            {
               "name": "徐OK（实测",
               "side": "blue"
             },
@@ -2089,6 +2097,14 @@
             },
             {
               "name": "Mico林木森",
+              "side": "blue"
+            },
+            {
+              "name": "来姐大人",
+              "side": "red"
+            },
+            {
+              "name": "YYS方寒",
               "side": "blue"
             },
             {
@@ -17370,7 +17386,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T07:38:04.308Z",
+    "fetchedAt": "2026-10-02T07:39:04.398Z",
     "syncFailed": false,
     "records": [
       {
