@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T08:03:14.167Z",
+  "fetchedAt": "2026-10-02T08:06:14.704Z",
   "events": [
     {
       "id": "2026-national",
@@ -180,10 +180,10 @@
         },
         {
           "name": "井心小能（冥灯？）",
-          "wins": "6",
+          "wins": "7",
           "losses": "9",
-          "winRate": "40.00%",
-          "total": "15"
+          "winRate": "43.75%",
+          "total": "16"
         },
         {
           "name": "猫掌柜吃不下了",
@@ -2017,6 +2017,10 @@
             },
             {
               "name": "四区兄弟（夜神大哥",
+              "side": "blue"
+            },
+            {
+              "name": "井心小能（冥灯？）",
               "side": "blue"
             },
             {
@@ -17411,7 +17415,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T08:03:04.802Z",
+    "fetchedAt": "2026-10-02T08:06:04.827Z",
     "syncFailed": false,
     "records": [
       {
