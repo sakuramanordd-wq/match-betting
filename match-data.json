@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T05:30:10.209Z",
+  "fetchedAt": "2026-10-02T05:31:10.301Z",
   "events": [
     {
       "id": "2026-national",
@@ -1969,6 +1969,10 @@
             },
             {
               "name": "YYS方寒",
+              "side": "blue"
+            },
+            {
+              "name": "四区兄弟（夜神大哥",
               "side": "blue"
             },
             {
@@ -17241,7 +17245,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T05:30:01.138Z",
+    "fetchedAt": "2026-10-02T05:31:01.164Z",
     "syncFailed": false,
     "records": [
       {
@@ -17252,14 +17256,14 @@
       },
       {
         "name": "晨时微凉",
-        "side": "red",
-        "postedAt": "2026-10-02T11:42:48+08:00",
-        "match": "10月2日，10:00场"
+        "side": "blue",
+        "postedAt": "2026-10-02T13:29:13+08:00",
+        "match": "10月2日，12:00场"
       },
       {
         "name": "春秋霸主徐清林",
         "side": "blue",
-        "postedAt": "2026-10-02T10:32:44+08:00",
+        "postedAt": "2026-10-02T13:19:32+08:00",
         "match": ""
       },
       {
@@ -17319,7 +17323,7 @@
       {
         "name": "夜神月Lwaite",
         "side": "blue",
-        "postedAt": "2026-10-01T23:22:08+08:00",
+        "postedAt": "2026-10-02T13:28:08+08:00",
         "match": ""
       },
       {
@@ -17378,9 +17382,9 @@
       },
       {
         "name": "yys靠脸混饭",
-        "side": "red",
-        "postedAt": "2026-10-01T21:21:45+08:00",
-        "match": "10月1日，20:00场"
+        "side": "blue",
+        "postedAt": "2026-10-02T13:29:03+08:00",
+        "match": "10月2日，12:00场"
       },
       {
         "name": "yys雯雯",
