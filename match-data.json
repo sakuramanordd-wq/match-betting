@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T09:08:16.476Z",
+  "fetchedAt": "2026-10-02T09:12:16.191Z",
   "events": [
     {
       "id": "2026-national",
@@ -2186,6 +2186,10 @@
             {
               "name": "猫耄喵大王（抖音）",
               "side": "blue"
+            },
+            {
+              "name": "YYS方寒",
+              "side": "red"
             },
             {
               "name": "四区兄弟（夜神大哥",
@@ -17455,7 +17459,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T09:08:06.465Z",
+    "fetchedAt": "2026-10-02T09:12:06.915Z",
     "syncFailed": false,
     "records": [
       {
@@ -17533,8 +17537,8 @@
       {
         "name": "夜神月Lwaite",
         "side": "blue",
-        "postedAt": "2026-10-02T14:41:17+08:00",
-        "match": "10月2日，14:00场"
+        "postedAt": "2026-10-02T17:04:20+08:00",
+        "match": ""
       },
       {
         "name": "阴阳师攻略组",
