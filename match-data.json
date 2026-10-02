@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T12:09:20.652Z",
+  "fetchedAt": "2026-10-02T12:10:20.574Z",
   "events": [
     {
       "id": "2026-national",
@@ -167,9 +167,9 @@
         {
           "name": "NGA平安志作者模拟",
           "wins": "9",
-          "losses": "7",
-          "winRate": "56.25%",
-          "total": "16"
+          "losses": "6",
+          "winRate": "60.00%",
+          "total": "15"
         },
         {
           "name": "四区兄弟（夜神大哥",
@@ -17633,7 +17633,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T12:09:10.635Z",
+    "fetchedAt": "2026-10-02T12:10:10.663Z",
     "syncFailed": false,
     "records": [
       {
