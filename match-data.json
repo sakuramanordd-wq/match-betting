@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T13:37:22.019Z",
+  "fetchedAt": "2026-10-02T13:39:21.850Z",
   "events": [
     {
       "id": "2026-national",
@@ -2392,6 +2392,10 @@
               "side": "blue"
             },
             {
+              "name": "NGAArchonXP",
+              "side": "red"
+            },
+            {
               "name": "七面相（实测",
               "side": "red"
             },
@@ -2409,6 +2413,10 @@
             },
             {
               "name": "晨时微凉（实测",
+              "side": "red"
+            },
+            {
+              "name": "炒饭菌（实测",
               "side": "red"
             },
             {
@@ -2437,6 +2445,10 @@
             },
             {
               "name": "世一协（群友",
+              "side": "red"
+            },
+            {
+              "name": "来姐大人",
               "side": "red"
             },
             {
@@ -2663,7 +2675,7 @@
       "title": "2026 春节",
       "year": 2026,
       "resultRow": "26春节结果",
-      "sourceSheet": "测试",
+      "sourceSheet": "206国庆竞猜汇总 (2)",
       "summaries": [
         {
           "name": "面灵气喵",
@@ -5122,12 +5134,40 @@
           "result": "blue",
           "records": [
             {
+              "name": "面灵气喵",
+              "side": "blue"
+            },
+            {
               "name": "查查尔",
               "side": "blue"
             },
             {
+              "name": "NGAArchonXP",
+              "side": "red"
+            },
+            {
+              "name": "七面相（实测",
+              "side": "red"
+            },
+            {
               "name": "NGA渊无尽（大数据",
               "side": "blue"
+            },
+            {
+              "name": "梅布斯尼（实测",
+              "side": "red"
+            },
+            {
+              "name": "雯雯（实测",
+              "side": "red"
+            },
+            {
+              "name": "晨时微凉（实测",
+              "side": "red"
+            },
+            {
+              "name": "徐OK（实测",
+              "side": "red"
             },
             {
               "name": "鸽海成路",
@@ -5138,11 +5178,23 @@
               "side": "blue"
             },
             {
+              "name": "徐清林",
+              "side": "blue"
+            },
+            {
               "name": "猫耄喵大王（抖音）",
               "side": "blue"
             },
             {
+              "name": "Mico林木森",
+              "side": "red"
+            },
+            {
               "name": "世一协（群友",
+              "side": "red"
+            },
+            {
+              "name": "来姐大人",
               "side": "red"
             },
             {
@@ -16398,7 +16450,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T13:37:12.897Z",
+    "fetchedAt": "2026-10-02T13:39:13.028Z",
     "syncFailed": false,
     "records": [
       {
