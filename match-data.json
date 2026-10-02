@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T02:35:06.893Z",
+  "fetchedAt": "2026-10-02T02:41:05.930Z",
   "events": [
     {
       "id": "2026-national",
@@ -1815,6 +1815,10 @@
           "startsAt": "2026-10-02T10:00:00+08:00",
           "result": null,
           "records": [
+            {
+              "name": "徐清林",
+              "side": "blue"
+            },
             {
               "name": "井心小能（冥灯？）",
               "side": "red"
@@ -17096,7 +17100,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T02:34:56.892Z",
+    "fetchedAt": "2026-10-02T02:40:57.011Z",
     "syncFailed": false,
     "records": [
       {
