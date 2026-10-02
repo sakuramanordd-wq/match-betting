@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T08:31:15.561Z",
+  "fetchedAt": "2026-10-02T08:37:15.613Z",
   "events": [
     {
       "id": "2026-national",
@@ -2155,6 +2155,10 @@
           "startsAt": "2026-10-02T16:00:00+08:00",
           "result": null,
           "records": [
+            {
+              "name": "面灵气喵",
+              "side": "blue"
+            },
             {
               "name": "猫耄喵大王（抖音）",
               "side": "blue"
@@ -17423,7 +17427,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T08:31:05.410Z",
+    "fetchedAt": "2026-10-02T08:37:05.575Z",
     "syncFailed": false,
     "records": [
       {
