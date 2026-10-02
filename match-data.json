@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T03:17:07.368Z",
+  "fetchedAt": "2026-10-02T03:32:08.258Z",
   "events": [
     {
       "id": "2026-national",
@@ -1834,6 +1834,10 @@
             {
               "name": "Mico林木森",
               "side": "blue"
+            },
+            {
+              "name": "来姐大人",
+              "side": "red"
             },
             {
               "name": "井心小能（冥灯？）",
@@ -17116,7 +17120,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T03:16:58.287Z",
+    "fetchedAt": "2026-10-02T03:31:58.639Z",
     "syncFailed": false,
     "records": [
       {
@@ -17211,9 +17215,9 @@
       },
       {
         "name": "嘤嘤井",
-        "side": "red",
-        "postedAt": "2026-10-01T22:41:53+08:00",
-        "match": "1日DAY 2，22点场"
+        "side": "blue",
+        "postedAt": "2026-10-02T11:28:42+08:00",
+        "match": "10月2日DAY 3，10点场"
       },
       {
         "name": "著名智障二小姐(明灯)",
