@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T13:39:21.850Z",
+  "fetchedAt": "2026-10-02T13:41:22.277Z",
   "events": [
     {
       "id": "2026-national",
@@ -2436,6 +2436,10 @@
               "side": "blue"
             },
             {
+              "name": "CC南浔",
+              "side": "red"
+            },
+            {
               "name": "猫耄喵大王（抖音）",
               "side": "blue"
             },
@@ -2450,6 +2454,10 @@
             {
               "name": "来姐大人",
               "side": "red"
+            },
+            {
+              "name": "NGA平安志作者模拟",
+              "side": "blue"
             },
             {
               "name": "四区兄弟（夜神大哥",
@@ -16450,7 +16458,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T13:39:13.028Z",
+    "fetchedAt": "2026-10-02T13:41:13.189Z",
     "syncFailed": false,
     "records": [
       {
@@ -16497,9 +16505,9 @@
       },
       {
         "name": "面灵气喵",
-        "side": "red",
-        "postedAt": "2026-10-02T18:21:31+08:00",
-        "match": "10月2日，18:00场"
+        "side": "blue",
+        "postedAt": "2026-10-02T21:32:55+08:00",
+        "match": "10月2日，20:00场"
       },
       {
         "name": "七面相",
@@ -16587,9 +16595,9 @@
       },
       {
         "name": "yys靠脸混饭",
-        "side": "red",
-        "postedAt": "2026-10-02T19:02:08+08:00",
-        "match": "10月2日，18:00场"
+        "side": "blue",
+        "postedAt": "2026-10-02T21:36:37+08:00",
+        "match": "10月2日，20:00点场"
       },
       {
         "name": "yys雯雯",
