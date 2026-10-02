@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T11:50:20.146Z",
+  "fetchedAt": "2026-10-02T11:51:19.335Z",
   "events": [
     {
       "id": "2026-national",
@@ -2293,6 +2293,18 @@
             },
             {
               "name": "梅布斯尼（实测",
+              "side": "red"
+            },
+            {
+              "name": "晨时微凉（实测",
+              "side": "red"
+            },
+            {
+              "name": "炒饭菌（实测",
+              "side": "red"
+            },
+            {
+              "name": "徐OK（实测",
               "side": "red"
             },
             {
@@ -17600,7 +17612,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T11:50:10.253Z",
+    "fetchedAt": "2026-10-02T11:51:10.247Z",
     "syncFailed": false,
     "records": [
       {
@@ -17617,8 +17629,8 @@
       },
       {
         "name": "春秋霸主徐清林",
-        "side": "blue",
-        "postedAt": "2026-10-02T17:16:45+08:00",
+        "side": "red",
+        "postedAt": "2026-10-02T19:14:42+08:00",
         "match": ""
       },
       {
