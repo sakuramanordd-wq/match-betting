@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T07:04:13.858Z",
+  "fetchedAt": "2026-10-02T07:13:14.259Z",
   "events": [
     {
       "id": "2026-national",
@@ -2049,6 +2049,10 @@
             },
             {
               "name": "嘤嘤井",
+              "side": "blue"
+            },
+            {
+              "name": "徐清林",
               "side": "blue"
             },
             {
@@ -17334,7 +17338,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T07:04:03.486Z",
+    "fetchedAt": "2026-10-02T07:13:03.678Z",
     "syncFailed": false,
     "records": [
       {
@@ -17448,8 +17452,8 @@
       {
         "name": "Mico林木森",
         "side": "blue",
-        "postedAt": "2026-10-02T13:05:06+08:00",
-        "match": "10月2日，12:00场"
+        "postedAt": "2026-10-02T15:11:28+08:00",
+        "match": "Day3-14:00"
       },
       {
         "name": "Poetry红鲤",
