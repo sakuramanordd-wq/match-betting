@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T11:03:18.640Z",
+  "fetchedAt": "2026-10-02T11:06:19.007Z",
   "events": [
     {
       "id": "2026-national",
@@ -2280,11 +2280,19 @@
               "side": "blue"
             },
             {
+              "name": "鸽海成路",
+              "side": "red"
+            },
+            {
               "name": "嘤嘤井",
               "side": "red"
             },
             {
               "name": "Mico林木森",
+              "side": "red"
+            },
+            {
+              "name": "四区兄弟（夜神大哥",
               "side": "red"
             },
             {
@@ -17536,7 +17544,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T11:03:09.203Z",
+    "fetchedAt": "2026-10-02T11:06:09.313Z",
     "syncFailed": false,
     "records": [
       {
