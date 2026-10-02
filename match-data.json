@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T11:52:20.156Z",
+  "fetchedAt": "2026-10-02T11:53:20.681Z",
   "events": [
     {
       "id": "2026-national",
@@ -2325,6 +2325,10 @@
             },
             {
               "name": "行水姑娘",
+              "side": "red"
+            },
+            {
+              "name": "抖音茨木童子（实测",
               "side": "red"
             },
             {
@@ -17616,14 +17620,14 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T11:52:10.223Z",
+    "fetchedAt": "2026-10-02T11:53:10.338Z",
     "syncFailed": false,
     "records": [
       {
         "name": "炒饭菌",
-        "side": "blue",
-        "postedAt": "2026-10-02T17:33:33+08:00",
-        "match": "10月02日，16:00场"
+        "side": "red",
+        "postedAt": "2026-10-02T19:50:36+08:00",
+        "match": "10月02日，18:00场"
       },
       {
         "name": "晨时微凉",
@@ -17723,9 +17727,9 @@
       },
       {
         "name": "CC南浔",
-        "side": "red",
-        "postedAt": "2026-10-02T17:31:42+08:00",
-        "match": "实测第3天——第4局"
+        "side": "blue",
+        "postedAt": "2026-10-02T19:47:03+08:00",
+        "match": "10月2日，19:47场"
       },
       {
         "name": "Mico林木森",
@@ -17747,9 +17751,9 @@
       },
       {
         "name": "YYS方寒",
-        "side": "red",
-        "postedAt": "2026-10-02T17:14:02+08:00",
-        "match": "10月2号，16:00场"
+        "side": "blue",
+        "postedAt": "2026-10-02T19:45:12+08:00",
+        "match": "10月2号-18.00场"
       },
       {
         "name": "yys靠脸混饭",
