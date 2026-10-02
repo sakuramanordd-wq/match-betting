@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T12:42:21.864Z",
+  "fetchedAt": "2026-10-02T12:43:21.123Z",
   "events": [
     {
       "id": "2026-national",
@@ -17637,7 +17637,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T12:42:11.483Z",
+    "fetchedAt": "2026-10-02T12:43:11.609Z",
     "syncFailed": false,
     "records": [
       {
@@ -17702,9 +17702,9 @@
       },
       {
         "name": "是大荣啦",
-        "side": "blue",
-        "postedAt": "2026-10-02T19:09:41+08:00",
-        "match": "10月2日，18:00场"
+        "side": "red",
+        "postedAt": "2026-10-02T20:35:21+08:00",
+        "match": "10月2日，20:00场"
       },
       {
         "name": "夕水残阳",
