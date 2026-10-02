@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T13:32:21.355Z",
+  "fetchedAt": "2026-10-02T13:34:23.796Z",
   "events": [
     {
       "id": "2026-national",
@@ -2384,6 +2384,10 @@
           "result": null,
           "records": [
             {
+              "name": "面灵气喵",
+              "side": "blue"
+            },
+            {
               "name": "查查尔",
               "side": "blue"
             },
@@ -2394,6 +2398,10 @@
             {
               "name": "NGA渊无尽（大数据",
               "side": "blue"
+            },
+            {
+              "name": "雯雯（实测",
+              "side": "red"
             },
             {
               "name": "鸽海成路",
@@ -2635,7 +2643,7 @@
       "title": "2026 春节",
       "year": 2026,
       "resultRow": "26春节结果",
-      "sourceSheet": "206国庆竞猜汇总 (2)",
+      "sourceSheet": "测试",
       "summaries": [
         {
           "name": "面灵气喵",
@@ -16370,7 +16378,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T13:32:12.735Z",
+    "fetchedAt": "2026-10-02T13:34:12.980Z",
     "syncFailed": false,
     "records": [
       {
