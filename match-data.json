@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T09:33:17.178Z",
+  "fetchedAt": "2026-10-02T09:34:16.614Z",
   "events": [
     {
       "id": "2026-national",
@@ -2166,6 +2166,10 @@
             {
               "name": "NGAArchonXP",
               "side": "red"
+            },
+            {
+              "name": "七面相（实测",
+              "side": "blue"
             },
             {
               "name": "NGA渊无尽（大数据",
@@ -17475,7 +17479,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T09:33:07.566Z",
+    "fetchedAt": "2026-10-02T09:34:07.321Z",
     "syncFailed": false,
     "records": [
       {
@@ -17606,9 +17610,9 @@
       },
       {
         "name": "YYS方寒",
-        "side": "blue",
-        "postedAt": "2026-10-02T15:37:40+08:00",
-        "match": "10月2号-12.00场"
+        "side": "red",
+        "postedAt": "2026-10-02T17:14:02+08:00",
+        "match": "10月2号，16:00场"
       },
       {
         "name": "yys靠脸混饭",
