@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T13:41:22.277Z",
+  "fetchedAt": "2026-10-02T13:42:21.993Z",
   "events": [
     {
       "id": "2026-national",
@@ -2438,6 +2438,10 @@
             {
               "name": "CC南浔",
               "side": "red"
+            },
+            {
+              "name": "惰落珈百璃",
+              "side": "blue"
             },
             {
               "name": "猫耄喵大王（抖音）",
@@ -16458,7 +16462,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T13:41:13.189Z",
+    "fetchedAt": "2026-10-02T13:42:13.106Z",
     "syncFailed": false,
     "records": [
       {
@@ -16469,14 +16473,14 @@
       },
       {
         "name": "晨时微凉",
-        "side": "blue",
-        "postedAt": "2026-10-02T17:36:07+08:00",
-        "match": "10月2日，16:00场"
+        "side": "red",
+        "postedAt": "2026-10-02T21:35:38+08:00",
+        "match": "10月2日，20点场"
       },
       {
         "name": "春秋霸主徐清林",
-        "side": "red",
-        "postedAt": "2026-10-02T19:14:42+08:00",
+        "side": "blue",
+        "postedAt": "2026-10-02T21:35:37+08:00",
         "match": ""
       },
       {
