@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T03:43:08.898Z",
+  "fetchedAt": "2026-10-02T03:44:08.689Z",
   "events": [
     {
       "id": "2026-national",
@@ -1841,6 +1841,14 @@
             },
             {
               "name": "行水姑娘",
+              "side": "red"
+            },
+            {
+              "name": "CC南浔",
+              "side": "red"
+            },
+            {
+              "name": "惰落珈百璃",
               "side": "red"
             },
             {
@@ -17136,7 +17144,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T03:42:58.967Z",
+    "fetchedAt": "2026-10-02T03:43:58.976Z",
     "syncFailed": false,
     "records": [
       {
@@ -17202,8 +17210,8 @@
       {
         "name": "是大荣啦",
         "side": "red",
-        "postedAt": "2026-10-01T22:47:13+08:00",
-        "match": "10月1日20点局"
+        "postedAt": "2026-10-02T11:38:10+08:00",
+        "match": "10月2日，10:00场"
       },
       {
         "name": "夕水残阳",
