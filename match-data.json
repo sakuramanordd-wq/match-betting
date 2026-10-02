@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T10:00:17.951Z",
+  "fetchedAt": "2026-10-02T10:01:17.885Z",
   "events": [
     {
       "id": "2026-national",
@@ -2270,7 +2270,12 @@
           "label": "10月2日18点场",
           "startsAt": "2026-10-02T18:00:00+08:00",
           "result": null,
-          "records": []
+          "records": [
+            {
+              "name": "猫掌柜吃不下了",
+              "side": "red"
+            }
+          ]
         },
         {
           "id": "2026-national-20",
@@ -17515,7 +17520,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T10:00:07.781Z",
+    "fetchedAt": "2026-10-02T10:01:07.680Z",
     "syncFailed": false,
     "records": [
       {
