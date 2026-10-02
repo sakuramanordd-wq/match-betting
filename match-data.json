@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://www.kdocs.cn/l/cris3KItpMwO",
   "sourceTitle": "2026国庆对弈竞猜汇总（尽量准时版",
-  "fetchedAt": "2026-10-02T05:33:11.149Z",
+  "fetchedAt": "2026-10-02T05:34:10.644Z",
   "events": [
     {
       "id": "2026-national",
@@ -1937,6 +1937,18 @@
             },
             {
               "name": "七面相（实测",
+              "side": "blue"
+            },
+            {
+              "name": "梅布斯尼（实测",
+              "side": "blue"
+            },
+            {
+              "name": "晨时微凉（实测",
+              "side": "blue"
+            },
+            {
+              "name": "徐OK（实测",
               "side": "blue"
             },
             {
@@ -17245,7 +17257,7 @@
   ],
   "wind": {
     "sourceUrl": "https://yysrank.com/dyjc.html",
-    "fetchedAt": "2026-10-02T05:33:01.247Z",
+    "fetchedAt": "2026-10-02T05:34:01.283Z",
     "syncFailed": false,
     "records": [
       {
@@ -17316,9 +17328,9 @@
       },
       {
         "name": "夕水残阳",
-        "side": "red",
-        "postedAt": "2026-10-02T11:45:21+08:00",
-        "match": "10月2日 10点场"
+        "side": "blue",
+        "postedAt": "2026-10-02T13:20:07+08:00",
+        "match": "10月2日，12:00场"
       },
       {
         "name": "夜神月Lwaite",
@@ -17352,9 +17364,9 @@
       },
       {
         "name": "CC南浔",
-        "side": "red",
-        "postedAt": "2026-10-02T11:43:21+08:00",
-        "match": "第3天，第1局"
+        "side": "blue",
+        "postedAt": "2026-10-02T13:26:08+08:00",
+        "match": "实测第3天——第2局"
       },
       {
         "name": "Mico林木森",
@@ -17376,9 +17388,9 @@
       },
       {
         "name": "YYS方寒",
-        "side": "red",
-        "postedAt": "2026-10-02T11:42:08+08:00",
-        "match": "10月2号，10:00场"
+        "side": "blue",
+        "postedAt": "2026-10-02T13:23:00+08:00",
+        "match": "10月2日，12:00场"
       },
       {
         "name": "yys靠脸混饭",
